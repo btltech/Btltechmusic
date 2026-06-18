@@ -1,0 +1,19 @@
+<svg width="1280" height="720" viewBox="0 0 1280 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1280" height="720" rx="48" fill="#100C09"/>
+  <rect x="28" y="28" width="1224" height="664" rx="30" fill="url(#paint0_linear)" stroke="#F5B642" stroke-opacity="0.18" stroke-width="2"/>
+  <circle cx="1090" cy="150" r="140" fill="#F5B642" fill-opacity="0.14"/>
+  <circle cx="220" cy="620" r="180" fill="#E85D2A" fill-opacity="0.18"/>
+  <rect x="140" y="120" width="1000" height="480" rx="28" fill="#080706" fill-opacity="0.72" stroke="#FFF1D6" stroke-opacity="0.08"/>
+  <circle cx="640" cy="360" r="88" fill="#1B1510" stroke="#F5B642" stroke-opacity="0.32" stroke-width="2"/>
+  <path d="M612 308L712 360L612 412V308Z" fill="#F5B642"/>
+  <text x="640" y="176" fill="#F5B642" font-family="Inter, system-ui, sans-serif" font-size="28" font-weight="700" text-anchor="middle" letter-spacing="10">BTLTECH VISUAL</text>
+  <text x="640" y="565" fill="#FFF1D6" font-family="Inter, system-ui, sans-serif" font-size="34" font-weight="600" text-anchor="middle">Video Placeholder</text>
+  <text x="640" y="606" fill="#B8A88C" font-family="Inter, system-ui, sans-serif" font-size="20" text-anchor="middle">Replace with official thumbnails when available</text>
+  <defs>
+    <linearGradient id="paint0_linear" x1="110" y1="86" x2="1166" y2="660" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#25180F"/>
+      <stop offset="0.52" stop-color="#120D0A"/>
+      <stop offset="1" stop-color="#2B1109"/>
+    </linearGradient>
+  </defs>
+</svg>

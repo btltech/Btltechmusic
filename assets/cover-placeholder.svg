@@ -1,0 +1,20 @@
+<svg width="800" height="800" viewBox="0 0 800 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="800" rx="48" fill="#120E0B"/>
+  <rect x="28" y="28" width="744" height="744" rx="36" fill="url(#paint0_linear)" stroke="#F5B642" stroke-opacity="0.25" stroke-width="2"/>
+  <circle cx="630" cy="170" r="120" fill="#E85D2A" fill-opacity="0.22"/>
+  <circle cx="215" cy="620" r="160" fill="#F5B642" fill-opacity="0.16"/>
+  <rect x="90" y="90" width="620" height="620" rx="30" fill="#0E0A08" fill-opacity="0.72" stroke="#FFF1D6" stroke-opacity="0.08"/>
+  <path d="M250 400C250 317.157 317.157 250 400 250V250C482.843 250 550 317.157 550 400V400C550 482.843 482.843 550 400 550V550C317.157 550 250 482.843 250 400V400Z" fill="#1B1510" stroke="#F5B642" stroke-opacity="0.24" stroke-width="2"/>
+  <circle cx="400" cy="400" r="105" fill="#080706" stroke="#FFF1D6" stroke-opacity="0.08"/>
+  <circle cx="400" cy="400" r="18" fill="#F5B642" fill-opacity="0.75"/>
+  <text x="400" y="150" fill="#F5B642" font-family="Inter, system-ui, sans-serif" font-size="30" font-weight="700" text-anchor="middle" letter-spacing="10">BTLTECH</text>
+  <text x="400" y="626" fill="#FFF1D6" font-family="Inter, system-ui, sans-serif" font-size="34" font-weight="600" text-anchor="middle">Cover Art Placeholder</text>
+  <text x="400" y="668" fill="#B8A88C" font-family="Inter, system-ui, sans-serif" font-size="20" text-anchor="middle">Replace with official single artwork inside the assets folder</text>
+  <defs>
+    <linearGradient id="paint0_linear" x1="88" y1="71" x2="708" y2="734" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2B1E15"/>
+      <stop offset="0.52" stop-color="#140F0B"/>
+      <stop offset="1" stop-color="#2A140D"/>
+    </linearGradient>
+  </defs>
+</svg>

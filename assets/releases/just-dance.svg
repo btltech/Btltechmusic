@@ -1,0 +1,20 @@
+<svg width="800" height="800" viewBox="0 0 800 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="800" rx="48" fill="#100A08"/>
+  <rect x="26" y="26" width="748" height="748" rx="36" fill="url(#paint0_linear)" stroke="#F5B642" stroke-opacity="0.2" stroke-width="2"/>
+  <circle cx="598" cy="196" r="138" fill="#F5B642" fill-opacity="0.16"/>
+  <circle cx="234" cy="590" r="164" fill="#E85D2A" fill-opacity="0.2"/>
+  <path d="M174 264C254 214 342 188 438 188C527 188 608 208 680 248" stroke="#FFF1D6" stroke-opacity="0.16" stroke-width="3" stroke-linecap="round"/>
+  <path d="M154 328C258 276 366 250 478 250C553 250 622 262 684 286" stroke="#FFF1D6" stroke-opacity="0.12" stroke-width="3" stroke-linecap="round"/>
+  <rect x="92" y="94" width="616" height="612" rx="28" fill="#120E0B" fill-opacity="0.64" stroke="#FFF1D6" stroke-opacity="0.08"/>
+  <text x="400" y="154" fill="#F5B642" font-family="Inter, system-ui, sans-serif" font-size="28" font-weight="700" text-anchor="middle" letter-spacing="8">BTLTECH MUSIC</text>
+  <text x="400" y="392" fill="#FFF1D6" font-family="Inter, system-ui, sans-serif" font-size="76" font-weight="800" text-anchor="middle">JUST</text>
+  <text x="400" y="472" fill="#FFF1D6" font-family="Inter, system-ui, sans-serif" font-size="76" font-weight="800" text-anchor="middle">DANCE</text>
+  <text x="400" y="556" fill="#B8A88C" font-family="Inter, system-ui, sans-serif" font-size="24" text-anchor="middle">Feel-good movement, replay value, and party rhythm</text>
+  <defs>
+    <linearGradient id="paint0_linear" x1="84" y1="72" x2="710" y2="720" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#25170F"/>
+      <stop offset="0.5" stop-color="#130D0A"/>
+      <stop offset="1" stop-color="#34140B"/>
+    </linearGradient>
+  </defs>
+</svg>

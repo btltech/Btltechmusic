@@ -1,0 +1,7 @@
+.DS_Store
+Thumbs.db
+
+# Local preview / tooling noise
+.wrangler/
+dist/
+node_modules/

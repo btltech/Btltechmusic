@@ -1,0 +1,19 @@
+<svg width="800" height="800" viewBox="0 0 800 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="800" rx="48" fill="#0E0908"/>
+  <rect x="26" y="26" width="748" height="748" rx="36" fill="url(#paint0_linear)" stroke="#F5B642" stroke-opacity="0.22" stroke-width="2"/>
+  <circle cx="640" cy="164" r="110" fill="#F5B642" fill-opacity="0.14"/>
+  <circle cx="182" cy="620" r="198" fill="#E85D2A" fill-opacity="0.2"/>
+  <rect x="96" y="96" width="608" height="608" rx="28" fill="#110D0A" fill-opacity="0.66" stroke="#FFF1D6" stroke-opacity="0.08"/>
+  <path d="M188 542L310 406L390 470L532 294L612 360" stroke="#F5B642" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="400" y="156" fill="#F5B642" font-family="Inter, system-ui, sans-serif" font-size="28" font-weight="700" text-anchor="middle" letter-spacing="8">BTLTECH MUSIC</text>
+  <text x="400" y="366" fill="#FFF1D6" font-family="Inter, system-ui, sans-serif" font-size="62" font-weight="800" text-anchor="middle">I'M A</text>
+  <text x="400" y="446" fill="#FFF1D6" font-family="Inter, system-ui, sans-serif" font-size="72" font-weight="800" text-anchor="middle">HUSTLER</text>
+  <text x="400" y="560" fill="#B8A88C" font-family="Inter, system-ui, sans-serif" font-size="24" text-anchor="middle">Street-drive, persistence, hard work, and survival instinct</text>
+  <defs>
+    <linearGradient id="paint0_linear" x1="86" y1="72" x2="710" y2="716" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#24160E"/>
+      <stop offset="0.48" stop-color="#140D0A"/>
+      <stop offset="1" stop-color="#2B140D"/>
+    </linearGradient>
+  </defs>
+</svg>

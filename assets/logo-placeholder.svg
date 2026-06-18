@@ -1,0 +1,16 @@
+<svg width="1400" height="420" viewBox="0 0 1400 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1400" height="420" rx="42" fill="#0D0907"/>
+  <rect x="22" y="22" width="1356" height="376" rx="28" fill="url(#paint0_linear)" stroke="#F5B642" stroke-opacity="0.22" stroke-width="2"/>
+  <circle cx="1170" cy="118" r="98" fill="#E85D2A" fill-opacity="0.18"/>
+  <circle cx="250" cy="308" r="112" fill="#F5B642" fill-opacity="0.15"/>
+  <text x="700" y="187" fill="#F5B642" font-family="Inter, system-ui, sans-serif" font-size="42" font-weight="700" text-anchor="middle" letter-spacing="14">OFFICIAL LOGO PLACEHOLDER</text>
+  <text x="700" y="260" fill="#FFF1D6" font-family="Inter, system-ui, sans-serif" font-size="98" font-weight="800" text-anchor="middle" letter-spacing="14">BTLTECH</text>
+  <text x="700" y="320" fill="#B8A88C" font-family="Inter, system-ui, sans-serif" font-size="24" text-anchor="middle">Replace this file with the official wordmark or logo when ready</text>
+  <defs>
+    <linearGradient id="paint0_linear" x1="100" y1="48" x2="1292" y2="364" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#24170F"/>
+      <stop offset="0.45" stop-color="#120E0B"/>
+      <stop offset="1" stop-color="#2A110A"/>
+    </linearGradient>
+  </defs>
+</svg>

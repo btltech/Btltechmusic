@@ -1,0 +1,24 @@
+<svg width="1280" height="720" viewBox="0 0 1280 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1280" height="720" rx="48" fill="#0F0A08"/>
+  <rect x="24" y="24" width="1232" height="672" rx="32" fill="url(#paint0_linear)" stroke="#F5B642" stroke-opacity="0.18" stroke-width="2"/>
+  <circle cx="1080" cy="154" r="136" fill="#E85D2A" fill-opacity="0.18"/>
+  <circle cx="198" cy="594" r="166" fill="#F5B642" fill-opacity="0.14"/>
+  <rect x="118" y="116" width="1044" height="488" rx="30" fill="#120E0B" fill-opacity="0.68" stroke="#FFF1D6" stroke-opacity="0.08"/>
+  <path d="M180 194H1098" stroke="#FFF1D6" stroke-opacity="0.1" stroke-width="2"/>
+  <path d="M180 266H1098" stroke="#FFF1D6" stroke-opacity="0.08" stroke-width="2"/>
+  <path d="M180 338H1098" stroke="#FFF1D6" stroke-opacity="0.08" stroke-width="2"/>
+  <path d="M180 410H1098" stroke="#FFF1D6" stroke-opacity="0.08" stroke-width="2"/>
+  <path d="M180 482H1098" stroke="#FFF1D6" stroke-opacity="0.08" stroke-width="2"/>
+  <circle cx="640" cy="360" r="86" fill="#1B1510" stroke="#F5B642" stroke-opacity="0.32" stroke-width="2"/>
+  <path d="M612 308L712 360L612 412V308Z" fill="#F5B642"/>
+  <text x="640" y="188" fill="#F5B642" font-family="Inter, system-ui, sans-serif" font-size="30" font-weight="700" text-anchor="middle" letter-spacing="10">LAGOS CLIP</text>
+  <text x="640" y="548" fill="#FFF1D6" font-family="Inter, system-ui, sans-serif" font-size="48" font-weight="800" text-anchor="middle">WELCOME TO LAGOS</text>
+  <text x="640" y="596" fill="#B8A88C" font-family="Inter, system-ui, sans-serif" font-size="24" text-anchor="middle">Street pressure, late-night grit, and city momentum</text>
+  <defs>
+    <linearGradient id="paint0_linear" x1="88" y1="64" x2="1186" y2="660" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2B160E"/>
+      <stop offset="0.52" stop-color="#130D0A"/>
+      <stop offset="1" stop-color="#2E120B"/>
+    </linearGradient>
+  </defs>
+</svg>

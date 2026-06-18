@@ -1,0 +1,21 @@
+{
+  "name": "BTLTECH Music",
+  "short_name": "BTLTECH",
+  "description": "Official music hub for BTLTECH and Choko King, and home of the Lyrid lyric-video app.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#080706",
+  "theme_color": "#080706",
+  "icons": [
+    {
+      "src": "apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "apple-touch-icon-precomposed.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}

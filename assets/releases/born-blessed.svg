@@ -1,0 +1,20 @@
+<svg width="800" height="800" viewBox="0 0 800 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="800" rx="48" fill="#120B08"/>
+  <rect x="26" y="26" width="748" height="748" rx="36" fill="url(#paint0_linear)" stroke="#F5B642" stroke-opacity="0.22" stroke-width="2"/>
+  <circle cx="624" cy="186" r="136" fill="#F5B642" fill-opacity="0.16"/>
+  <circle cx="188" cy="612" r="170" fill="#E85D2A" fill-opacity="0.16"/>
+  <rect x="96" y="96" width="608" height="608" rx="28" fill="#140F0B" fill-opacity="0.64" stroke="#FFF1D6" stroke-opacity="0.08"/>
+  <path d="M312 250L340 308L404 316L358 360L370 424L312 392L254 424L266 360L220 316L284 308L312 250Z" fill="#F5B642" fill-opacity="0.28"/>
+  <path d="M488 250L516 308L580 316L534 360L546 424L488 392L430 424L442 360L396 316L460 308L488 250Z" fill="#F5B642" fill-opacity="0.2"/>
+  <text x="400" y="154" fill="#F5B642" font-family="Inter, system-ui, sans-serif" font-size="28" font-weight="700" text-anchor="middle" letter-spacing="8">BTLTECH MUSIC</text>
+  <text x="400" y="404" fill="#FFF1D6" font-family="Inter, system-ui, sans-serif" font-size="68" font-weight="800" text-anchor="middle">BORN</text>
+  <text x="400" y="484" fill="#FFF1D6" font-family="Inter, system-ui, sans-serif" font-size="68" font-weight="800" text-anchor="middle">BLESSED</text>
+  <text x="400" y="572" fill="#B8A88C" font-family="Inter, system-ui, sans-serif" font-size="24" text-anchor="middle">Celebration, grace, joy, and shining higher</text>
+  <defs>
+    <linearGradient id="paint0_linear" x1="86" y1="72" x2="710" y2="718" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#26170F"/>
+      <stop offset="0.52" stop-color="#14100B"/>
+      <stop offset="1" stop-color="#34160C"/>
+    </linearGradient>
+  </defs>
+</svg>

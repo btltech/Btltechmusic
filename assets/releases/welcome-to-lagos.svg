@@ -1,0 +1,26 @@
+<svg width="800" height="800" viewBox="0 0 800 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="800" rx="48" fill="#0F0A08"/>
+  <rect x="26" y="26" width="748" height="748" rx="36" fill="url(#paint0_linear)" stroke="#F5B642" stroke-opacity="0.22" stroke-width="2"/>
+  <circle cx="648" cy="170" r="130" fill="#E85D2A" fill-opacity="0.2"/>
+  <circle cx="150" cy="628" r="180" fill="#F5B642" fill-opacity="0.14"/>
+  <rect x="92" y="92" width="616" height="616" rx="28" fill="#0F0C0A" fill-opacity="0.68" stroke="#FFF1D6" stroke-opacity="0.08"/>
+  <path d="M150 222H650" stroke="#FFF1D6" stroke-opacity="0.1" stroke-width="2"/>
+  <path d="M150 294H650" stroke="#FFF1D6" stroke-opacity="0.08" stroke-width="2"/>
+  <path d="M150 366H650" stroke="#FFF1D6" stroke-opacity="0.08" stroke-width="2"/>
+  <path d="M150 438H650" stroke="#FFF1D6" stroke-opacity="0.08" stroke-width="2"/>
+  <path d="M150 510H650" stroke="#FFF1D6" stroke-opacity="0.08" stroke-width="2"/>
+  <path d="M236 178V622" stroke="#FFF1D6" stroke-opacity="0.08" stroke-width="2"/>
+  <path d="M398 178V622" stroke="#FFF1D6" stroke-opacity="0.08" stroke-width="2"/>
+  <path d="M560 178V622" stroke="#FFF1D6" stroke-opacity="0.08" stroke-width="2"/>
+  <text x="400" y="154" fill="#F5B642" font-family="Inter, system-ui, sans-serif" font-size="28" font-weight="700" text-anchor="middle" letter-spacing="8">BTLTECH MUSIC</text>
+  <text x="400" y="360" fill="#FFF1D6" font-family="Inter, system-ui, sans-serif" font-size="56" font-weight="800" text-anchor="middle">WELCOME TO</text>
+  <text x="400" y="440" fill="#FFF1D6" font-family="Inter, system-ui, sans-serif" font-size="74" font-weight="800" text-anchor="middle">LAGOS</text>
+  <text x="400" y="548" fill="#B8A88C" font-family="Inter, system-ui, sans-serif" font-size="24" text-anchor="middle">Danfo energy, pressure, prayer, survival, and 4AM ambition</text>
+  <defs>
+    <linearGradient id="paint0_linear" x1="86" y1="72" x2="710" y2="718" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2A170E"/>
+      <stop offset="0.5" stop-color="#120D0A"/>
+      <stop offset="1" stop-color="#2C130B"/>
+    </linearGradient>
+  </defs>
+</svg>

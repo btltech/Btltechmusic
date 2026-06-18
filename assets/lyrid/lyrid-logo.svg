@@ -1,0 +1,17 @@
+<svg width="1400" height="420" viewBox="0 0 1400 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1400" height="420" rx="42" fill="#0D0907"/>
+  <rect x="22" y="22" width="1356" height="376" rx="28" fill="url(#g)" stroke="#F5B642" stroke-opacity="0.2" stroke-width="2"/>
+  <circle cx="1180" cy="132" r="104" fill="#F5B642" fill-opacity="0.14"/>
+  <circle cx="250" cy="314" r="112" fill="#E85D2A" fill-opacity="0.18"/>
+  <g transform="translate(232,150)">
+    <rect x="0" y="40" width="14" height="40" rx="7" fill="#F5B642"/>
+    <rect x="26" y="14" width="14" height="92" rx="7" fill="#FFF1D6"/>
+    <rect x="52" y="-2" width="14" height="124" rx="7" fill="#F5B642"/>
+    <rect x="78" y="26" width="14" height="68" rx="7" fill="#E85D2A"/>
+    <rect x="104" y="44" width="14" height="32" rx="7" fill="#FFF1D6"/>
+  </g>
+  <text x="740" y="252" fill="#FFF1D6" font-family="Inter, system-ui, sans-serif" font-size="118" font-weight="800" text-anchor="middle" letter-spacing="4">Lyrid</text>
+  <text x="740" y="316" fill="#B8A88C" font-family="Inter, system-ui, sans-serif" font-size="24" text-anchor="middle" letter-spacing="2">Lyric videos in seconds</text>
+  <defs><linearGradient id="g" x1="90" y1="48" x2="1294" y2="362" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#25170F"/><stop offset="0.5" stop-color="#110D0A"/><stop offset="1" stop-color="#2D140C"/></linearGradient></defs>
+</svg>

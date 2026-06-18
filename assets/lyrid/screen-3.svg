@@ -1,0 +1,24 @@
+<svg width="1280" height="820" viewBox="0 0 1280 820" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1280" height="820" rx="22" fill="url(#g)" stroke="#F5B642" stroke-opacity="0.18" stroke-width="2"/>
+  <path d="M0 22 Q0 0 22 0 H1258 Q1280 0 1280 22 V92 H0 Z" fill="#0E0A08" fill-opacity="0.9"/>
+  <circle cx="44" cy="46" r="11" fill="#E85D2A"/>
+  <circle cx="80" cy="46" r="11" fill="#F5B642"/>
+  <circle cx="116" cy="46" r="11" fill="#7FB069"/>
+  <text x="640" y="54" fill="#B8A88C" font-family="Inter, system-ui, sans-serif" font-size="22" font-weight="600" text-anchor="middle" letter-spacing="3">Lyrid — Export</text>
+  <line x1="380" y1="92" x2="380" y2="820" stroke="#FFF1D6" stroke-opacity="0.06" stroke-width="2"/>
+  <text x="40" y="138" fill="#F5B642" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="700" letter-spacing="3">PROJECTS</text>
+  <rect x="40" y="116" width="300" height="52" rx="12" fill="#F5B642" fill-opacity="0.12" stroke="#F5B642" stroke-opacity="0.3"/><circle cx="66" cy="142" r="8" fill="#F5B642"/><text x="92" y="148" fill="#FFF1D6" font-family="Inter, system-ui, sans-serif" font-size="20" font-weight="700">Welcome to Lagos</text>
+  <circle cx="66" cy="206" r="8" fill="#6F6555"/><text x="92" y="212" fill="#B8A88C" font-family="Inter, system-ui, sans-serif" font-size="20" font-weight="500">Omo Stacker</text>
+  <circle cx="66" cy="270" r="8" fill="#6F6555"/><text x="92" y="276" fill="#B8A88C" font-family="Inter, system-ui, sans-serif" font-size="20" font-weight="500">Choko So Cool</text>
+  <circle cx="66" cy="334" r="8" fill="#6F6555"/><text x="92" y="340" fill="#B8A88C" font-family="Inter, system-ui, sans-serif" font-size="20" font-weight="500">Just Dance</text>
+  <circle cx="66" cy="398" r="8" fill="#6F6555"/><text x="92" y="404" fill="#B8A88C" font-family="Inter, system-ui, sans-serif" font-size="20" font-weight="500">Born Blessed</text>
+  
+  <text x="800" y="210" fill="#F5B642" font-family="Inter, system-ui, sans-serif" font-size="22" font-weight="700" text-anchor="middle" letter-spacing="4">EXPORT YOUR VIDEO</text>
+  <rect x="500" y="260" width="600" height="300" rx="20" fill="#140F0B" stroke="#FFF1D6" stroke-opacity="0.08"/>
+  <polygon points="760,360 760,460 850,410" fill="#F5B642" fill-opacity="0.85"/>
+  <text x="800" y="520" fill="#B8A88C" font-family="Inter, system-ui, sans-serif" font-size="20" text-anchor="middle" letter-spacing="3">1080p · MP4 · 9:16 / 1:1 / 16:9</text>
+  <rect x="640" y="620" width="320" height="70" rx="35" fill="#F5B642"/>
+  <text x="800" y="665" fill="#150F08" font-family="Inter, system-ui, sans-serif" font-size="28" font-weight="700" text-anchor="middle">Export video</text>
+  <defs><linearGradient id="g" x1="60" y1="30" x2="1220" y2="800" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#1C130D"/><stop offset="0.5" stop-color="#100B08"/><stop offset="1" stop-color="#23110B"/></linearGradient></defs>
+</svg>
