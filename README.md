@@ -93,7 +93,7 @@ Edit the Press Kit section in `press-kit.html`.
 
 ## Notes
 
-- The site now includes basic offline support via `sw.js` and service worker registration in `script.js`.
+- `sw.js` only clears the old launch cache and unregisters the legacy service worker.
 - Privacy and terms pages were added for launch readiness.
 
 - Empty optional social buttons are hidden until links are added.

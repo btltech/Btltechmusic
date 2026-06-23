@@ -185,7 +185,7 @@ document.addEventListener("DOMContentLoaded", () => {
   applyEmbedLinks();
   setupMailingListForm();
   setupMobileMenu();
-  registerServiceWorker();
+  clearLegacyServiceWorker();
 });
 
 function applyChokoLinks() {
@@ -566,16 +566,31 @@ function setupMobileMenu() {
   });
 }
 
-function registerServiceWorker() {
-  if (!('serviceWorker' in navigator)) {
-    return;
-  }
+function clearLegacyServiceWorker() {
+  const cacheCleanup = 'caches' in window
+    ? caches.keys().then((keys) => Promise.all(keys.map((key) => caches.delete(key))))
+    : Promise.resolve();
 
-  window.addEventListener('load', () => {
-    navigator.serviceWorker
-      .register('/sw.js')
-      .catch((error) => {
-        console.warn('Service worker registration failed:', error);
-      });
+  const workerCleanup = 'serviceWorker' in navigator
+    ? navigator.serviceWorker.getRegistrations().then((registrations) =>
+        Promise.all(registrations.map((registration) => registration.unregister()))
+      )
+    : Promise.resolve();
+
+  Promise.allSettled([cacheCleanup, workerCleanup]).then(() => {
+    if (!('serviceWorker' in navigator) || !navigator.serviceWorker.controller) {
+      return;
+    }
+
+    try {
+      if (sessionStorage.getItem('btltech-sw-cleared') === '1') {
+        return;
+      }
+
+      sessionStorage.setItem('btltech-sw-cleared', '1');
+      window.location.reload();
+    } catch {
+      /* If storage is unavailable, leave the current page alone. */
+    }
   });
 }
