@@ -1,10 +1,11 @@
-const CACHE_NAME = 'btltech-music-v10';
+const CACHE_NAME = 'btltech-music-v12';
 const CORE_ASSETS = [
   '/',
   '/index.html',
   '/btltech.html',
   '/choko-king.html',
   '/lyrid.html',
+  '/lyrid-help.html',
   '/press-kit.html',
   '/contact.html',
   '/styles.css',

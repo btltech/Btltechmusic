@@ -9,6 +9,7 @@ Home of two artists (BTLTECH and Choko King) and the Lyrid lyric-video app.
 - `btltech.html` — BTLTECH artist page (bio, releases, videos, contact)
 - `choko-king.html` — Choko King artist page (separate artist, own links/releases)
 - `lyrid.html` — Lyrid app landing page (features, how-it-works, screenshots, download)
+- `lyrid-help.html` — Lyrid help and user guide
 - `press-kit.html` — EPK / press kit
 - `contact.html` — contact page
 - `privacy-policy.html`, `terms-of-service.html` — legal pages
@@ -42,7 +43,7 @@ Edit the top of `script.js`:
 - `releaseCatalog` — BTLTECH per-song links
 - `chokoLinks` — Choko King's own streaming/social links
 - `chokoReleaseCatalog` — Choko King's per-song links
-- `lyridLinks` — Lyrid (macOS app): Mac App Store URL, direct download (.dmg), optional web page
+- `lyridLinks` — Lyrid checkout URL, Mac App Store URL, direct download (.dmg), optional web page
 - `upcomingRelease`
 - `videoCatalog`
 - `pressDownloads`
@@ -80,6 +81,9 @@ Edit the Press Kit section in `press-kit.html`.
 
 - Add remaining social and smart links.
 - Add per-release links where available.
+- Publish the Lyrid Lemon Squeezy product as one-time payment: £29 base price,
+  £24 launch sale price, and license keys enabled. Paste the generated checkout
+  URL into `lyridLinks.checkout` in `script.js`.
 - Replace placeholder visuals with approved assets.
 - Add real pre-save and teaser URLs.
 - Update the EPK with final stats, placements, and media references.

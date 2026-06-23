@@ -1609,6 +1609,118 @@ a {
   color: var(--muted);
 }
 
+/* Lyrid help guide */
+.guide-layout {
+  display: grid;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.guide-sidebar {
+  background: linear-gradient(180deg, rgba(27, 21, 16, 0.96), rgba(16, 13, 10, 0.92));
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+  padding: 1.25rem;
+}
+
+.guide-nav {
+  display: grid;
+  gap: 0.35rem;
+  margin-top: 1rem;
+}
+
+.guide-nav a {
+  border-radius: var(--radius-sm);
+  color: var(--muted);
+  padding: 0.72rem 0.85rem;
+}
+
+.guide-nav a:hover,
+.guide-nav a:focus-visible {
+  background: rgba(245, 182, 66, 0.1);
+  color: var(--cream);
+}
+
+.guide-content {
+  display: grid;
+  gap: 1rem;
+}
+
+.guide-panel {
+  background: linear-gradient(180deg, rgba(27, 21, 16, 0.96), rgba(16, 13, 10, 0.92));
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+  scroll-margin-top: 6rem;
+  padding: 1.5rem;
+}
+
+.guide-panel h2 {
+  margin: 0 0 0.85rem;
+  font-size: clamp(1.65rem, 4vw, 2.35rem);
+  line-height: 1.08;
+}
+
+.guide-panel h3 {
+  margin: 0 0 0.45rem;
+  color: var(--cream);
+  font-size: 1.05rem;
+}
+
+.guide-panel p {
+  color: var(--muted);
+  margin: 0 0 1rem;
+}
+
+.guide-panel p:last-child {
+  margin-bottom: 0;
+}
+
+.guide-steps,
+.guide-list {
+  display: grid;
+  gap: 0.75rem;
+  margin: 1rem 0;
+  padding-left: 1.3rem;
+  color: var(--muted);
+}
+
+.guide-steps li,
+.guide-list li {
+  padding-left: 0.2rem;
+}
+
+.guide-quick-card .guide-steps {
+  margin-bottom: 0;
+}
+
+.troubleshooting-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.troubleshooting-list section {
+  border-top: 1px solid var(--border);
+  padding-top: 1rem;
+}
+
+.troubleshooting-list section:first-child {
+  border-top: 0;
+  padding-top: 0;
+}
+
+@media (min-width: 920px) {
+  .guide-layout {
+    grid-template-columns: minmax(220px, 0.32fr) minmax(0, 1fr);
+  }
+
+  .guide-sidebar {
+    position: sticky;
+    top: 6rem;
+  }
+}
+
 /* Single centered embed (Spotify preview only) */
 .embed-single {
   max-width: 680px;

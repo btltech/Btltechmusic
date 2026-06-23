@@ -32,9 +32,11 @@ const chokoReleaseCatalog = {
   sweetFire: { links: { spotify: "#", appleMusic: "#", youtube: "#", audiomack: "#" } }
 };
 
-// BEGINNER EDITING: Lyrid is a macOS app in progress. Add the Mac App Store
-// link and/or a direct download (.dmg) URL here when public access is ready.
+// BEGINNER EDITING: Add the Lemon Squeezy checkout link here when the Lyrid
+// product is published. Product setup: one-time payment, £29 base price, £24
+// launch sale price, license keys enabled.
 const lyridLinks = {
+  checkout: "#",
   macAppStore: "#",
   download: "#",
   web: "lyrid.html"
