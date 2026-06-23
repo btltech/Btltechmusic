@@ -21,8 +21,8 @@ const chokoLinks = {
   appleMusic: "#",
   youtube: "https://www.youtube.com/@btltechmusic",
   audiomack: "#",
-  instagram: "#",
-  tiktok: "#",
+  instagram: "https://www.instagram.com/chokokingofficial/",
+  tiktok: "https://www.tiktok.com/@chokokingofficial",
   smartLink: "#",
   email: "mailto:btl@btltech.co.uk?subject=Choko%20King%20Enquiry"
 };
