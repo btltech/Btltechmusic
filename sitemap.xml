@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://btltechmusic.com/</loc>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://btltechmusic.com/choko-king.html</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://btltechmusic.com/lyrid.html</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://btltechmusic.com/btltech.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://btltechmusic.com/press-kit.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://btltechmusic.com/contact.html</loc>
+    <priority>0.6</priority>
+  </url>
+</urlset>

@@ -1,4 +1,4 @@
-const CACHE_NAME = 'btltech-music-v2';
+const CACHE_NAME = 'btltech-music-v10';
 const CORE_ASSETS = [
   '/',
   '/index.html',
@@ -12,6 +12,7 @@ const CORE_ASSETS = [
   '/assets/favicon.svg',
   '/site.webmanifest',
   '/assets/logo-btltech-music.svg',
+  '/assets/choko-king-artist-bio.txt',
   '/privacy-policy.html',
   '/terms-of-service.html'
 ];

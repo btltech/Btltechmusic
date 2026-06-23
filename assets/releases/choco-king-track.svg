@@ -1,0 +1,13 @@
+<svg width="800" height="800" viewBox="0 0 800 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="800" rx="48" fill="#0E0A08"/>
+  <rect x="26" y="26" width="748" height="748" rx="36" fill="url(#g)" stroke="#F5B642" stroke-opacity="0.22" stroke-width="2"/>
+  <circle cx="628" cy="170" r="126" fill="#F5B642" fill-opacity="0.14"/>
+  <circle cx="195" cy="612" r="180" fill="#E85D2A" fill-opacity="0.18"/>
+  <rect x="88" y="96" width="624" height="608" rx="30" fill="#120E0B" fill-opacity="0.68" stroke="#FFF1D6" stroke-opacity="0.08"/>
+  <text x="400" y="150" fill="#F5B642" font-family="Inter, system-ui, sans-serif" font-size="28" font-weight="700" text-anchor="middle" letter-spacing="8">BTLTECH MUSIC</text>
+  <text x="400" y="430" fill="#FFF1D6" font-family="Inter, system-ui, sans-serif" font-size="64" font-weight="800" text-anchor="middle" letter-spacing="2">CHOCO KING</text>
+  <text x="400" y="510" fill="#B8A88C" font-family="Inter, system-ui, sans-serif" font-size="24" text-anchor="middle">From the album Through It All</text>
+  <text x="400" y="600" fill="#F5B642" font-family="Inter, system-ui, sans-serif" font-size="20" font-weight="600" text-anchor="middle" letter-spacing="6">CROWN THE SOUND</text>
+  <defs><linearGradient id="g" x1="90" y1="86" x2="700" y2="732" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#261A11"/><stop offset="0.48" stop-color="#140F0B"/><stop offset="1" stop-color="#2D150C"/></linearGradient></defs>
+</svg>

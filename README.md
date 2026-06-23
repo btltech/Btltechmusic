@@ -38,7 +38,7 @@ http://127.0.0.1:4173
 
 Edit the top of `script.js`:
 
-- `artistLinks` — BTLTECH streaming, social, email, and phone links
+- `artistLinks` — BTLTECH streaming, social, and email links
 - `releaseCatalog` — BTLTECH per-song links
 - `chokoLinks` — Choko King's own streaming/social links
 - `chokoReleaseCatalog` — Choko King's per-song links
@@ -55,12 +55,13 @@ Replace files in:
 - `assets/releases/`
 - `assets/videos/`
 - `assets/logo-btltech-music.svg`
-- `assets/press-photo-placeholder.svg`
+- `assets/choko-king-artist-bio.txt`
+- `assets/artists/choko-king-real.jpg`
 - `assets/og-image.jpg`
 
 ### Update the press kit copy
 
-Edit the Press Kit section in `index.html`.
+Edit the Press Kit section in `press-kit.html`.
 
 ## Cloudflare Pages Deployment
 

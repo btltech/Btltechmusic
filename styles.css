@@ -21,6 +21,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -33,6 +34,7 @@ body {
     linear-gradient(180deg, #090807 0%, #080706 48%, #0f0c09 100%);
   min-height: 100vh;
   line-height: 1.6;
+  overflow-x: hidden;
 }
 
 body::before,
@@ -123,12 +125,15 @@ a {
 .card-label {
   display: inline-flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 0.5rem;
   margin: 0 0 1rem;
   text-transform: uppercase;
   letter-spacing: 0.18em;
   font-size: 0.76rem;
   color: var(--gold);
+  max-width: 100%;
+  line-height: 1.35;
 }
 
 .eyebrow::before,
@@ -317,6 +322,35 @@ a {
   gap: 1.5rem;
 }
 
+.hero-grid > *,
+.feature-layout > *,
+.press-layout > *,
+.embed-layout > *,
+.community-layout > *,
+.content-grid > *,
+.home-artists-grid > *,
+.upcoming-card__grid > *,
+.app-promo > * {
+  min-width: 0;
+}
+
+.hero-copy,
+.featured-card,
+.trait-card,
+.facts-card,
+.contact-card,
+.media-card,
+.artist-card,
+.artist-link-card,
+.embed-card,
+.signup-card,
+.community-card,
+.trust-card,
+.upcoming-card,
+.app-promo {
+  min-width: 0;
+}
+
 .hero-copy,
 .featured-card,
 .trait-card,
@@ -337,10 +371,12 @@ a {
 
 .hero-copy h1 {
   margin: 0;
-  font-size: clamp(3.7rem, 12vw, 7.6rem);
+  max-width: 100%;
+  font-size: clamp(3.2rem, 10vw, 7.4rem);
   line-height: 0.92;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.07em;
   text-transform: uppercase;
+  overflow-wrap: anywhere;
   background: linear-gradient(180deg, var(--white) 0%, var(--cream) 55%, var(--gold) 100%);
   -webkit-background-clip: text;
   background-clip: text;
@@ -352,11 +388,13 @@ a {
   font-size: clamp(1.2rem, 2.8vw, 1.8rem);
   color: var(--cream);
   max-width: 28rem;
+  overflow-wrap: anywhere;
 }
 
 .hero-description {
   max-width: 40rem;
   font-size: 1rem;
+  overflow-wrap: anywhere;
 }
 
 .button-group {
@@ -379,6 +417,8 @@ a {
   font-weight: 600;
   letter-spacing: 0.02em;
   border: 1px solid transparent;
+  max-width: 100%;
+  text-align: center;
   transition:
     transform 180ms ease,
     background-color 180ms ease,
@@ -473,6 +513,8 @@ a {
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid rgba(255, 255, 255, 0.08);
   color: var(--cream);
+  max-width: 100%;
+  text-align: center;
 }
 
 .hero-notes {
@@ -486,6 +528,8 @@ a {
 .hero-notes li {
   display: flex;
   gap: 0.8rem;
+  min-width: 0;
+  overflow-wrap: anywhere;
 }
 
 .hero-notes li::before {
@@ -496,6 +540,59 @@ a {
 .featured-card {
   padding: 1.25rem;
   overflow: hidden;
+}
+
+.product-focus-card {
+  display: grid;
+  align-content: start;
+  gap: 1.1rem;
+}
+
+.product-focus {
+  display: grid;
+  gap: 0.75rem;
+  color: inherit;
+}
+
+.product-focus + .product-focus {
+  padding-top: 1.1rem;
+  border-top: 1px solid rgba(245, 182, 66, 0.16);
+}
+
+.product-focus img {
+  border-radius: calc(var(--radius-lg) - 10px);
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  object-position: center top;
+}
+
+/* Choko King's album cover is square — show it uncropped so the crown is never clipped */
+.product-focus:first-of-type img {
+  aspect-ratio: 1 / 1;
+}
+
+.product-focus__kicker {
+  color: var(--gold);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.product-focus h2 {
+  margin: 0;
+  font-size: clamp(1.7rem, 4vw, 2.45rem);
+  line-height: 1.05;
+}
+
+.product-focus p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.product-focus strong {
+  width: fit-content;
+  color: var(--gold);
 }
 
 .featured-card__art {
@@ -949,6 +1046,95 @@ a {
   }
 }
 
+@media (max-width: 560px) {
+  .container {
+    width: min(calc(100% - 1.5rem), var(--container));
+  }
+
+  .section {
+    padding: 4rem 0;
+  }
+
+  .hero {
+    padding-top: 4rem;
+  }
+
+  .hero-copy,
+  .contact-card,
+  .embed-card,
+  .signup-card,
+  .community-card,
+  .trust-card,
+  .artist-link-card {
+    padding: 1.35rem;
+    border-radius: var(--radius-md);
+  }
+
+  .featured-card,
+  .upcoming-card,
+  .app-promo {
+    padding: 1rem;
+    border-radius: var(--radius-md);
+  }
+
+  .hero-copy h1 {
+    font-size: clamp(2.55rem, 13vw, 3.7rem);
+    letter-spacing: 0.035em;
+    line-height: 0.98;
+  }
+
+  .hero-tagline {
+    font-size: 1.14rem;
+    line-height: 1.35;
+  }
+
+  .hero-description,
+  .artist-bio,
+  .upcoming-card__description,
+  .app-promo p {
+    font-size: 0.98rem;
+  }
+
+  .eyebrow,
+  .card-label {
+    letter-spacing: 0.12em;
+    font-size: 0.68rem;
+  }
+
+  .button-group {
+    gap: 0.65rem;
+  }
+
+  .hero-actions .button,
+  .featured-card__actions .button,
+  .upcoming-card__actions .button,
+  .signup-secondary-actions .button,
+  .contact-actions .button {
+    flex: 1 1 100%;
+  }
+
+  .button,
+  .platform-pill {
+    white-space: normal;
+  }
+
+  .store-button {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .product-focus img,
+  .artist-link-card img,
+  .app-promo__art img {
+    max-height: 280px;
+  }
+
+  .countdown-chip {
+    min-width: 0;
+    width: 100%;
+  }
+}
+
 @media (min-width: 700px) {
   .section {
     padding: 6.25rem 0;
@@ -1302,7 +1488,7 @@ a {
 
 @media (min-width: 700px) {
   .app-shots {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     align-items: start;
   }
 }
@@ -1376,6 +1562,59 @@ a {
   margin-bottom: 0.6rem;
 }
 
+.faq-list {
+  display: grid;
+  gap: 1rem;
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  padding: 0;
+  overflow: hidden;
+}
+
+.faq-item summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  min-height: 4rem;
+  padding: 1.1rem 1.35rem;
+  cursor: pointer;
+  color: var(--cream);
+  font-weight: 700;
+  list-style: none;
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item summary::after {
+  content: "+";
+  flex: 0 0 auto;
+  color: var(--gold);
+  font-size: 1.25rem;
+  line-height: 1;
+}
+
+.faq-item[open] summary::after {
+  content: "-";
+}
+
+.faq-item p {
+  margin: 0;
+  padding: 0 1.35rem 1.2rem;
+  color: var(--muted);
+}
+
+/* Single centered embed (Spotify preview only) */
+.embed-single {
+  max-width: 680px;
+  margin: 0 auto;
+}
+
 /* Two big artist cards on the home page */
 .home-artists-grid {
   display: grid;
@@ -1392,6 +1631,13 @@ a {
   box-shadow: var(--shadow);
   padding: 1.5rem;
   transition: transform 180ms ease, border-color 180ms ease;
+}
+
+.artist-link-card--featured {
+  border-color: rgba(245, 182, 66, 0.32);
+  background:
+    radial-gradient(circle at top right, rgba(245, 182, 66, 0.12), transparent 42%),
+    linear-gradient(180deg, rgba(34, 25, 16, 0.98), rgba(16, 13, 10, 0.94));
 }
 
 .artist-link-card:hover,
@@ -1420,5 +1666,11 @@ a {
 @media (min-width: 760px) {
   .home-artists-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 980px) {
+  .home-artists-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }

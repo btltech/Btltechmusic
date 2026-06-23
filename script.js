@@ -1,18 +1,17 @@
-// BEGINNER EDITING: Update all main artist, streaming, social, email, and phone links here.
+// BEGINNER EDITING: Update all main artist, streaming, social, and email links here.
 // Replace the placeholder # values with the official URLs once you have them.
 const artistLinks = {
   spotify: "https://open.spotify.com/artist/3t2rkD90BbAtlzi5Tn4jPu?si=SkRtFELHT4-3te1rXyoyWA",
   appleMusic: "https://music.apple.com/gb/album/through-it-all/1893236878",
   youtube: "https://music.youtube.com/playlist?list=OLAK5uy_kJXtfOoMAxX80GfaoMhZ0Cfa2SBmH3-vw&si=I6yOj1-X7KrukSjw",
-  youtubeChannel: "#",
+  youtubeChannel: "https://www.youtube.com/@btltechmusic",
   audiomack: "https://audiomack.com/btl-15",
   tiktok: "https://www.tiktok.com/@btltechmusic",
   instagram: "https://www.instagram.com/btltechmusic/",
   facebook: "#",
   soundcloud: "#",
   smartLink: "#",
-  email: "mailto:btl@btltech.co.uk",
-  phone: "tel:+447771071111"
+  email: "mailto:btl@btltech.co.uk"
 };
 
 // BEGINNER EDITING: Choko King is a separate artist. Put his own links here.
@@ -20,20 +19,17 @@ const artistLinks = {
 const chokoLinks = {
   spotify: "#",
   appleMusic: "#",
-  youtube: "#",
+  youtube: "https://www.youtube.com/@btltechmusic",
   audiomack: "#",
   instagram: "#",
   tiktok: "#",
   smartLink: "#",
-  email: "mailto:btl@btltech.co.uk"
+  email: "mailto:btl@btltech.co.uk?subject=Choko%20King%20Enquiry"
 };
 
 // BEGINNER EDITING: Choko King's own songs. Falls back to his hub links above when a song link is #.
 const chokoReleaseCatalog = {
-  chokoSoCool: { links: { spotify: "#", appleMusic: "#", youtube: "#", audiomack: "#" } },
-  chokoSoHigh: { links: { spotify: "#", appleMusic: "#", youtube: "#", audiomack: "#" } },
-  chokoGyalDem: { links: { spotify: "#", appleMusic: "#", youtube: "#", audiomack: "#" } },
-  chokoKingAnthem: { links: { spotify: "#", appleMusic: "#", youtube: "#", audiomack: "#" } }
+  sweetFire: { links: { spotify: "#", appleMusic: "#", youtube: "#", audiomack: "#" } }
 };
 
 // BEGINNER EDITING: Lyrid is a macOS app in progress. Add the Mac App Store
@@ -49,42 +45,34 @@ const lyridLinks = {
 const releaseCatalog = {
   omoStacker: {
     links: {
-      spotify: "#",
-      appleMusic: "#",
-      youtube: "#",
-      audiomack: "#"
-    }
-  },
-  chokoSoCool: {
-    links: {
-      spotify: "#",
-      appleMusic: "#",
-      youtube: "#",
-      audiomack: "#"
+      spotify: "https://open.spotify.com/track/02iC7F7WG1ytUpAmfHed9l",
+      appleMusic: "https://music.apple.com/gb/album/omo-stacker/1893236878?i=1893236954",
+      youtube: "https://www.youtube.com/watch?v=Q02rkkR6rzU",
+      audiomack: "https://audiomack.com/btl-15/album/through-it-all"
     }
   },
   justDance: {
     links: {
-      spotify: "#",
+      spotify: "https://open.spotify.com/track/7frTkXYbeWoJ6OB0EAPx4z",
       appleMusic: "#",
       youtube: "#",
-      audiomack: "#"
+      audiomack: "https://audiomack.com/btl-15/album/through-it-all"
     }
   },
   imAHustler: {
     links: {
-      spotify: "#",
-      appleMusic: "#",
-      youtube: "#",
-      audiomack: "#"
+      spotify: "https://open.spotify.com/track/5LP7z14HOE3CZpbJzg8Evz",
+      appleMusic: "https://music.apple.com/gb/album/im-a-hustler/1893236878?i=1893236879",
+      youtube: "https://youtu.be/Wqxl7dakMu8",
+      audiomack: "https://audiomack.com/btl-15/album/through-it-all"
     }
   },
   welcomeToLagos: {
     links: {
-      spotify: "#",
-      appleMusic: "#",
-      youtube: "#",
-      audiomack: "#"
+      spotify: "https://open.spotify.com/track/0nVh3jDIOYWEu2xzBDJf8p",
+      appleMusic: "https://music.apple.com/gb/album/welcome-to-lagos/6773167906?i=6773167907",
+      youtube: "https://www.youtube.com/watch?v=Gmq0UzyPvZk",
+      audiomack: "https://audiomack.com/btl-15/song/welcome-to-lagos"
     }
   },
   bornBlessed: {
@@ -93,6 +81,46 @@ const releaseCatalog = {
       appleMusic: "#",
       youtube: "#",
       audiomack: "#"
+    }
+  },
+  naYou: {
+    links: {
+      spotify: "https://open.spotify.com/track/0EWiL1ctDiuDn7tlrY0SUB",
+      appleMusic: "#",
+      youtube: "#",
+      audiomack: "https://audiomack.com/btl-15/album/through-it-all"
+    }
+  },
+  youLied: {
+    links: {
+      spotify: "https://open.spotify.com/track/0FFCOxvNDvT1IvNhHIcKW4",
+      appleMusic: "#",
+      youtube: "#",
+      audiomack: "https://audiomack.com/btl-15/album/through-it-all"
+    }
+  },
+  ahYouMeChoose: {
+    links: {
+      spotify: "https://open.spotify.com/track/5ZZnHjuwgSZhDgFMxdeuA1",
+      appleMusic: "https://music.apple.com/gb/album/ah-you-me-choose/1893236878?i=1893236961",
+      youtube: "#",
+      audiomack: "https://audiomack.com/btl-15/album/through-it-all"
+    }
+  },
+  candidate: {
+    links: {
+      spotify: "https://open.spotify.com/track/4o5Om5rXRlZE0EArX2o8wg",
+      appleMusic: "https://music.apple.com/gb/album/candidate/1893236878?i=1893236887",
+      youtube: "#",
+      audiomack: "https://audiomack.com/btl-15/album/through-it-all"
+    }
+  },
+  chocoKing: {
+    links: {
+      spotify: "https://open.spotify.com/track/7ia1IV6ahcZeUuOiY4KLkz",
+      appleMusic: "https://music.apple.com/gb/album/choco-king/1893236878?i=1893236886",
+      youtube: "#",
+      audiomack: "https://audiomack.com/btl-15/album/through-it-all"
     }
   }
 };
@@ -109,20 +137,17 @@ const videoCatalog = {
   omoStackerVisual: {
     url: "#"
   },
-  chokoSoCoolShort: {
-    url: "#"
-  },
   welcomeToLagosClip: {
-    url: "#"
+    url: "https://www.youtube.com/watch?v=Gmq0UzyPvZk"
   }
 };
 
-// BEGINNER EDITING: Update these placeholder press kit files when you have real assets.
+// BEGINNER EDITING: Update these press kit files as new assets are approved.
 const pressDownloads = {
-  photos: "assets/press-photo-placeholder.svg",
-  bio: "assets/artist-bio-placeholder.txt",
+  photos: "assets/artists/choko-king-real.jpg",
+  bio: "assets/choko-king-artist-bio.txt",
   logo: "assets/logo-btltech-music.svg",
-  oneSheet: "assets/epk-one-sheet-placeholder.txt"
+  oneSheet: "#"
 };
 
 // BEGINNER EDITING: This powers the simple mailing list form with no backend.
@@ -194,8 +219,6 @@ function applyLyridLinks() {
 
 function applyArtistLinks() {
   const emailLabel = artistLinks.email.replace(/^mailto:/i, "");
-  const phoneLabel = (artistLinks.phone || "").replace(/^tel:/i, "");
-
   document.querySelectorAll("[data-link]").forEach((link) => {
     const key = link.getAttribute("data-link");
     const href = artistLinks[key] || "#";
@@ -208,27 +231,28 @@ function applyArtistLinks() {
     node.textContent = emailLabel;
   });
 
-  document.querySelectorAll("[data-phone-label]").forEach((node) => {
-    node.textContent = phoneLabel;
-  });
 }
 
 function applyReleaseLinks() {
   document.querySelectorAll("[data-release-key][data-platform]").forEach((link) => {
     const releaseKey = link.dataset.releaseKey;
     const platform = link.dataset.platform;
-    const href = resolveReleaseLink(releaseKey, platform);
+    const strict = link.dataset.releaseStrict === "true";
+    const hideIfEmpty = link.dataset.hideIfEmpty === "true";
+    const href = resolveReleaseLink(releaseKey, platform, { strict });
 
-    setLinkState(link, href);
+    setLinkState(link, href, { hideIfEmpty });
   });
 }
 
 function applyVideoLinks() {
   document.querySelectorAll("[data-video-key]").forEach((link) => {
     const videoKey = link.dataset.videoKey;
-    const href = resolveVideoLink(videoKey);
+    const strict = link.dataset.videoStrict === "true";
+    const hideIfEmpty = link.dataset.hideIfEmpty === "true";
+    const href = resolveVideoLink(videoKey, { strict });
 
-    setLinkState(link, href);
+    setLinkState(link, href, { hideIfEmpty });
   });
 }
 
@@ -349,18 +373,28 @@ function showEmbedFallback(card, embedKey) {
   wrapper.hidden = false;
 }
 
-function resolveReleaseLink(releaseKey, platform) {
+function resolveReleaseLink(releaseKey, platform, options = {}) {
+  const { strict = false } = options;
   const release = releaseCatalog[releaseKey];
 
   if (!release) {
-    return getFirstLiveLink(artistLinks[platform], artistLinks.smartLink);
+    return strict ? "#" : getFirstLiveLink(artistLinks[platform], artistLinks.smartLink);
+  }
+
+  if (strict) {
+    return getFirstLiveLink(release.links[platform]);
   }
 
   return getFirstLiveLink(release.links[platform], artistLinks[platform], artistLinks.smartLink);
 }
 
-function resolveVideoLink(videoKey) {
+function resolveVideoLink(videoKey, options = {}) {
+  const { strict = false } = options;
   const video = videoCatalog[videoKey];
+
+  if (strict) {
+    return getFirstLiveLink(video?.url);
+  }
 
   return getFirstLiveLink(video?.url, artistLinks.youtubeChannel, artistLinks.youtube);
 }
