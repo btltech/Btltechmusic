@@ -1,0 +1,9 @@
+.git
+.git/**
+.wrangler
+.wrangler/**
+.DS_Store
+.codex
+.codex/**
+.agents
+.agents/**
