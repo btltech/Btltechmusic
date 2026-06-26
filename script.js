@@ -17,19 +17,26 @@ const artistLinks = {
 // BEGINNER EDITING: Choko King is a separate artist. Put his own links here.
 // Used anywhere with a data-choko-link attribute. Leave as # until you have the real URL.
 const chokoLinks = {
-  spotify: "#",
-  appleMusic: "#",
-  youtube: "https://www.youtube.com/@btltechmusic",
+  spotify: "https://open.spotify.com/album/1BeFz4HWKYgxqJdf2ITnkP?si=xhP_-sKOSrmL_uRUZ61_VA",
+  appleMusic: "https://music.apple.com/gb/album/sweet-fire-single/6781821072",
+  youtube: "https://youtu.be/laj3oyrXPR8",
   audiomack: "#",
   instagram: "https://www.instagram.com/chokokingofficial/",
   tiktok: "https://www.tiktok.com/@chokokingofficial",
   smartLink: "#",
-  email: "mailto:btl@btltech.co.uk?subject=Choko%20King%20Enquiry"
+  email: "mailto:chokoking@btltechmusic.com?subject=Choko%20King%20Enquiry"
 };
 
 // BEGINNER EDITING: Choko King's own songs. Falls back to his hub links above when a song link is #.
 const chokoReleaseCatalog = {
-  sweetFire: { links: { spotify: "#", appleMusic: "#", youtube: "#", audiomack: "#" } }
+  sweetFire: {
+    links: {
+      spotify: "https://open.spotify.com/album/1BeFz4HWKYgxqJdf2ITnkP?si=xhP_-sKOSrmL_uRUZ61_VA",
+      appleMusic: "https://music.apple.com/gb/album/sweet-fire-single/6781821072",
+      youtube: "https://youtu.be/laj3oyrXPR8",
+      audiomack: "#"
+    }
+  }
 };
 
 // BEGINNER EDITING: Add the Lemon Squeezy checkout link here when the Lyrid
