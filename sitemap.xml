@@ -28,4 +28,12 @@
     <loc>https://btltechmusic.com/contact</loc>
     <priority>0.6</priority>
   </url>
+  <url>
+    <loc>https://btltechmusic.com/privacy-policy</loc>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://btltechmusic.com/terms-of-service</loc>
+    <priority>0.4</priority>
+  </url>
 </urlset>
