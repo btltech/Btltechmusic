@@ -179,7 +179,12 @@ const embedLinks = {
   youtubePlaylist: buildYouTubePlaylistEmbedUrl(artistLinks.youtube)
 };
 
+const mediaConsentStorageKey = "btltech-media-consent";
+const mediaConsentAccepted = "accepted";
+const mediaConsentEssential = "essential";
+
 document.addEventListener("DOMContentLoaded", () => {
+  setupMediaConsent();
   applyArtistLinks();
   applyChokoLinks();
   applyChokoReleaseLinks();
@@ -190,6 +195,7 @@ document.addEventListener("DOMContentLoaded", () => {
   applyPressDownloads();
   applyCommunityActions();
   applyEmbedLinks();
+  setupDirectMediaEmbeds();
   setupMailingListForm();
   setupMobileMenu();
   clearLegacyServiceWorker();
@@ -309,6 +315,18 @@ function applyEmbedLinks() {
       return;
     }
 
+    frame.dataset.cookieSrc = src;
+
+    if (!hasMediaConsent()) {
+      showMediaConsentPlaceholder(frame, key);
+
+      if (wrapper) {
+        wrapper.hidden = false;
+      }
+
+      return;
+    }
+
     frame.src = src;
 
     if (wrapper) {
@@ -317,6 +335,209 @@ function applyEmbedLinks() {
 
     setupEmbedErrorHandling(frame, wrapper, card, key);
   });
+}
+
+function setupDirectMediaEmbeds() {
+  document.querySelectorAll("iframe[data-cookie-src]:not([data-embed])").forEach((frame) => {
+    if (hasMediaConsent()) {
+      loadMediaFrame(frame);
+      return;
+    }
+
+    showMediaConsentPlaceholder(frame);
+  });
+}
+
+function setupMediaConsent() {
+  addCookieSettingsLink();
+
+  if (getMediaConsent()) {
+    return;
+  }
+
+  showMediaConsentBanner();
+}
+
+function showMediaConsentBanner() {
+  if (document.querySelector("[data-cookie-banner]")) {
+    return;
+  }
+
+  const banner = document.createElement("section");
+  banner.className = "cookie-banner";
+  banner.setAttribute("data-cookie-banner", "");
+  banner.setAttribute("aria-label", "Cookie and media choices");
+  banner.innerHTML = `
+    <div>
+      <p class="cookie-banner__title">Media and cookies</p>
+      <p>BTLTECH Music uses essential browser storage. YouTube and Spotify players only load if you accept optional media embeds.</p>
+    </div>
+    <div class="cookie-banner__actions">
+      <button class="button button--primary" type="button" data-accept-media>Accept Media</button>
+      <button class="button button--ghost" type="button" data-essential-media>Essential Only</button>
+      <a href="privacy-policy.html">Privacy Policy</a>
+    </div>
+  `;
+
+  document.body.appendChild(banner);
+
+  banner.querySelector("[data-accept-media]")?.addEventListener("click", () => {
+    setMediaConsent(mediaConsentAccepted);
+    banner.remove();
+    loadAllMediaFrames();
+  });
+
+  banner.querySelector("[data-essential-media]")?.addEventListener("click", () => {
+    setMediaConsent(mediaConsentEssential);
+    banner.remove();
+    unloadAllMediaFrames();
+  });
+}
+
+function addCookieSettingsLink() {
+  document.querySelectorAll(".footer-links").forEach((footerLinks) => {
+    if (footerLinks.querySelector("[data-cookie-settings]")) {
+      return;
+    }
+
+    const button = document.createElement("button");
+    button.className = "cookie-settings-link";
+    button.type = "button";
+    button.setAttribute("data-cookie-settings", "");
+    button.textContent = "Cookie settings";
+    button.addEventListener("click", () => {
+      clearMediaConsent();
+      showMediaConsentBanner();
+      document.querySelector("[data-cookie-banner]")?.scrollIntoView({ block: "nearest" });
+    });
+
+    footerLinks.appendChild(button);
+  });
+}
+
+function showMediaConsentPlaceholder(frame, embedKey = "") {
+  const wrapper = frame.closest(".embed-frame-wrap") || frame.parentElement;
+
+  if (!wrapper) {
+    return;
+  }
+
+  frame.hidden = true;
+  frame.removeAttribute("src");
+
+  if (wrapper.querySelector("[data-media-placeholder]")) {
+    return;
+  }
+
+  const provider = getMediaProviderLabel(frame.dataset.cookieSrc || frame.src || "", embedKey);
+  const openUrl = frame.dataset.openUrl || getExternalMediaUrl(frame.dataset.cookieSrc);
+  const placeholder = document.createElement("div");
+  placeholder.className = "embed-consent-placeholder";
+  placeholder.setAttribute("data-media-placeholder", "");
+  placeholder.innerHTML = `
+    <p class="embed-consent-placeholder__title">${provider} player blocked</p>
+    <p>Load this optional media player to watch or listen here. You can also open it on the external platform.</p>
+    <div class="button-group">
+      <button class="button button--primary" type="button" data-load-media>Load Media</button>
+      ${openUrl ? `<a class="button button--ghost" href="${openUrl}" target="_blank" rel="noopener noreferrer">Open Externally</a>` : ""}
+    </div>
+  `;
+
+  placeholder.querySelector("[data-load-media]")?.addEventListener("click", () => {
+    setMediaConsent(mediaConsentAccepted);
+    document.querySelector("[data-cookie-banner]")?.remove();
+    loadAllMediaFrames();
+  });
+
+  wrapper.appendChild(placeholder);
+}
+
+function loadAllMediaFrames() {
+  document.querySelectorAll("iframe[data-cookie-src]").forEach(loadMediaFrame);
+}
+
+function unloadAllMediaFrames() {
+  document.querySelectorAll("iframe[data-cookie-src]").forEach((frame) => {
+    frame.removeAttribute("src");
+    showMediaConsentPlaceholder(frame, frame.dataset.embed || "");
+  });
+}
+
+function loadMediaFrame(frame) {
+  const src = frame.dataset.cookieSrc;
+
+  if (!src) {
+    return;
+  }
+
+  frame.src = src;
+  frame.hidden = false;
+  frame.closest(".embed-frame-wrap")?.querySelector("[data-media-placeholder]")?.remove();
+
+  const card = frame.closest(".embed-card");
+
+  if (frame.dataset.embed) {
+    setupEmbedErrorHandling(frame, frame.closest("[data-embed-wrapper]"), card, frame.dataset.embed);
+  }
+}
+
+function getMediaConsent() {
+  try {
+    return window.localStorage.getItem(mediaConsentStorageKey);
+  } catch {
+    return "";
+  }
+}
+
+function hasMediaConsent() {
+  return getMediaConsent() === mediaConsentAccepted;
+}
+
+function setMediaConsent(value) {
+  try {
+    window.localStorage.setItem(mediaConsentStorageKey, value);
+  } catch {
+    /* Storage may be unavailable in private browsing modes. */
+  }
+}
+
+function clearMediaConsent() {
+  try {
+    window.localStorage.removeItem(mediaConsentStorageKey);
+  } catch {
+    /* Storage may be unavailable in private browsing modes. */
+  }
+}
+
+function getMediaProviderLabel(src, embedKey = "") {
+  if (embedKey.includes("spotify") || src.includes("spotify.com")) {
+    return "Spotify";
+  }
+
+  if (src.includes("youtube.com") || src.includes("youtu.be")) {
+    return "YouTube";
+  }
+
+  return "Third-party";
+}
+
+function getExternalMediaUrl(src = "") {
+  try {
+    const parsedUrl = new URL(src);
+
+    if (parsedUrl.hostname.includes("youtube.com")) {
+      const videoId = parsedUrl.pathname.match(/\/embed\/([^/?]+)/)?.[1];
+      return videoId ? `https://youtu.be/${videoId}` : src;
+    }
+
+    if (parsedUrl.hostname.includes("spotify.com")) {
+      return src.replace("/embed/", "/");
+    }
+  } catch {
+    return "";
+  }
+
+  return src;
 }
 
 function setupEmbedErrorHandling(frame, wrapper, card, key) {
@@ -415,6 +636,7 @@ function getFirstLiveLink(...links) {
 function setupMailingListForm() {
   const form = document.querySelector("[data-mailing-list-form]");
   const input = document.querySelector("[data-mailing-list-input]");
+  const consent = document.querySelector("[data-mailing-consent]");
   const feedback = document.querySelector("[data-mailing-list-feedback]");
 
   if (!form || !input || !feedback) {
@@ -432,9 +654,15 @@ function setupMailingListForm() {
       return;
     }
 
+    if (consent && !consent.checked) {
+      feedback.textContent = "Confirm consent to receive occasional BTLTECH Music updates before joining.";
+      consent.focus();
+      return;
+    }
+
     const joinUrl = new URL(communityActions.mailingList);
     const body = joinUrl.searchParams.get("body") || "";
-    joinUrl.searchParams.set("body", `${body}\n\nSubscriber email: ${email}`);
+    joinUrl.searchParams.set("body", `${body}\n\nSubscriber email: ${email}\nConsent: yes, release and Lyrid updates requested.`);
 
     window.location.href = joinUrl.toString();
     feedback.textContent = "Your email app should open so you can confirm the request. If it does not, use the Open In Email App button below.";
