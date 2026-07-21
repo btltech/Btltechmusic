@@ -17,9 +17,9 @@ const artistLinks = {
 // BEGINNER EDITING: Choko King is a separate artist. Put his own links here.
 // Used anywhere with a data-choko-link attribute. Leave as # until you have the real URL.
 const chokoLinks = {
-  spotify: "https://open.spotify.com/album/1BeFz4HWKYgxqJdf2ITnkP?si=xhP_-sKOSrmL_uRUZ61_VA",
-  appleMusic: "https://music.apple.com/gb/album/sweet-fire-single/6781821072",
-  youtube: "https://youtu.be/laj3oyrXPR8",
+  spotify: "https://open.spotify.com/track/7slUe9GJ5owbOXHFTzoZrm?si=f94041c12b714507",
+  appleMusic: "#",
+  youtube: "https://www.youtube.com/channel/UCRxVgloFGArqLOAT4pDIYsw",
   audiomack: "#",
   instagram: "https://www.instagram.com/chokokingofficial/",
   tiktok: "https://www.tiktok.com/@chokokingofficial",
@@ -29,6 +29,30 @@ const chokoLinks = {
 
 // BEGINNER EDITING: Choko King's own songs. Falls back to his hub links above when a song link is #.
 const chokoReleaseCatalog = {
+  londonOutside: {
+    links: {
+      spotify: "https://open.spotify.com/track/1YUM6BY5ODMEirvxSytLkW?si=9760aabda4e146cc",
+      appleMusic: "#",
+      youtube: "https://youtu.be/rtXeSaP4s7M?si=1Wl7MjVjHfbcbeHc",
+      audiomack: "#"
+    }
+  },
+  goSlow: {
+    links: {
+      spotify: "https://open.spotify.com/track/7slUe9GJ5owbOXHFTzoZrm?si=f94041c12b714507",
+      appleMusic: "#",
+      youtube: "https://youtu.be/eCHfEXeaUhM?si=1DEWNkPPmIl-8_AA",
+      audiomack: "#"
+    }
+  },
+  chokoSoCool: {
+    links: {
+      spotify: "https://open.spotify.com/track/5RLrBZJ1tcJLPnMnWP9pVm?si=ffcbe94930f24ea1",
+      appleMusic: "#",
+      youtube: "#",
+      audiomack: "#"
+    }
+  },
   sweetFire: {
     links: {
       spotify: "https://open.spotify.com/album/1BeFz4HWKYgxqJdf2ITnkP?si=xhP_-sKOSrmL_uRUZ61_VA",
