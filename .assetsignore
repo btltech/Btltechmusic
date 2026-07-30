@@ -3,6 +3,8 @@
 .wrangler
 .wrangler/**
 .DS_Store
+/visuals
+/visuals/**
 .codex
 .codex/**
 .agents

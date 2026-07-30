@@ -6,7 +6,7 @@
   <rect x="118" y="116" width="1044" height="488" rx="30" fill="#120E0B" fill-opacity="0.7" stroke="#FFF1D6" stroke-opacity="0.08"/>
   <circle cx="640" cy="360" r="86" fill="#1B1510" stroke="#F5B642" stroke-opacity="0.32" stroke-width="2"/>
   <path d="M612 308L712 360L612 412V308Z" fill="#F5B642"/>
-  <text x="640" y="188" fill="#F5B642" font-family="Inter, system-ui, sans-serif" font-size="30" font-weight="700" text-anchor="middle" letter-spacing="10">CHOKO KING</text>
+  <text x="640" y="188" fill="#F5B642" font-family="Inter, system-ui, sans-serif" font-size="30" font-weight="700" text-anchor="middle" letter-spacing="10">BTLTECH</text>
   <text x="640" y="548" fill="#FFF1D6" font-family="Inter, system-ui, sans-serif" font-size="48" font-weight="800" text-anchor="middle">CHOKO SO COOL SHORT</text>
   <text x="640" y="596" fill="#B8A88C" font-family="Inter, system-ui, sans-serif" font-size="24" text-anchor="middle">Swagger, chant hooks, and short-form energy</text>
   <defs>

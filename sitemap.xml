@@ -2,38 +2,67 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://btltechmusic.com/</loc>
+    <lastmod>2026-07-29</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://btltechmusic.com/btltech</loc>
+    <lastmod>2026-07-29</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>https://btltechmusic.com/choko-king</loc>
+    <lastmod>2026-07-29</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://btltechmusic.com/lyrid</loc>
+    <lastmod>2026-07-29</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://btltechmusic.com/lyrid-help</loc>
+    <lastmod>2026-07-29</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://btltechmusic.com/btltech</loc>
+    <loc>https://btltechmusic.com/whine-for-me</loc>
+    <lastmod>2026-07-29</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://btltechmusic.com/go-slow</loc>
+    <lastmod>2026-07-29</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://btltechmusic.com/london-outside</loc>
+    <lastmod>2026-07-29</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://btltechmusic.com/choko-so-cool</loc>
+    <lastmod>2026-07-29</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://btltechmusic.com/press-kit</loc>
+    <lastmod>2026-07-29</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://btltechmusic.com/contact</loc>
+    <lastmod>2026-07-29</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://btltechmusic.com/privacy-policy</loc>
+    <lastmod>2026-07-29</lastmod>
     <priority>0.4</priority>
   </url>
   <url>
     <loc>https://btltechmusic.com/terms-of-service</loc>
+    <lastmod>2026-07-29</lastmod>
     <priority>0.4</priority>
   </url>
 </urlset>

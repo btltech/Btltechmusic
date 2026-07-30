@@ -1,8 +1,26 @@
+// BEGINNER EDITING: NO CONTEST platform and video link placeholders.
+// Paste final URLs below when available.
+const NO_CONTEST_PRESAVE_URL = "https://distrokid.com/hyperfollow/btltech/no-contest";
+const NO_CONTEST_SPOTIFY_URL = "#"; // Paste Spotify track URL here
+const NO_CONTEST_APPLE_MUSIC_URL = "#"; // Paste Apple Music track URL here
+const NO_CONTEST_YOUTUBE_URL = "#"; // Paste YouTube track URL here
+const NO_CONTEST_VIDEO_URL = "#"; // Paste official music video URL here when available
+
+// BEGINNER EDITING: WHINE FOR ME (Choko King) platform and video link placeholders.
+// Paste official URLs below when available.
+const WHINE_FOR_ME_SPOTIFY_URL = "#"; // Paste Spotify track URL here
+const WHINE_FOR_ME_APPLE_MUSIC_URL = "#"; // Paste Apple Music track URL here
+const WHINE_FOR_ME_YOUTUBE_URL = "#"; // Paste YouTube track URL here
+const WHINE_FOR_ME_PRESAVE_URL = "https://distrokid.com/hyperfollow/chokoking/whine-for-me";
+const WHINE_FOR_ME_VIDEO_URL = "#"; // Paste official music video URL here when available
+const WHINE_FOR_ME_AMAZON_URL = "#"; // Optional Amazon Music URL
+const WHINE_FOR_ME_DEEZER_URL = "#"; // Optional Deezer URL
+
 // BEGINNER EDITING: Update all main artist, streaming, social, and email links here.
 // Replace the placeholder # values with the official URLs once you have them.
 const artistLinks = {
   spotify: "https://open.spotify.com/artist/3t2rkD90BbAtlzi5Tn4jPu?si=SkRtFELHT4-3te1rXyoyWA",
-  appleMusic: "https://music.apple.com/gb/album/through-it-all/1893236878",
+  appleMusic: "https://music.apple.com/gb/artist/btltech/1880688903",
   youtube: "https://music.youtube.com/playlist?list=OLAK5uy_kJXtfOoMAxX80GfaoMhZ0Cfa2SBmH3-vw&si=I6yOj1-X7KrukSjw",
   youtubeChannel: "https://www.youtube.com/@btltechmusic",
   audiomack: "https://audiomack.com/btl-15",
@@ -17,9 +35,9 @@ const artistLinks = {
 // BEGINNER EDITING: Choko King is a separate artist. Put his own links here.
 // Used anywhere with a data-choko-link attribute. Leave as # until you have the real URL.
 const chokoLinks = {
-  spotify: "https://open.spotify.com/track/7slUe9GJ5owbOXHFTzoZrm?si=f94041c12b714507",
-  appleMusic: "#",
-  youtube: "https://www.youtube.com/channel/UCRxVgloFGArqLOAT4pDIYsw",
+  spotify: "https://open.spotify.com/artist/1EkMryKT07cI2PF9mLBn7D?si=aEi_xN-GReyDzvZTZRJb6g",
+  appleMusic: "https://music.apple.com/gb/artist/choko-king/6781295368",
+  youtube: "https://music.youtube.com/@chokokingofficial?si=UU_0N6BhL9FIZt85",
   audiomack: "#",
   instagram: "https://www.instagram.com/chokokingofficial/",
   tiktok: "https://www.tiktok.com/@chokokingofficial",
@@ -29,6 +47,24 @@ const chokoLinks = {
 
 // BEGINNER EDITING: Choko King's own songs. Falls back to his hub links above when a song link is #.
 const chokoReleaseCatalog = {
+  whineForMe: {
+    title: "WHINE FOR ME",
+    artist: "Choko King",
+    type: "Single",
+    releaseDate: "2026-08-07",
+    clean: true,
+    genre: "Afro-Dancehall / Afrobeats",
+    description: "A vibrant Afro-dancehall anthem built around infectious rhythm, smooth melodies and an irresistible dance groove. Designed for clubs, parties and dance challenges with Choko King's signature gravel vocal style.",
+    links: {
+      spotify: WHINE_FOR_ME_SPOTIFY_URL,
+      appleMusic: WHINE_FOR_ME_APPLE_MUSIC_URL,
+      youtube: WHINE_FOR_ME_YOUTUBE_URL,
+      preSave: WHINE_FOR_ME_PRESAVE_URL,
+      video: WHINE_FOR_ME_VIDEO_URL,
+      amazonMusic: WHINE_FOR_ME_AMAZON_URL,
+      deezer: WHINE_FOR_ME_DEEZER_URL
+    }
+  },
   londonOutside: {
     links: {
       spotify: "https://open.spotify.com/track/1YUM6BY5ODMEirvxSytLkW?si=9760aabda4e146cc",
@@ -42,14 +78,6 @@ const chokoReleaseCatalog = {
       spotify: "https://open.spotify.com/track/7slUe9GJ5owbOXHFTzoZrm?si=f94041c12b714507",
       appleMusic: "#",
       youtube: "https://youtu.be/eCHfEXeaUhM?si=1DEWNkPPmIl-8_AA",
-      audiomack: "#"
-    }
-  },
-  chokoSoCool: {
-    links: {
-      spotify: "https://open.spotify.com/track/5RLrBZJ1tcJLPnMnWP9pVm?si=ffcbe94930f24ea1",
-      appleMusic: "#",
-      youtube: "#",
       audiomack: "#"
     }
   },
@@ -74,8 +102,23 @@ const lyridLinks = {
 };
 
 // BEGINNER EDITING: Add release-specific links here so each song can go to its own page.
-// If you leave a release link as #, the site falls back to the main artist/platform link above.
+// If a release link is #, that platform button stays hidden until its URL is added.
 const releaseCatalog = {
+  noContest: {
+    title: "NO CONTEST",
+    artist: "BTLTECH",
+    type: "Single",
+    releaseDate: "2026-07-31",
+    clean: true,
+    links: {
+      spotify: NO_CONTEST_SPOTIFY_URL,
+      appleMusic: NO_CONTEST_APPLE_MUSIC_URL,
+      youtube: NO_CONTEST_YOUTUBE_URL,
+      audiomack: "#",
+      preSave: NO_CONTEST_PRESAVE_URL,
+      video: NO_CONTEST_VIDEO_URL
+    }
+  },
   omoStacker: {
     links: {
       spotify: "https://open.spotify.com/track/02iC7F7WG1ytUpAmfHed9l",
@@ -216,6 +259,7 @@ document.addEventListener("DOMContentLoaded", () => {
   applyReleaseLinks();
   applyVideoLinks();
   applyUpcomingReleaseLinks();
+  updateReleaseStatus();
   applyPressDownloads();
   applyCommunityActions();
   applyEmbedLinks();
@@ -301,6 +345,90 @@ function applyUpcomingReleaseLinks() {
     const href = upcomingRelease[key] || "#";
 
     setLinkState(link, href);
+  });
+}
+
+function updateReleaseStatus() {
+  // Update BTLTECH releases
+  document.querySelectorAll("[data-release-card]").forEach((card) => {
+    const releaseKey = card.dataset.releaseCard;
+    const release = releaseCatalog[releaseKey];
+    if (!release || !release.releaseDate) return;
+
+    const today = new Date();
+    const [year, month, day] = release.releaseDate.split("-").map(Number);
+    const releaseDate = new Date(year, month - 1, day);
+    const now = new Date(today.getFullYear(), today.getMonth(), today.getDate());
+
+    const isReleased = now >= releaseDate;
+    const statusBadge = card.querySelector("[data-release-status]");
+    const ctaButton = card.querySelector("[data-release-cta]");
+
+    if (statusBadge) {
+      statusBadge.textContent = isReleased ? "Available Now" : "Upcoming";
+      statusBadge.classList.toggle("release-badge--upcoming", !isReleased);
+      statusBadge.classList.toggle("release-badge--available", isReleased);
+    }
+
+    if (ctaButton) {
+      if (isReleased) {
+        ctaButton.textContent = "Listen Now";
+        const primaryHref = getFirstLiveLink(
+          release.links.spotify,
+          release.links.appleMusic,
+          release.links.youtube,
+          release.links.audiomack
+        );
+        setLinkState(ctaButton, primaryHref);
+        ctaButton.setAttribute("aria-label", `Listen to ${release.title} by ${release.artist}`);
+      } else {
+        ctaButton.textContent = "Pre-save / Coming Soon";
+        const preSaveHref = getFirstLiveLink(release.links.preSave);
+        setLinkState(ctaButton, preSaveHref);
+        ctaButton.setAttribute("aria-label", `Pre-save ${release.title} by ${release.artist}`);
+      }
+    }
+  });
+
+  // Update Choko King releases
+  document.querySelectorAll("[data-choko-release-card]").forEach((card) => {
+    const releaseKey = card.dataset.chokoReleaseCard;
+    const release = chokoReleaseCatalog[releaseKey];
+    if (!release || !release.releaseDate) return;
+
+    const today = new Date();
+    const [year, month, day] = release.releaseDate.split("-").map(Number);
+    const releaseDate = new Date(year, month - 1, day);
+    const now = new Date(today.getFullYear(), today.getMonth(), today.getDate());
+
+    const isReleased = now >= releaseDate;
+    const statusBadge = card.querySelector("[data-release-status]");
+    const ctaButton = card.querySelector("[data-choko-cta]");
+
+    if (statusBadge) {
+      statusBadge.textContent = isReleased ? "Available Now" : "Upcoming";
+      statusBadge.classList.toggle("release-badge--upcoming", !isReleased);
+      statusBadge.classList.toggle("release-badge--available", isReleased);
+    }
+
+    if (ctaButton) {
+      if (isReleased) {
+        ctaButton.textContent = "Listen Now";
+        const primaryHref = getFirstLiveLink(
+          release.links.spotify,
+          release.links.appleMusic,
+          release.links.youtube,
+          release.links.audiomack
+        );
+        setLinkState(ctaButton, primaryHref);
+        ctaButton.setAttribute("aria-label", `Listen to ${release.title} by ${release.artist}`);
+      } else {
+        ctaButton.textContent = "Pre-save";
+        const preSaveHref = getFirstLiveLink(release.links.preSave);
+        setLinkState(ctaButton, preSaveHref);
+        ctaButton.setAttribute("aria-label", `Pre-save ${release.title} by ${release.artist}`);
+      }
+    }
   });
 }
 
@@ -628,7 +756,7 @@ function showEmbedFallback(card, embedKey) {
 }
 
 function resolveReleaseLink(releaseKey, platform, options = {}) {
-  const { strict = false } = options;
+  const { strict = true } = options;
   const release = releaseCatalog[releaseKey];
 
   if (!release) {
@@ -694,9 +822,7 @@ function setupMailingListForm() {
   });
 }
 
-function setLinkState(link, href, options = {}) {
-  const { hideIfEmpty = false } = options;
-
+function setLinkState(link, href) {
   if (!link.dataset.defaultLabel) {
     link.dataset.defaultLabel = link.textContent.trim();
   }
@@ -711,34 +837,20 @@ function setLinkState(link, href, options = {}) {
     link.removeAttribute("rel");
     link.removeAttribute("title");
 
-    if (hideIfEmpty) {
-      link.hidden = true;
-      link.classList.remove("is-disabled", "is-coming-soon");
-      link.removeAttribute("aria-disabled");
-      link.removeAttribute("tabindex");
-      link.removeAttribute("data-status-label");
+    link.hidden = true;
+    link.removeAttribute("aria-disabled");
+    link.removeAttribute("tabindex");
 
-      if (link.dataset.defaultAriaLabel) {
-        link.setAttribute("aria-label", link.dataset.defaultAriaLabel);
-      }
-    } else {
-      link.hidden = false;
-      link.classList.add("is-disabled", "is-coming-soon");
-      link.setAttribute("aria-disabled", "true");
-      link.setAttribute("tabindex", "-1");
-      link.setAttribute("data-status-label", "Coming Soon");
-      link.setAttribute("title", `${link.dataset.defaultLabel} coming soon`);
-      link.setAttribute("aria-label", `${link.dataset.defaultLabel} coming soon`);
+    if (link.dataset.defaultAriaLabel) {
+      link.setAttribute("aria-label", link.dataset.defaultAriaLabel);
     }
 
     return;
   }
 
   link.hidden = false;
-  link.classList.remove("is-disabled", "is-coming-soon");
   link.removeAttribute("aria-disabled");
   link.removeAttribute("tabindex");
-  link.removeAttribute("data-status-label");
   link.removeAttribute("title");
   link.setAttribute("href", href);
 

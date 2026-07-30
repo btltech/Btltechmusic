@@ -1,0 +1,57 @@
+<svg width="800" height="800" viewBox="0 0 800 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="800" rx="36" fill="#1A0509"/>
+  
+  <!-- Background Deep Velvet Gradient -->
+  <rect width="800" height="800" fill="url(#velvet_grad)"/>
+  
+  <!-- Warm Bokeh Golden Lights -->
+  <circle cx="280" cy="180" r="45" fill="#F5B642" fill-opacity="0.28" filter="blur(20px)"/>
+  <circle cx="340" cy="220" r="30" fill="#F5B642" fill-opacity="0.35" filter="blur(15px)"/>
+  <circle cx="680" cy="140" r="60" fill="#F5B642" fill-opacity="0.25" filter="blur(25px)"/>
+  <circle cx="740" cy="210" r="40" fill="#F5B642" fill-opacity="0.2" filter="blur(20px)"/>
+  <circle cx="200" cy="280" r="25" fill="#FFF1D6" fill-opacity="0.4" filter="blur(10px)"/>
+
+  <!-- Instrument Silhouettes (Rhodes Piano left, Bass right) -->
+  <path d="M 60 140 L 460 280 L 440 450 L 40 310 Z" fill="#000000" fill-opacity="0.45"/>
+  <rect x="50" y="270" width="380" height="70" transform="rotate(18 50 270)" fill="#111111" stroke="#F5B642" stroke-opacity="0.3"/>
+  <path d="M 480 200 L 760 300" stroke="#F5B642" stroke-opacity="0.4" stroke-width="6"/>
+
+  <!-- Embossed Velvet Pattern Overlay -->
+  <rect x="50" y="520" width="700" height="220" rx="16" fill="url(#pattern_grad)" fill-opacity="0.85" stroke="#F5B642" stroke-opacity="0.15"/>
+  <path d="M 70 550 Q 400 610 730 550 M 70 610 Q 400 670 730 610" stroke="#8B1E2D" stroke-opacity="0.4" stroke-width="10"/>
+
+  <!-- Gold Typography -->
+  <!-- Top Artist Name (placed safely at y=110) -->
+  <text x="400" y="110" fill="url(#gold_grad)" font-family="Georgia, 'Times New Roman', serif" font-size="24" font-weight="700" text-anchor="middle" letter-spacing="10">BTLTECH</text>
+
+  <!-- Main Title: No Contest (placed at y=420) -->
+  <text x="400" y="420" fill="url(#gold_grad)" font-family="Georgia, 'Times New Roman', serif" font-size="90" font-weight="700" text-anchor="middle" letter-spacing="2">No Contest</text>
+
+  <!-- Subtitle Tagline (placed at y=480, font-size=22 for clean unclipped margins) -->
+  <text x="400" y="480" fill="#FFEAA7" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="22" text-anchor="middle" letter-spacing="0.5">Woman, you are the best - Nobody else fi contest</text>
+
+  <!-- Bottom Tagline (placed safely at y=695) -->
+  <text x="400" y="695" fill="#D4AF37" font-family="Georgia, 'Times New Roman', serif" font-size="16" text-anchor="middle" letter-spacing="5" opacity="0.85">no contest forever us</text>
+
+  <defs>
+    <linearGradient id="velvet_grad" x1="0" y1="0" x2="800" y2="800" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#4A0E17"/>
+      <stop offset="0.4" stop-color="#2D080E"/>
+      <stop offset="0.75" stop-color="#5C121E"/>
+      <stop offset="1" stop-color="#1A0407"/>
+    </linearGradient>
+
+    <linearGradient id="pattern_grad" x1="50" y1="520" x2="750" y2="740" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#3D0B12"/>
+      <stop offset="0.5" stop-color="#6B1523"/>
+      <stop offset="1" stop-color="#26060B"/>
+    </linearGradient>
+
+    <linearGradient id="gold_grad" x1="200" y1="350" x2="600" y2="450" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFEAA7"/>
+      <stop offset="0.3" stop-color="#F5B642"/>
+      <stop offset="0.7" stop-color="#E5A93B"/>
+      <stop offset="1" stop-color="#FFF1D6"/>
+    </linearGradient>
+  </defs>
+</svg>

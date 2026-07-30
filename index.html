@@ -36,7 +36,7 @@
     <meta name="twitter:image" content="https://btltechmusic.com/assets/og-image.jpg" />
 
     <link rel="stylesheet" href="styles.css?v=20260623a" />
-    <script defer src="script.js?v=20260623b"></script>
+    <script defer src="script.js?v=20260722d"></script>
 
     <script type="application/ld+json">
       {
@@ -55,7 +55,7 @@
         },
         "sameAs": [
           "https://open.spotify.com/artist/3t2rkD90BbAtlzi5Tn4jPu?si=SkRtFELHT4-3te1rXyoyWA",
-          "https://music.apple.com/gb/album/through-it-all/1893236878",
+          "https://music.apple.com/gb/artist/btltech/1880688903",
           "https://music.youtube.com/playlist?list=OLAK5uy_kJXtfOoMAxX80GfaoMhZ0Cfa2SBmH3-vw&si=I6yOj1-X7KrukSjw",
           "https://audiomack.com/btl-15",
           "https://www.tiktok.com/@btltechmusic",
@@ -134,10 +134,10 @@
             </div>
 
             <div class="platform-strip" aria-label="Platform links">
-              <a class="platform-pill" href="#" data-link="spotify" aria-label="Open Spotify artist page">Spotify</a>
-              <a class="platform-pill" href="#" data-link="appleMusic" aria-label="Open Apple Music artist page">Apple Music</a>
-              <a class="platform-pill" href="#" data-link="youtube" aria-label="Open YouTube channel">YouTube</a>
-              <a class="platform-pill" href="#" data-link="audiomack" aria-label="Open Audiomack artist page">Audiomack</a>
+              <a class="platform-pill" href="#" data-link="spotify" data-hide-if-empty="true" aria-label="Open Spotify artist page">Spotify</a>
+              <a class="platform-pill" href="#" data-link="appleMusic" data-hide-if-empty="true" aria-label="Open Apple Music artist page">Apple Music</a>
+              <a class="platform-pill" href="#" data-link="youtube" data-hide-if-empty="true" aria-label="Open YouTube channel">YouTube</a>
+              <a class="platform-pill" href="#" data-link="audiomack" data-hide-if-empty="true" aria-label="Open Audiomack artist page">Audiomack</a>
             </div>
 
             <ul class="hero-notes" aria-label="Highlights">
@@ -151,16 +151,17 @@
             <p class="card-label">Main Focus</p>
             <a class="product-focus" href="choko-king.html">
               <img
-                src="https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e020735dd075f2e4269fd32cdf8"
-                alt="Go Slow by Choko King cover artwork"
-                width="1000"
-                height="1000"
+                src="assets/releases/whine-for-me-cover.jpg"
+                alt="WHINE FOR ME by Choko King cover artwork"
+                width="800"
+                height="800"
                 decoding="async"
+                onerror="this.onerror=null; this.src='assets/releases/whine-for-me.jpg';"
               />
-              <span class="product-focus__kicker">Lead Artist</span>
+              <span class="product-focus__kicker">Lead Artist · New Single</span>
               <h2>Choko King</h2>
-              <p>A virtual Afro-dancehall artist carrying Lagos heat into the London cold. New single Go Slow is out now.</p>
-              <strong>Open Choko King</strong>
+              <p>A virtual Afro-dancehall artist carrying Lagos heat into the London cold. New single WHINE FOR ME releases 7 August 2026.</p>
+              <strong>Pre-save WHINE FOR ME</strong>
             </a>
 
             <a class="product-focus" href="lyrid.html">
@@ -194,10 +195,6 @@
               </p>
 
               <div class="store-buttons app-promo__actions">
-                <a class="store-button" href="#" data-lyrid-link="checkout">
-                  <span class="store-icon" aria-hidden="true">✉</span>
-                  <span class="store-text"><span>Launch price</span><strong>Buy Lyrid — £24</strong></span>
-                </a>
                 <a class="store-button" href="#" data-community-link="lyridUpdates">
                   <span class="store-icon" aria-hidden="true">↗</span>
                   <span class="store-text"><span>Stay updated</span><strong>Get Release Updates</strong></span>
@@ -220,58 +217,101 @@
         </div>
       </section>
 
-      <section class="section section--soft" id="latest-release">
+      <section class="section section--soft" id="upcoming-releases">
         <div class="container">
           <div class="section-heading">
-            <p class="eyebrow">Creator · Artist</p>
-            <h2>BTLTECH Also Releases Music</h2>
-            <p>
-              BTLTECH is the creator behind the platform, but he is also an
-              Afro-fusion artist with records streaming across the main platforms.
-            </p>
+            <p class="eyebrow">Upcoming Singles</p>
+            <h2>New Music Dropping Now</h2>
+            <p>Two artists. Two singles. Both releasing this summer — pre-save to be first to listen.</p>
           </div>
 
-          <article class="upcoming-card">
-            <div class="upcoming-card__status" aria-label="Latest release status">
-              <div>
-                <p class="card-label">Out Now</p>
-                <h3>Welcome to Lagos</h3>
-              </div>
+          <div class="content-grid" style="grid-template-columns: repeat(auto-fit, minmax(min(100%, 480px), 1fr)); gap: 2rem;">
 
-              <div class="countdown-chip">
-                <span class="countdown-chip__label">Released</span>
-                <strong>June 5, 2026</strong>
-              </div>
-            </div>
-
-            <div class="upcoming-card__grid">
-              <img
-                class="upcoming-card__art"
-                src="assets/releases/welcome-to-lagos.svg"
-                alt="Artwork for Welcome to Lagos"
-                width="800"
-                height="800"
-                loading="lazy"
-                decoding="async"
-              />
-
-              <div class="upcoming-card__body">
-                <p class="release-date">Out June 5, 2026</p>
-                <p class="upcoming-card__description">
-                  A gritty Afrobeats street anthem inspired by Lagos hustle, danfo
-                  energy, pressure, survival, family prayers, 4AM grind, and
-                  ambition. Stream the single now.
-                </p>
-
-                <div class="button-group upcoming-card__actions">
-                  <a class="button button--primary" href="#" data-release-key="welcomeToLagos" data-platform="appleMusic" data-release-strict="true">Apple Music</a>
-                  <a class="button button--secondary" href="#" data-release-key="welcomeToLagos" data-platform="youtube" data-release-strict="true">Lyric Video</a>
-                  <a class="button button--secondary" href="#" data-release-key="welcomeToLagos" data-platform="spotify" data-release-strict="true" data-hide-if-empty="true">Spotify</a>
-                  <a class="button button--ghost" href="#" data-release-key="welcomeToLagos" data-platform="audiomack" data-release-strict="true" data-hide-if-empty="true">Audiomack</a>
+            <!-- NO CONTEST — BTLTECH -->
+            <article class="upcoming-card" data-release-card="noContest" style="margin: 0;">
+              <div class="upcoming-card__status" aria-label="NO CONTEST release status">
+                <div>
+                  <p class="card-label">New Single · BTLTECH</p>
+                  <h3>NO CONTEST</h3>
+                </div>
+                <div class="countdown-chip">
+                  <span class="countdown-chip__label" data-release-status>Upcoming</span>
+                  <strong>31 July 2026</strong>
                 </div>
               </div>
-            </div>
-          </article>
+              <div class="upcoming-card__grid">
+                <img
+                  class="upcoming-card__art"
+                  src="assets/releases/no-contest-cover.jpg"
+                  alt="Artwork for NO CONTEST by BTLTECH"
+                  width="800"
+                  height="800"
+                  loading="lazy"
+                  decoding="async"
+                  onerror="this.onerror=null; this.src='assets/releases/no-contest.svg';"
+                />
+                <div class="upcoming-card__body">
+                  <p class="release-date">Releasing 31 July 2026</p>
+                  <p class="upcoming-card__description">
+                    A warm Afro-soul and lovers rock record about choosing one woman above everyone else. Deep gravel vocals, Nigerian Pidgin, patois phrasing, warm bass, Rhodes, soft Afro drums and Fuji-inspired touches.
+                  </p>
+                  <div class="button-group upcoming-card__actions">
+                    <a
+                      class="button button--primary"
+                      href="https://distrokid.com/hyperfollow/btltech/no-contest"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      data-release-cta="noContest"
+                    >Pre-save &ldquo;NO CONTEST&rdquo;</a>
+                    <a class="button button--secondary" href="btltech.html">BTLTECH Page</a>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- WHINE FOR ME — CHOKO KING -->
+            <article class="upcoming-card" data-choko-release-card="whineForMe" style="margin: 0;">
+              <div class="upcoming-card__status" aria-label="WHINE FOR ME release status">
+                <div>
+                  <p class="card-label">New Single · Choko King</p>
+                  <h3>WHINE FOR ME</h3>
+                </div>
+                <div class="countdown-chip">
+                  <span class="countdown-chip__label" data-release-status>Upcoming</span>
+                  <strong>7 August 2026</strong>
+                </div>
+              </div>
+              <div class="upcoming-card__grid">
+                <img
+                  class="upcoming-card__art"
+                  src="assets/releases/whine-for-me-cover.jpg"
+                  alt="Artwork for WHINE FOR ME by Choko King"
+                  width="800"
+                  height="800"
+                  loading="lazy"
+                  decoding="async"
+                  onerror="this.onerror=null; this.src='assets/releases/whine-for-me.jpg';"
+                />
+                <div class="upcoming-card__body">
+                  <p class="release-date">Releasing 7 August 2026</p>
+                  <p class="upcoming-card__description">
+                    A vibrant Afro-dancehall anthem built around infectious rhythm, smooth melodies and an irresistible dance groove. Designed for clubs, parties and dance challenges with Choko King&rsquo;s signature gravel vocal style.
+                  </p>
+                  <div class="button-group upcoming-card__actions">
+                    <a
+                      class="button button--primary"
+                      href="https://distrokid.com/hyperfollow/chokoking/whine-for-me"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      data-choko-cta="whineForMe"
+                    >Pre-save &ldquo;WHINE FOR ME&rdquo;</a>
+                    <a class="button button--secondary" href="choko-king.html">Choko King Page</a>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+          </div>
         </div>
       </section>
 
@@ -328,8 +368,8 @@
               <h3>Choko King</h3>
               <p>
                 A faceless, crown-wearing virtual Afro-dancehall artist with
-                deep gravel vocals, pidgin, patois, and new tracks London Outside,
-                Go Slow, and Choko So Cool out now.
+                deep gravel vocals, pidgin, patois, and new tracks London Outside
+                and Go Slow out now.
               </p>
               <div class="button-group">
                 <a class="button button--primary" href="choko-king.html">Open Choko King</a>
@@ -352,7 +392,7 @@
                 visuals, and export clean videos for social platforms.
               </p>
               <div class="button-group">
-                <a class="button button--primary" href="#" data-lyrid-link="checkout">Buy Lyrid — £24</a>
+                <a class="button button--primary" href="lyrid.html">Explore Lyrid</a>
               </div>
             </article>
 
@@ -465,15 +505,12 @@
             </p>
 
             <div class="button-group social-cluster">
-              <a class="button button--secondary" href="#" data-link="spotify">Spotify</a>
-              <a class="button button--secondary" href="#" data-link="appleMusic">Apple Music</a>
-              <a class="button button--secondary" href="#" data-link="youtube">YouTube</a>
-              <a class="button button--secondary" href="#" data-link="audiomack">Audiomack</a>
+              <a class="button button--secondary" href="#" data-link="spotify" data-hide-if-empty="true">Spotify</a>
+              <a class="button button--secondary" href="#" data-link="appleMusic" data-hide-if-empty="true">Apple Music</a>
+              <a class="button button--secondary" href="#" data-link="youtube" data-hide-if-empty="true">YouTube</a>
+              <a class="button button--secondary" href="#" data-link="audiomack" data-hide-if-empty="true">Audiomack</a>
               <a class="button button--secondary" href="#" data-link="instagram" data-hide-if-empty="true">Instagram</a>
               <a class="button button--secondary" href="#" data-link="tiktok" data-hide-if-empty="true">TikTok</a>
-              <a class="button button--secondary" href="#" data-link="facebook" data-hide-if-empty="true">Facebook</a>
-              <a class="button button--secondary" href="#" data-link="soundcloud" data-hide-if-empty="true">SoundCloud</a>
-              <a class="button button--ghost" href="#" data-link="smartLink" data-hide-if-empty="true">Smart Link</a>
             </div>
           </aside>
         </div>

@@ -40,7 +40,7 @@ http://127.0.0.1:4173
 Edit the top of `script.js`:
 
 - `artistLinks` — BTLTECH streaming, social, and email links
-- `releaseCatalog` — BTLTECH per-song links
+- `releaseCatalog` — BTLTECH per-song links; missing platform buttons stay hidden
 - `chokoLinks` — Choko King's own streaming/social links
 - `chokoReleaseCatalog` — Choko King's per-song links
 - `lyridLinks` — Lyrid checkout URL, Mac App Store URL, direct download (.dmg), optional web page
@@ -66,16 +66,19 @@ Edit the Press Kit section in `press-kit.html`.
 
 ## Cloudflare Pages Deployment
 
-1. Push this project to a GitHub repository.
-2. Log in to Cloudflare.
-3. Open `Workers & Pages`.
-4. Create a new `Pages` project.
-5. Connect the GitHub repository.
-6. Use no build command for this plain static site.
-7. Set the output directory to the project root, usually `.`.
-8. Deploy.
-9. Connect the custom domain `btltechmusic.com`.
-10. Test the live site on mobile and desktop.
+Deploy the current site directly to the existing Pages project:
+
+```bash
+./deploy-pages.sh
+```
+
+The script builds a temporary publish directory, excludes local tooling and
+`visuals/`, deploys it to the `btltechmusic` Pages project with Wrangler, and
+runs post-deployment checks. You can also verify any deployment URL directly:
+
+```bash
+./verify-deployment.sh https://example.btltechmusic.pages.dev
+```
 
 ## Before Public Launch
 
@@ -97,5 +100,5 @@ Edit the Press Kit section in `press-kit.html`.
 - Privacy and terms pages were added for launch readiness.
 
 - Empty optional social buttons are hidden until links are added.
-- Missing non-social actions show a `Coming Soon` state.
+- Missing links are hidden until their real URLs are added.
 - CSS and JS are cache-busted from `index.html` with version query strings.
