@@ -177,10 +177,10 @@
               <p class="eyebrow">Start</p>
               <h2>Getting Started</h2>
               <p>
-                You need an Apple Silicon Mac, M1 or newer, running macOS 14
-                Sonoma or later. On first launch, Lyrid downloads its sync engine
-                once. That needs internet and usually takes about a minute. After
-                setup, you can work offline.
+                You need an Apple Silicon Mac (M1, M2, M3, M4 or newer) running macOS 14
+                Sonoma or later. On first launch, Lyrid downloads its processing engine
+                and models. This requires internet and timing varies depending on your
+                connection speed. After setup, the core workflow can run offline.
               </p>
               <ol class="guide-steps">
                 <li>Open Lyrid and create a new project, or open the built-in demo.</li>
@@ -188,8 +188,8 @@
                 <li>Pick a look, fine-tune the timing and design, then export.</li>
               </ol>
               <p>
-                The workflow is three steps: Sync, Design, Export. Jump between
-                them with Command-1, Command-2 and Command-3.
+                The workflow is four steps: <strong>Import → Sync → Design → Export</strong>. Jump between
+                them using <strong>⌘1, ⌘2, ⌘3 and ⌘4</strong>.
               </p>
             </article>
 
@@ -214,7 +214,7 @@
               </p>
               <ul class="guide-list">
                 <li>Section tags like [Intro], [Verse] and [Hook] are recognised and never shown in the video.</li>
-                <li>Use Tidy to remove section tags and production notes from the text.</li>
+                <li>Use <strong>Clean Up</strong> to remove section tags and production notes from the text.</li>
                 <li>If your track repeats the hook, paste the hook each place it is actually sung.</li>
               </ul>
             </article>
@@ -229,8 +229,8 @@
                 names and accent-heavy phrases.
               </p>
               <p>
-                The Precise engine aligns your pasted lyrics to the vocal and gives
-                the cleanest timing. Paste lyrics whenever you have them.
+                The Precise engine aligns your pasted lyrics to the vocal sound-for-sound
+                and gives the cleanest timing. Paste lyrics whenever you have them.
               </p>
               <p>
                 Optional AI helpers, including Fix Mishears and Translate, need
@@ -244,11 +244,11 @@
               <h2>Fixing Sync &amp; Timing</h2>
               <p>
                 After Auto Sync, open the Sync screen to review line timing while
-                the song plays. You can adjust anything before export.
+                the song plays. You can adjust anything before export:
               </p>
               <ul class="guide-list">
-                <li>Drag a line to move its timing.</li>
-                <li>Select a line and nudge it with the up or down arrow keys.</li>
+                <li>Drag a line block on the waveform or prompter to adjust its timing.</li>
+                <li>Select a line and use its <strong>− / +</strong> nudge controls for fine adjustments, or click the lock control to protect its timing.</li>
                 <li>Use Resync to re-time the current words without changing them.</li>
                 <li>Use Fix Mishears, if configured, to correct likely speech-to-text errors while keeping slang.</li>
                 <li>Use Manual Stamp for advanced hand-tapped timings.</li>
@@ -259,12 +259,12 @@
               <p class="eyebrow">Make It</p>
               <h2>Templates &amp; Styles</h2>
               <p>
-                On the Design screen, pick a one-tap look, then make it match the
-                artist or release.
+                On the Design screen, pick a look from the 34-Look catalogue or use an 8-Look Quick Start shortcut, then customize it for your release.
               </p>
               <ul class="guide-list">
-                <li>Use built-in macOS fonts, bundled premium fonts, or import your own TTF/OTF fonts.</li>
-                <li>Adjust colours, quick palettes, beat-reactive motion and glow.</li>
+                <li>Use built-in macOS fonts, bundled premium fonts (marked ✦), or import your own TTF/OTF fonts.</li>
+                <li>Adjust colours, quick palettes, beat-reactive motion, glow, and Halo ✦ section motion.</li>
+                <li>Manage custom styles and saved looks in the Brand tab.</li>
                 <li>Use your own photo or video, a generated background, or an animated backdrop.</li>
                 <li>Looping video backgrounds are silent by default. Turn off Mute video sound if you want to mix their audio under the song.</li>
                 <li>Undo and redo design changes with Command-Z and Command-Shift-Z.</li>
@@ -280,11 +280,11 @@
               </p>
               <ul class="guide-list">
                 <li>Export 9:16 vertical, 1:1 square, 16:9 wide and 4:5 portrait, up to high resolution and 60fps.</li>
-                <li>Use Publish Pack to render every platform size into one folder.</li>
-                <li>Turn on Export a clip to make short 8-to-30-second teasers with smooth fades.</li>
+                <li>Use <strong>Publish Pack</strong> to render every platform size into one folder.</li>
+                <li>Turn on <strong>Export a clip or section</strong> to make short 8-to-30-second teasers with smooth fades.</li>
                 <li>Use Hook to jump to the catchiest section, then preview with Play section.</li>
-                <li>Export short looping vertical clips for Spotify Canvas.</li>
-                <li>Export SRT or LRC subtitle files for use elsewhere.</li>
+                <li>Export short 8-second vertical visual loops for Spotify Canvas (lyrics are off by default because the Canvas loop does not track live song position).</li>
+                <li>Export stems (including Acapella, Instrumental, Drums, Bass, and Other) or SRT / LRC subtitle files for use elsewhere.</li>
               </ul>
             </article>
 
@@ -312,7 +312,7 @@
                 <li>Use Deactivate on this Mac before moving a seat to a new Mac.</li>
               </ol>
               <p>
-                One licence activates on up to two Macs. Activation needs internet
+                Licences enforce the device seat limit configured at checkout. Activation needs internet
                 once; after that, Lyrid keeps working offline.
               </p>
             </article>
@@ -324,14 +324,14 @@
                 <section>
                   <h3>"Couldn't reach the internet" on the first sync</h3>
                   <p>
-                    The very first sync downloads the voice model. Connect to
+                    The very first sync downloads processing models. Connect to
                     Wi-Fi and try again. After setup, syncing works offline.
                   </p>
                 </section>
                 <section>
                   <h3>The timing is slightly off on some lines</h3>
                   <p>
-                    Open the Sync screen and drag or nudge those lines. If the
+                    Open the Sync screen and drag or use the − / + nudge controls on those lines. If the
                     words are wrong, paste your correct lyrics and use the Precise
                     engine, or run Fix Mishears if configured.
                   </p>
@@ -348,7 +348,7 @@
                   <p>
                     Check that the key is pasted exactly, confirm you are online
                     for activation, and make sure the licence has not already
-                    reached its two-Mac limit.
+                    reached its device seat limit.
                   </p>
                 </section>
               </div>
