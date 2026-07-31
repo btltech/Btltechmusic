@@ -1,8 +1,8 @@
 // BEGINNER EDITING: NO CONTEST platform and video link placeholders.
 // Paste final URLs below when available.
 const NO_CONTEST_PRESAVE_URL = "https://distrokid.com/hyperfollow/btltech/no-contest";
-const NO_CONTEST_SPOTIFY_URL = "#"; // Paste Spotify track URL here
-const NO_CONTEST_APPLE_MUSIC_URL = "#"; // Paste Apple Music track URL here
+const NO_CONTEST_SPOTIFY_URL = "https://open.spotify.com/track/7oFIeqYunFkhfFA6MoprzX?si=aa298a9fda574a01";
+const NO_CONTEST_APPLE_MUSIC_URL = "https://music.apple.com/gb/album/no-contest-single/6794939181";
 const NO_CONTEST_YOUTUBE_URL = "#"; // Paste YouTube track URL here
 const NO_CONTEST_VIDEO_URL = "#"; // Paste official music video URL here when available
 
