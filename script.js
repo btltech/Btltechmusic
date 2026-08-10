@@ -8,7 +8,7 @@ const NO_CONTEST_VIDEO_URL = "https://youtu.be/nUQRqOZtjlY";
 
 // BEGINNER EDITING: WHINE FOR ME (Choko King) platform and video link placeholders.
 // Paste official URLs below when available.
-const WHINE_FOR_ME_SPOTIFY_URL = "#"; // Paste Spotify track URL here
+const WHINE_FOR_ME_SPOTIFY_URL = "https://open.spotify.com/track/79tnurjUBvOsSjgR1rxqT3?si=2ae8dae0680540d0";
 const WHINE_FOR_ME_APPLE_MUSIC_URL = "#"; // Paste Apple Music track URL here
 const WHINE_FOR_ME_YOUTUBE_URL = "#"; // Paste YouTube track URL here
 const WHINE_FOR_ME_PRESAVE_URL = "https://distrokid.com/hyperfollow/chokoking/whine-for-me";
