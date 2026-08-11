@@ -6,6 +6,10 @@ const NO_CONTEST_APPLE_MUSIC_URL = "https://music.apple.com/gb/album/no-contest-
 const NO_CONTEST_YOUTUBE_URL = "https://youtu.be/nUQRqOZtjlY";
 const NO_CONTEST_VIDEO_URL = "https://youtu.be/nUQRqOZtjlY";
 
+// BEGINNER EDITING: YAHOO MAN (BTLTECH) official lyric video link.
+const YAHOO_MAN_YOUTUBE_URL = "https://youtu.be/51YVrOcPmWg";
+const YAHOO_MAN_VIDEO_URL = "https://youtu.be/51YVrOcPmWg";
+
 // BEGINNER EDITING: WHINE FOR ME (Choko King) platform and video link placeholders.
 // Paste official URLs below when available.
 const WHINE_FOR_ME_SPOTIFY_URL = "https://open.spotify.com/track/79tnurjUBvOsSjgR1rxqT3?si=2ae8dae0680540d0";
@@ -117,6 +121,16 @@ const releaseCatalog = {
       audiomack: "#",
       preSave: NO_CONTEST_PRESAVE_URL,
       video: NO_CONTEST_VIDEO_URL
+    }
+  },
+  yahooMan: {
+    title: "Yahoo Man",
+    artist: "BTLTECH",
+    type: "Single",
+    clean: true,
+    links: {
+      youtube: YAHOO_MAN_YOUTUBE_URL,
+      video: YAHOO_MAN_VIDEO_URL
     }
   },
   omoStacker: {
