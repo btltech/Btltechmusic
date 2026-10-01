@@ -1,7 +1,7 @@
 #!/bin/sh
 set -eu
 
-publish_dir="$(mktemp -d /tmp/btltechmusic-publish.XXXXXX)"
+publish_dir="$(mktemp -d ./deploy_tmp.XXXXXX)"
 trap 'rm -rf "$publish_dir"' EXIT HUP INT TERM
 
 rsync -a \
@@ -17,7 +17,7 @@ if find "$publish_dir" -path '*/visuals/*' -print -quit | grep -q .; then
   exit 1
 fi
 
-WRANGLER_LOG_PATH=/tmp/btltechmusic-deploy.log \
+WRANGLER_LOG_PATH=./deploy-log.log \
   wrangler pages deploy "$publish_dir" \
   --project-name=btltechmusic \
   --branch=main \

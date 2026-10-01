@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lyrid — AI Lyric Video Maker for Mac</title>
+    <title>Lyrid — AI Lyric Video Generator for Mac</title>
     <meta
       name="description"
-      content="Turn any song into a synced lyric video on your Mac. AI syncs words to the beat. Export for TikTok, Reels, Shorts & Spotify Canvas. No subscription."
+      content="Turn any song into a ready-to-share lyric video on your Mac. Add your track, paste your lyrics, choose a visual style, and Lyrid automatically aligns your lyrics to the performance."
     />
     <meta name="robots" content="index, follow" />
     <meta name="theme-color" content="#080706" />
@@ -17,19 +17,19 @@
 
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://btltechmusic.com/lyrid" />
-    <meta property="og:title" content="Lyrid: AI Lyric Videos, Made on Your Mac" />
-    <meta property="og:description" content="Drop in a song, paste your lyrics, and Lyrid times every word into a share-ready lyric video. Built for musicians. No subscription." />
-    <meta property="og:image" content="https://btltechmusic.com/assets/lyrid/lyrid-dashboard.png" />
-    <meta property="og:image:alt" content="Lyrid AI lyric-video maker dashboard on Mac" />
-    <meta property="og:image:width" content="1800" />
-    <meta property="og:image:height" content="1060" />
+    <meta property="og:title" content="Lyrid: Turn Any Song Into a Ready-to-Share Lyric Video" />
+    <meta property="og:description" content="Add your track, paste your lyrics, choose a visual style, and Lyrid automatically aligns your lyrics to the performance. Fine-tune anything you want, then export polished videos for TikTok, Reels, Shorts, YouTube and Spotify Canvas." />
+    <meta property="og:image" content="https://btltechmusic.com/assets/lyrid/lyrid-og.jpg" />
+    <meta property="og:image:alt" content="Lyrid AI lyric-video generator dashboard on Mac" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
     <meta property="og:site_name" content="BTLTECH Music" />
 
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Lyrid — AI Lyric Video Maker for Mac" />
-    <meta name="twitter:description" content="Turn any song into a synced lyric video on your Mac and export for TikTok, Reels, Shorts, YouTube and Spotify Canvas." />
-    <meta name="twitter:image" content="https://btltechmusic.com/assets/lyrid/lyrid-dashboard.png" />
-    <meta name="twitter:image:alt" content="Lyrid AI lyric-video maker dashboard on Mac" />
+    <meta name="twitter:title" content="Lyrid — AI Lyric Video Generator for Mac" />
+    <meta name="twitter:description" content="Turn any song into a ready-to-share lyric video on your Mac. Export videos sized for TikTok, Instagram Reels, YouTube Shorts, YouTube and Spotify Canvas." />
+    <meta name="twitter:image" content="https://btltechmusic.com/assets/lyrid/lyrid-og.jpg" />
+    <meta name="twitter:image:alt" content="Lyrid AI lyric-video generator dashboard on Mac" />
 
     <link rel="stylesheet" href="styles.css?v=20260623a" />
     <script defer src="script.js?v=20260722d"></script>
@@ -45,22 +45,26 @@
             "url": "https://btltechmusic.com/lyrid",
             "applicationCategory": "MultimediaApplication",
             "operatingSystem": "macOS 14+",
-            "isAccessibleForFree": true,
-            "description": "AI lyric video maker for Mac. Automatically syncs your lyrics to the beat and exports share-ready videos for TikTok, Reels, Shorts, YouTube and Spotify Canvas.",
+            "isAccessibleForFree": false,
+            "description": "AI lyric video generator for Mac. Add your track, paste your lyrics, choose a visual style, and Lyrid automatically aligns your lyrics to the performance. Export videos sized for TikTok, Reels, Shorts, YouTube and Spotify Canvas.",
             "screenshot": [
-              "https://btltechmusic.com/assets/lyrid/shot-dashboard-current.jpg",
-              "https://btltechmusic.com/assets/lyrid/shot-sync-current.jpg",
-              "https://btltechmusic.com/assets/lyrid/shot-export-current.jpg"
+              "https://btltechmusic.com/assets/lyrid/lyrid-home.jpg",
+              "https://btltechmusic.com/assets/lyrid/lyrid-sync.jpg",
+              "https://btltechmusic.com/assets/lyrid/lyrid-design-preview.jpg",
+              "https://btltechmusic.com/assets/lyrid/lyrid-export.jpg"
             ],
             "softwareHelp": "https://btltechmusic.com/lyrid-help",
             "license": "https://btltechmusic.com/terms-of-service",
-            "publisher": { "@type": "Organization", "name": "BTLTECH LTD" },
+            "publisher": {
+              "@type": "Organization",
+              "name": "BTLTECH LTD"
+            },
             "featureList": [
-              "Automatic word-by-word lyric sync",
-              "Audio transcription",
+              "Automatic lyric alignment",
+              "Song Read arrangement analysis",
+              "42 Look designs & Raw Media",
               "Beat-reactive motion",
               "Social video exports",
-              "Works offline after setup",
               "Audio stays on your Mac"
             ],
             "offers": {
@@ -74,13 +78,15 @@
                   "@type": "Offer",
                   "name": "Lyrid Launch Founders Price",
                   "price": "24.00",
-                  "priceCurrency": "GBP"
+                  "priceCurrency": "GBP",
+                  "url": "https://lyrid.lemonsqueezy.com"
                 },
                 {
                   "@type": "Offer",
                   "name": "Lyrid Standard Price",
                   "price": "29.00",
-                  "priceCurrency": "GBP"
+                  "priceCurrency": "GBP",
+                  "url": "https://lyrid.lemonsqueezy.com"
                 }
               ]
             }
@@ -93,7 +99,15 @@
                 "name": "What is Lyrid?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Lyrid is a Mac app that automatically turns a song into a synced, animated lyric video ready for social platforms."
+                  "text": "Lyrid is a Mac app that automatically aligns your lyrics to the performance and builds polished lyric videos for social platforms."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Can I use my own spelling and custom lyrics?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. Lyrid uses the exact lyrics you provide, preserving your wording, spelling, and phrasing. You can also generate an editable transcription draft when you do not already have the lyrics."
                 }
               },
               {
@@ -101,7 +115,7 @@
                 "name": "Does my music get uploaded anywhere?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "No. Your audio is processed on your Mac and never leaves your computer. Lyrid may use the network for setup, licensing, optional diagnostics, and optional text helpers."
+                  "text": "Audio processing stays on your Mac. Your music files are never uploaded for audio processing. Network access is only used for setup, licensing and optional services described in our Privacy Policy."
                 }
               },
               {
@@ -114,18 +128,10 @@
               },
               {
                 "@type": "Question",
-                "name": "Is there a watermark?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "You can try Lyrid free. Trial exports carry a small watermark: a corner badge that moves between all four corners as the video plays, plus a faint diagonal mark inside the frame — so cropping won't remove it. Activating your licence removes both, and licensed exports are completely clean."
-                }
-              },
-              {
-                "@type": "Question",
                 "name": "Does Lyrid work offline?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Yes, after setup. Lyrid may need the network for first-run engine/model setup and licence activation, but the lyric-video workflow runs locally and your audio is not uploaded."
+                  "text": "Audio processing stays on your Mac. Network access is only used for setup, licensing and optional services described in our Privacy Policy."
                 }
               }
             ]
@@ -133,6 +139,40 @@
         ]
       }
     </script>
+    <style>
+      .lyrid-page .lyrid-hero-shot { max-width: 1040px; }
+      .lyrid-page .lyrid-hero-shot img { max-height: none; }
+      .lyrid-page .lyrid-shots {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        margin-top: 1.5rem;
+      }
+      @media (min-width: 760px) {
+        .lyrid-page .lyrid-shots { grid-template-columns: 1fr 1fr; }
+      }
+      .lyrid-page .lyrid-shot {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+      }
+      .lyrid-page .lyrid-shot img {
+        border-radius: var(--radius-md);
+        border: 1px solid var(--lyrid-border);
+        box-shadow: 0 12px 32px rgba(0, 0, 0, 0.4);
+        background: #0c0e1c;
+      }
+      .lyrid-page .lyrid-shot figcaption {
+        color: var(--muted);
+        line-height: 1.55;
+      }
+      .lyrid-page .lyrid-shot figcaption strong {
+        display: block;
+        color: var(--text, #fff);
+        margin-bottom: 0.2rem;
+      }
+    </style>
   </head>
 
   <body>
@@ -158,13 +198,12 @@
         </button>
 
         <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
-          <a href="index.html">Home</a>
-          <a href="btltech.html">BTLTECH</a>
-          <a href="choko-king.html">Choko King</a>
-          <a href="lyrid.html" aria-current="page">Lyrid</a>
-          <a href="lyrid-help.html">Help</a>
-          <a href="press-kit.html">Press Kit</a>
-          <a href="contact.html">Contact</a>
+          <a href="#features">Features</a>
+          <a href="#how-it-works">How It Works</a>
+          <a href="#examples">Examples</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#faq">FAQ</a>
+          <a href="https://lyrid.lemonsqueezy.com" data-lyrid-link="checkout" target="_blank" rel="noopener noreferrer" style="color: var(--gold); font-weight: 700;">Buy — £24</a>
         </nav>
       </div>
     </header>
@@ -174,29 +213,34 @@
       <section class="section" id="home">
         <div class="container">
           <div class="lyrid-hero-text">
-            <p class="eyebrow">AI Lyric Video Maker · Mac</p>
+            <div style="display: flex; align-items: center; justify-content: center; margin-bottom: 0.75rem;">
+              <img
+                src="assets/lyrid/lyrid-app-icon.png"
+                alt="Lyrid App Icon"
+                width="56"
+                height="56"
+                style="width: 56px; height: 56px; border-radius: 14px; box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);"
+              />
+            </div>
+            <p class="eyebrow">AI Lyric Video Generator · Mac</p>
             <h1 style="font-size: clamp(2.2rem, 5vw, 3.4rem); line-height: 1.15; margin: 0.5rem 0 1rem; font-weight: 800;">
-              AI-synced lyric videos for musicians — <span class="lyrid-gradient-text">made locally on your Mac</span>
+              Turn any song into a <span class="lyrid-gradient-text">ready-to-share lyric video</span>
             </h1>
-            <p style="font-size: clamp(1.05rem, 2.2vw, 1.25rem); color: var(--muted); max-width: 680px; margin: 0 auto 1.5rem; line-height: 1.6;">
-              Drop in a song, paste your lyrics, and Lyrid times every word into a share-ready lyric video. Your audio is processed on your Mac. No subscription.
+            <p style="font-size: clamp(1.05rem, 2.2vw, 1.25rem); color: var(--muted); max-width: 720px; margin: 0 auto 1.5rem; line-height: 1.6;">
+              Add your track, paste your lyrics, choose a visual style, and Lyrid automatically aligns your lyrics to the performance. Fine-tune anything you want, then export polished videos for TikTok, Reels, Shorts, YouTube and Spotify Canvas.
             </p>
 
             <div class="lyrid-hero-actions">
-              <a class="lyrid-btn-primary" href="https://lyrid.lemonsqueezy.com" target="_blank" rel="noopener noreferrer">Buy Lyrid — £24</a>
-              <a class="lyrid-btn-secondary" href="#features">See what it does</a>
+              <a class="lyrid-btn-primary" href="https://lyrid.lemonsqueezy.com" data-lyrid-link="checkout" target="_blank" rel="noopener noreferrer">Buy Lyrid — £24</a>
+              <a class="lyrid-btn-secondary" href="#how-it-works">See how it works</a>
             </div>
 
-            <p style="color: var(--muted); font-size: 0.88rem; margin-top: 1rem;">
-              Free to try · the trial adds a small watermark you remove by activating.
-            </p>
-
-            <figure class="lyrid-dashboard-wrap">
+            <figure class="lyrid-dashboard-wrap lyrid-hero-shot" style="margin-top: 2rem;">
               <img
-                src="assets/lyrid/lyrid-dashboard.png"
-                alt="The Lyrid dashboard, with recent lyric-video projects and one-tap visual looks."
-                width="1800"
-                height="1060"
+                src="assets/lyrid/lyrid-home.jpg"
+                alt="The Lyrid home screen, with recent lyric-video projects and quick-start looks."
+                width="1600"
+                height="1000"
                 loading="eager"
                 fetchpriority="high"
                 decoding="async"
@@ -206,8 +250,95 @@
         </div>
       </section>
 
+      <!-- SCREENSHOTS -->
+      <section class="section" id="screenshots" style="padding-top: 0;">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Inside Lyrid</p>
+            <h2>Import, Sync, Design, Export</h2>
+            <p>Real projects, captured from Lyrid 1.2.1 on a Mac.</p>
+          </div>
+
+          <div class="lyrid-shots">
+            <figure class="lyrid-shot">
+              <img src="assets/lyrid/lyrid-sync.jpg" alt="Sync Review: every lyric line timed and marked Good, Review or Poor, with the waveform above and a live preview beside it." width="1600" height="1000" loading="lazy" decoding="async" />
+              <figcaption><strong>Sync Review</strong> Every line timed and marked Good, Review or Poor, so you know exactly which ones to check.</figcaption>
+            </figure>
+            <figure class="lyrid-shot">
+              <img src="assets/lyrid/lyrid-tap-timing.jpg" alt="Tap timing: the current lyric line shown large with a Tap button, grouped by Intro and Hook sections." width="1600" height="1000" loading="lazy" decoding="async" />
+              <figcaption><strong>Tap timing</strong> Prefer to time it yourself? Tap as each line starts while the song plays.</figcaption>
+            </figure>
+            <figure class="lyrid-shot">
+              <img src="assets/lyrid/lyrid-design-preview.jpg" alt="The Design screen with both panels hidden, showing the lyric video full-size over the artist's own footage." width="1600" height="1000" loading="lazy" decoding="async" />
+              <figcaption><strong>Design</strong> Hide the panels and watch your video full-size, exactly as it will export.</figcaption>
+            </figure>
+            <figure class="lyrid-shot">
+              <img src="assets/lyrid/lyrid-export.jpg" alt="Export: one-tap presets for TikTok, Instagram Reels, Instagram Square, YouTube Shorts, YouTube, Spotify Canvas, Facebook and X." width="1600" height="976" loading="lazy" decoding="async" />
+              <figcaption><strong>Export</strong> One tap sets the size and frame rate for TikTok, Reels, Shorts, YouTube and Spotify Canvas.</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- DEMONSTRATION VIDEO / EXAMPLES -->
+      <section class="section" id="examples" style="padding-top: 0;">
+        <div class="container" style="max-width: 800px;">
+          <div class="section-heading">
+            <p class="eyebrow">Finished Video Demo</p>
+            <h2>See a finished video in action</h2>
+            <p>Watch how aligned text, beat reactivity, and visual looks come together.</p>
+          </div>
+
+          <div class="embed-single" style="margin-top: 1.5rem;">
+            <article class="embed-card" style="margin: 0; padding: 0; background: none; border: none;">
+              <div class="embed-frame-wrap embed-frame-wrap--video" style="border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border); box-shadow: 0 16px 40px rgba(0,0,0,0.5);">
+                <iframe
+                  title="Lyrid finished lyric video demonstration"
+                  src="https://www.youtube.com/embed/51YVrOcPmWg"
+                  loading="lazy"
+                  allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- HOW IT WORKS -->
+      <section class="section section--soft" id="how-it-works">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Workflow</p>
+            <h2>From song to finished video in minutes</h2>
+            <p>Everything you need to create polished lyric videos without complicated video editing.</p>
+          </div>
+
+          <div class="lyrid-grid lyrid-grid--3">
+            <div class="lyrid-card">
+              <div class="lyrid-card-ico">1️⃣</div>
+              <h3>1. Add your song and lyrics</h3>
+              <p>Import your track and paste the exact lyrics you want displayed.</p>
+            </div>
+
+            <div class="lyrid-card">
+              <div class="lyrid-card-ico">2️⃣</div>
+              <h3>2. Sync and fine-tune</h3>
+              <p>Lyrid automatically aligns your lyrics to the vocal and builds the timing for you. Fine-tune any line when needed.</p>
+            </div>
+
+            <div class="lyrid-card">
+              <div class="lyrid-card-ico">3️⃣</div>
+              <h3>3. Style and export</h3>
+              <p>Choose a ready-made look, add your media, and export for every major social platform.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <!-- FEATURE GRID -->
-      <section class="section section--soft" id="features">
+      <section class="section" id="features">
         <div class="container">
           <div class="section-heading">
             <p class="eyebrow">Features</p>
@@ -218,25 +349,31 @@
           <div class="lyrid-grid lyrid-grid--3">
             <div class="lyrid-card">
               <div class="lyrid-card-ico">🎯</div>
-              <h3>Automatic word sync</h3>
-              <p>Lyrid separates the vocal, lines up your lyrics to the audio, and times every word. Fine-tune any line by dragging.</p>
+              <h3>Automatic lyric alignment</h3>
+              <p>Lyrid separates the vocal, aligns your supplied lyrics with the performance, and builds word-level timing automatically. Fine-tune the result when needed.</p>
             </div>
 
             <div class="lyrid-card">
               <div class="lyrid-card-ico">🗣️</div>
-              <h3>Your words, your spelling</h3>
-              <p>Lyrid matches the lyrics <em>you typed</em> to the vocal sound by sound — it never guesses what you sang. So Pidgin, patois and slang come out exactly as you wrote them, instead of being quietly corrected into standard English.</p>
+              <h3>Your lyrics, exactly as written</h3>
+              <p>Lyrid preserves the wording, names, spelling, slang, and creative phrasing you provide while matching it to the performance.</p>
+            </div>
+
+            <div class="lyrid-card">
+              <div class="lyrid-card-ico">📊</div>
+              <h3>Song Read — understand your arrangement</h3>
+              <p>Analyse the structure of your track before you create. Song Read measures sections, energy, repetition, hook timing and loudness changes to help you understand how your arrangement develops. It describes measurable characteristics of the recording — it does not score musical quality or predict commercial success.</p>
             </div>
 
             <div class="lyrid-card">
               <div class="lyrid-card-ico">🎨</div>
-              <h3>34 Looks &amp; Raw Media</h3>
-              <p>34 one-tap Looks in the full catalogue (plus a Raw Media option for untouched footage), with 8 Quick Start shortcuts, mood presets, and Auto-Design — with motion, glow and beat reactivity baked in.</p>
+              <h3>42 Looks &amp; Raw Media</h3>
+              <p>Choose from 42 Looks, use Raw Media for untouched footage, or start quickly with 8 curated shortcuts. Auto-Design, motion, glow and beat-reactive options give you plenty of room to make the result your own.</p>
             </div>
 
             <div class="lyrid-card">
               <div class="lyrid-card-ico">✂️</div>
-              <h3>8–30s social clips</h3>
+              <h3>Social clips or full-length videos</h3>
               <p>Cut any hook into a vertical clip for Reels, TikTok and Shorts, with smooth audio fades. Or export the full song.</p>
             </div>
 
@@ -249,13 +386,13 @@
             <div class="lyrid-card">
               <div class="lyrid-card-ico">🔒</div>
               <h3>Private by design</h3>
-              <p>Your audio is processed on your Mac and never uploaded. Unreleased tracks stay on your machine.</p>
+              <p>Audio processing stays on your Mac. Your music files are never uploaded for audio processing. Network access is only used for setup, licensing and optional services described in our Privacy Policy.</p>
             </div>
 
             <div class="lyrid-card">
               <div class="lyrid-card-ico">📐</div>
-              <h3>Every format &amp; MOV export</h3>
-              <p>9:16, 1:1, 16:9 and 4:5 at up to full resolution in MP4 or MOV (chosen in Export → Advanced) — plus a one-click Publish Pack for all your platforms at once.</p>
+              <h3>Formats for every major platform</h3>
+              <p>Export in 9:16, 1:1, 16:9 or 4:5, in MP4 or MOV, with a one-click Publish Pack for multiple platforms.</p>
             </div>
 
             <div class="lyrid-card">
@@ -266,7 +403,7 @@
 
             <div class="lyrid-card">
               <div class="lyrid-card-ico">⚡</div>
-              <h3>The 2026 glitch look</h3>
+              <h3>Beat-reactive glitch effects</h3>
               <p>Beat-gated RGB split, CRT scanlines and slice jitter that fire on the beat — not constantly. Includes the free Glitch Pop preset.</p>
             </div>
 
@@ -276,41 +413,6 @@
               <p>Manage custom styles in the Brand tab. Duplicate a project keeping its sync, restyle and re-export in minutes, or share looks as <code>.lyridstyle</code> files.</p>
             </div>
           </div>
-        </div>
-      </section>
-
-      <!-- PIDGIN / PATOIS / SLANG SECTION -->
-      <section class="section" id="dialect">
-        <div class="container">
-          <div class="section-heading">
-            <p class="eyebrow">Dialect &amp; Vocabulary</p>
-            <h2>Built for artists whose lyrics aren't standard English</h2>
-            <p>Pidgin, patois, slang and code-switching — kept as you wrote them.</p>
-          </div>
-
-          <div class="lyrid-grid lyrid-grid--3">
-            <div class="lyrid-card">
-              <div class="lyrid-card-ico">1️⃣</div>
-              <h3>Paste your lyrics</h3>
-              <p>Type them the way you sing them. Lyrid aligns your typed text sound for sound, so no spelling gets "fixed" on the way in — the words on screen match character for character.</p>
-            </div>
-
-            <div class="lyrid-card">
-              <div class="lyrid-card-ico">2️⃣</div>
-              <h3>Lyrid listens, not guesses</h3>
-              <p>It isolates the vocal, then matches your lyrics to the sound of the singing itself rather than relying solely on transcription. That's why it holds up on accents and dialects that speech-to-text mangles.</p>
-            </div>
-
-            <div class="lyrid-card">
-              <div class="lyrid-card-ico">3️⃣</div>
-              <h3>No lyrics to hand?</h3>
-              <p>Transcribe gives you a rough draft to edit, biased with a Nigerian Pidgin word list you can extend with your own vocabulary. Correct a chorus once and Lyrid offers to fix every other place it's sung.</p>
-            </div>
-          </div>
-
-          <p style="text-align: center; color: var(--muted); margin-top: 1.75rem; font-size: 0.95rem;">
-            Optional: add a plain-English caption under each line for listeners who don't speak the dialect — your lyrics stay exactly as written, with the meaning shown underneath.
-          </p>
         </div>
       </section>
 
@@ -331,12 +433,12 @@
             <ul class="lyrid-price-list">
               <li>Lifetime licence for Lyrid 1.x</li>
               <li>Activate on up to 2 of your Macs</li>
-              <li>All 34 Looks, clips and export formats</li>
+              <li>All 42 Looks, clips and export formats</li>
               <li>Free updates &amp; fixes within 1.x</li>
-              <li>No watermark</li>
+              <li>Clean, watermark-free exports</li>
             </ul>
 
-            <a class="lyrid-btn-primary" href="https://lyrid.lemonsqueezy.com" target="_blank" rel="noopener noreferrer" style="width: 100%;">Get Lyrid</a>
+            <a class="lyrid-btn-primary" href="https://lyrid.lemonsqueezy.com" data-lyrid-link="checkout" target="_blank" rel="noopener noreferrer" style="width: 100%;">Get Lyrid — £24</a>
 
             <div class="lyrid-req-text">
               Requires an Apple Silicon Mac (M1 or newer) · macOS 14 Sonoma or later
@@ -356,37 +458,32 @@
           <div class="faq-list">
             <details class="trust-card faq-item">
               <summary>What is Lyrid?</summary>
-              <p>Lyrid is a Mac app that automatically turns a song into a synced, animated lyric video ready for social platforms.</p>
+              <p>Lyrid is a Mac app that automatically aligns your lyrics to the performance and builds polished lyric videos for social platforms.</p>
+            </details>
+
+            <details class="trust-card faq-item">
+              <summary>Can I use my own spelling and custom lyrics?</summary>
+              <p>Yes. Lyrid uses the exact lyrics you provide, preserving your wording, spelling, and phrasing. You can also generate an editable transcription draft when you do not already have the lyrics.</p>
             </details>
 
             <details class="trust-card faq-item">
               <summary>Do I need video-editing experience?</summary>
-              <p>No. Lyrid syncs the lyrics for you and gives you 34 ready-made Looks — you pick a style and export.</p>
+              <p>No. Lyrid aligns the lyrics for you and gives you 42 ready-made Looks — you pick a style and export.</p>
             </details>
 
             <details class="trust-card faq-item">
               <summary>Which platforms can I make videos for?</summary>
-              <p>TikTok, Instagram Reels, YouTube, YouTube Shorts and Spotify Canvas, with vertical, square, widescreen and portrait sizes.</p>
-            </details>
-
-            <details class="trust-card faq-item">
-              <summary>Can I use my own lyrics, including Pidgin or slang?</summary>
-              <p>Yes. Type or paste your exact lyrics to preserve Pidgin, patois, slang and custom spelling sound-for-sound, or let Lyrid transcribe a draft from the audio.</p>
-            </details>
-
-            <details class="trust-card faq-item">
-              <summary>Is there a watermark?</summary>
-              <p>You can try Lyrid free. Trial exports carry a small watermark: a corner badge that moves between all four corners as the video plays, plus a faint diagonal mark inside the frame — so cropping won't remove it. Activating your licence removes both, and licensed exports are completely clean.</p>
+              <p>Export videos sized for TikTok, Instagram Reels, YouTube Shorts, YouTube and Spotify Canvas, with vertical, square, widescreen and portrait sizes.</p>
             </details>
 
             <details class="trust-card faq-item">
               <summary>Does my music get uploaded anywhere?</summary>
-              <p>No. Your audio is processed on your Mac and never leaves your computer. Lyrid may use the network for first-run engine/model setup, licence checks, optional anonymous diagnostics, and optional text helpers if you connect them.</p>
+              <p>Audio processing stays on your Mac. Your music files are never uploaded for audio processing. Network access is only used for setup, licensing and optional services described in our Privacy Policy.</p>
             </details>
 
             <details class="trust-card faq-item">
               <summary>Does Lyrid work offline?</summary>
-              <p>Yes, after setup. Lyrid may need the network for first-run engine/model setup and licence activation, but the lyric-video workflow runs locally and your audio is not uploaded.</p>
+              <p>Audio processing stays on your Mac. Network access is only used for setup, licensing and optional services described in our Privacy Policy.</p>
             </details>
 
             <details class="trust-card faq-item">
@@ -410,7 +507,9 @@
           <a href="index.html">Home</a>
           <a href="btltech.html">BTLTECH</a>
           <a href="choko-king.html">Choko King</a>
+          <a href="rhyme-and-bass.html">Rhyme &amp; Bass</a>
           <a href="lyrid.html" aria-current="page">Lyrid</a>
+          <a href="recovera.html">Recovera</a>
           <a href="lyrid-help.html">Help</a>
           <a href="press-kit.html">Press Kit</a>
           <a href="contact.html">Contact</a>

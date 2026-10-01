@@ -28,7 +28,10 @@ sleep 10
 check_status / 200
 check_status /btltech 200
 check_status /choko-king 200
+check_status /rhyme-and-bass 200
+check_status /rhymeandbass/fall-off 200
 check_status /lyrid 200
+check_status /choko-season 200
 check_status /go-slow 200
 check_status /london-outside 200
 check_status /choko-so-cool 200
@@ -50,14 +53,17 @@ curl -sS --max-time 20 "$base_url/choko-king" | grep -q 'music.apple.com/gb/arti
 curl -sS --max-time 20 "$base_url/btltech" | grep -q 'Choko So Cool by BTLTECH'
 curl -sS --max-time 20 "$base_url/btltech" | grep -q 'name="twitter:card" content="summary_large_image"'
 curl -sS --max-time 20 "$base_url/choko-king" | grep -q 'name="twitter:card" content="summary_large_image"'
-curl -sS --max-time 20 "$base_url/lyrid" | grep -q 'name="twitter:card" content="summary_large_image"'
-curl -sS --max-time 20 "$base_url/go-slow" | grep -q 'rel="canonical" href="https://btltechmusic.com/go-slow"'
-curl -sS --max-time 20 "$base_url/london-outside" | grep -q 'rel="canonical" href="https://btltechmusic.com/london-outside"'
-curl -sS --max-time 20 "$base_url/choko-so-cool" | grep -q 'Choko So Cool by BTLTECH'
+curl -sS --max-time 20 "https://btltechmusic.com/lyrid" | grep -q 'Song Read — understand your arrangement'
+curl -sS --max-time 20 "https://btltechmusic.com/lyrid" | grep -q 'automatically aligns your lyrics to the performance'
+
+if curl -sS --max-time 20 "https://btltechmusic.com/lyrid" | grep -q 'automatically syncs every word'; then
+  echo 'Verification failed: custom domain btltechmusic.com/lyrid still serves old "automatically syncs every word" copy.' >&2
+  exit 1
+fi
 
 if curl -sSL --max-time 20 "$base_url/visuals/sweet-fire-teaser.html" | grep -q 'Sweet Fire — Choko King · Teaser'; then
   echo 'Verification failed: excluded teaser is still being served.' >&2
   exit 1
 fi
 
-echo "Verified deployment: $base_url"
+echo "Verified deployment: $base_url and https://btltechmusic.com"

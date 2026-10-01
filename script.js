@@ -6,19 +6,38 @@ const NO_CONTEST_APPLE_MUSIC_URL = "https://music.apple.com/gb/album/no-contest-
 const NO_CONTEST_YOUTUBE_URL = "https://youtu.be/nUQRqOZtjlY";
 const NO_CONTEST_VIDEO_URL = "https://youtu.be/nUQRqOZtjlY";
 
+// BEGINNER EDITING: NO PHOTOCOPY (BTLTECH) single URLs
+const NO_PHOTOCOPY_SPOTIFY_URL = "https://open.spotify.com/track/4Hk2sNFqQ9eC0lMp9BepfM?si=ed04909f8ee64f1d";
+const NO_PHOTOCOPY_APPLE_MUSIC_URL = "https://music.apple.com/gb/album/no-photocopy-single/6811532041";
+
 // BEGINNER EDITING: YAHOO MAN (BTLTECH) official lyric video link.
 const YAHOO_MAN_YOUTUBE_URL = "https://youtu.be/51YVrOcPmWg";
 const YAHOO_MAN_VIDEO_URL = "https://youtu.be/51YVrOcPmWg";
 
+// BEGINNER EDITING: CHOKO SEASON THE EP (Choko King) platform and presave links.
+const CHOKO_SEASON_PRESAVE_URL = "https://distrokid.com/hyperfollow/chokoking/choko-season";
+const CHOKO_SEASON_SPOTIFY_URL = "#";
+const CHOKO_SEASON_APPLE_MUSIC_URL = "https://music.apple.com/gb/album/choko-season-ep/6801895512";
+const CHOKO_SEASON_YOUTUBE_URL = "#";
+const CHOKO_SEASON_VIDEO_URL = "#";
+
 // BEGINNER EDITING: WHINE FOR ME (Choko King) platform and video link placeholders.
 // Paste official URLs below when available.
 const WHINE_FOR_ME_SPOTIFY_URL = "https://open.spotify.com/track/79tnurjUBvOsSjgR1rxqT3?si=2ae8dae0680540d0";
-const WHINE_FOR_ME_APPLE_MUSIC_URL = "#"; // Paste Apple Music track URL here
+const WHINE_FOR_ME_APPLE_MUSIC_URL = "https://music.apple.com/gb/album/whine-for-me/6794765481?i=6794765482";
 const WHINE_FOR_ME_YOUTUBE_URL = "#"; // Paste YouTube track URL here
 const WHINE_FOR_ME_PRESAVE_URL = "https://distrokid.com/hyperfollow/chokoking/whine-for-me";
 const WHINE_FOR_ME_VIDEO_URL = "#"; // Paste official music video URL here when available
 const WHINE_FOR_ME_AMAZON_URL = "#"; // Optional Amazon Music URL
 const WHINE_FOR_ME_DEEZER_URL = "#"; // Optional Deezer URL
+
+// BEGINNER EDITING: Boomplay release & artist URLs
+const BOOMPLAY_WHINE_FOR_ME_URL = "https://www.boomplay.com/songs/EQtFa9hDqNGy-Gt6E4Ge1F2j";
+const BOOMPLAY_CHOKO_SEASON_URL = "https://www.boomplay.com/albums/EQX3pNctL9nMDccbKTgiY3zm";
+const BOOMPLAY_RHYME_BASS_RELEASE_URL = "https://www.boomplay.com/albums/EQXyHidSMO1VdYMq89fHqbkF";
+const BOOMPLAY_CHOKO_KING_ARTIST_URL = "https://www.boomplay.com/artists/EQKhbYPrn8O5aenUtbH0cqJE";
+const BOOMPLAY_RHYME_BASS_ARTIST_URL = "https://www.boomplay.com/artists/EQLGhr-TXwGzkkTU7H6yJhS5";
+const MONEY_DONT_MAKE_THE_MAN_SPOTIFY_URL = "https://open.spotify.com/track/2TDXaLvlTQkfSLcmHWZbcj?si=0408f46d9f2f4641";
 
 // BEGINNER EDITING: Update all main artist, streaming, social, and email links here.
 // Replace the placeholder # values with the official URLs once you have them.
@@ -28,6 +47,7 @@ const artistLinks = {
   youtube: "https://music.youtube.com/playlist?list=OLAK5uy_kJXtfOoMAxX80GfaoMhZ0Cfa2SBmH3-vw&si=I6yOj1-X7KrukSjw",
   youtubeChannel: "https://www.youtube.com/@btltechmusic",
   audiomack: "https://audiomack.com/btl-15",
+  boomplay: BOOMPLAY_CHOKO_KING_ARTIST_URL,
   tiktok: "https://www.tiktok.com/@btltechmusic",
   instagram: "https://www.instagram.com/btltechmusic/",
   facebook: "#",
@@ -42,6 +62,7 @@ const chokoLinks = {
   spotify: "https://open.spotify.com/artist/1EkMryKT07cI2PF9mLBn7D?si=aEi_xN-GReyDzvZTZRJb6g",
   appleMusic: "https://music.apple.com/gb/artist/choko-king/6781295368",
   youtube: "https://music.youtube.com/@chokokingofficial?si=UU_0N6BhL9FIZt85",
+  boomplay: BOOMPLAY_CHOKO_KING_ARTIST_URL,
   audiomack: "#",
   instagram: "https://www.instagram.com/chokokingofficial/",
   tiktok: "https://www.tiktok.com/@chokokingofficial",
@@ -49,8 +70,50 @@ const chokoLinks = {
   email: "mailto:chokoking@btltechmusic.com?subject=Choko%20King%20Enquiry"
 };
 
+// BEGINNER EDITING: RHYME & BASS is a separate BTLTECH Music collective. Put their links here.
+const rhymeAndBassLinks = {
+  tiktok: "https://www.tiktok.com/@rhymeandbass",
+  instagram: "https://www.instagram.com/rhyme.bass",
+  youtube: "https://www.youtube.com/@rhymeandbass",
+  spotify: "https://open.spotify.com/track/39eO1RRqaKdT5VuISqRMwc?si=47b048c6bdae413d",
+  appleMusic: "https://music.apple.com/gb/album/fall-off/6804373683?i=6804373685",
+  boomplay: BOOMPLAY_RHYME_BASS_ARTIST_URL,
+  moneyDontMakeTheManSpotify: MONEY_DONT_MAKE_THE_MAN_SPOTIFY_URL,
+  fallOffSpotify: "https://open.spotify.com/track/39eO1RRqaKdT5VuISqRMwc?si=47b048c6bdae413d"
+};
+
 // BEGINNER EDITING: Choko King's own songs. Falls back to his hub links above when a song link is #.
 const chokoReleaseCatalog = {
+  chokoSeason: {
+    title: "CHOKO SEASON (THE EP)",
+    artist: "Choko King",
+    type: "EP",
+    releaseDate: "2026-09-04",
+    clean: true,
+    genre: "Afro-Dancehall / Afrobeats",
+    description: "Six tracks, one night. Choko King's debut EP runs from sundown to losing your head — London streets, Lagos heat, and everything in between. Out now.",
+    links: {
+      preSave: CHOKO_SEASON_PRESAVE_URL,
+      spotify: CHOKO_SEASON_SPOTIFY_URL,
+      appleMusic: CHOKO_SEASON_APPLE_MUSIC_URL,
+      youtube: CHOKO_SEASON_YOUTUBE_URL,
+      boomplay: BOOMPLAY_CHOKO_SEASON_URL,
+      video: CHOKO_SEASON_VIDEO_URL
+    }
+  },
+  paycheckChokoStory: {
+    title: "Paycheck to Paycheck (Choko story)",
+    artist: "Choko King",
+    type: "Single",
+    releaseDate: "2026-10-01",
+    clean: true,
+    genre: "Afro-Dancehall / Afrobeats",
+    description: "A story of struggle, hustle, and ambition. Out now.",
+    links: {
+      preSave: "https://distrokid.com/hyperfollow/chokoking/paycheck-to-paycheck-choko-story",
+      spotify: "https://distrokid.com/hyperfollow/chokoking/paycheck-to-paycheck-choko-story"
+    }
+  },
   whineForMe: {
     title: "WHINE FOR ME",
     artist: "Choko King",
@@ -63,6 +126,7 @@ const chokoReleaseCatalog = {
       spotify: WHINE_FOR_ME_SPOTIFY_URL,
       appleMusic: WHINE_FOR_ME_APPLE_MUSIC_URL,
       youtube: WHINE_FOR_ME_YOUTUBE_URL,
+      boomplay: BOOMPLAY_WHINE_FOR_ME_URL,
       preSave: WHINE_FOR_ME_PRESAVE_URL,
       video: WHINE_FOR_ME_VIDEO_URL,
       amazonMusic: WHINE_FOR_ME_AMAZON_URL,
@@ -72,7 +136,7 @@ const chokoReleaseCatalog = {
   londonOutside: {
     links: {
       spotify: "https://open.spotify.com/track/1YUM6BY5ODMEirvxSytLkW?si=9760aabda4e146cc",
-      appleMusic: "#",
+      appleMusic: "https://music.apple.com/gb/album/london-outside-single/6788608520",
       youtube: "https://youtu.be/rtXeSaP4s7M?si=1Wl7MjVjHfbcbeHc",
       audiomack: "#"
     }
@@ -80,7 +144,7 @@ const chokoReleaseCatalog = {
   goSlow: {
     links: {
       spotify: "https://open.spotify.com/track/7slUe9GJ5owbOXHFTzoZrm?si=f94041c12b714507",
-      appleMusic: "#",
+      appleMusic: "https://music.apple.com/gb/album/go-slow/6787240110?i=6787240111",
       youtube: "https://youtu.be/eCHfEXeaUhM?si=1DEWNkPPmIl-8_AA",
       audiomack: "#"
     }
@@ -92,6 +156,18 @@ const chokoReleaseCatalog = {
       youtube: "https://youtu.be/laj3oyrXPR8",
       audiomack: "#"
     }
+  },
+  shayo: {
+    links: {
+      youtube: "https://youtu.be/q8pDbfkanwQ",
+      video: "https://youtu.be/q8pDbfkanwQ"
+    }
+  },
+  inevitable: {
+    links: {
+      youtube: "https://youtu.be/6fB8iX6S00E",
+      video: "https://youtu.be/6fB8iX6S00E"
+    }
   }
 };
 
@@ -99,15 +175,57 @@ const chokoReleaseCatalog = {
 // product is published. Product setup: one-time payment, £29 base price, £24
 // launch sale price, license keys enabled.
 const lyridLinks = {
-  checkout: "#",
+  checkout: "https://lyrid.lemonsqueezy.com",
   macAppStore: "#",
   download: "#",
   web: "lyrid.html"
 };
 
+const recoveraLinks = {
+  checkout: "https://lyrid.lemonsqueezy.com",
+  macAppStore: "#",
+  download: "#",
+  web: "recovera.html"
+};
+
 // BEGINNER EDITING: Add release-specific links here so each song can go to its own page.
 // If a release link is #, that platform button stays hidden until its URL is added.
 const releaseCatalog = {
+  paycheckBtltech: {
+    title: "Paycheck to Paycheck",
+    artist: "BTLTECH",
+    type: "Single",
+    releaseDate: "2026-10-01",
+    clean: true,
+    links: {
+      preSave: "https://distrokid.com/hyperfollow/btltech/paycheck-to-paycheck",
+      spotify: "https://distrokid.com/hyperfollow/btltech/paycheck-to-paycheck"
+    }
+  },
+  archiveArchive: {
+    title: "Archive! Archive!",
+    artist: "RHYME & BASS",
+    type: "Single",
+    releaseDate: "2026-10-01",
+    clean: true,
+    links: {
+      preSave: "https://distrokid.com/hyperfollow/rhymeandbass/archive-archive",
+      spotify: "https://distrokid.com/hyperfollow/rhymeandbass/archive-archive"
+    }
+  },
+  noPhotocopy: {
+    title: "No Photocopy",
+    artist: "BTLTECH",
+    type: "Single",
+    releaseDate: "2026-09-18",
+    clean: true,
+    links: {
+      spotify: NO_PHOTOCOPY_SPOTIFY_URL,
+      appleMusic: NO_PHOTOCOPY_APPLE_MUSIC_URL,
+      youtube: "#",
+      audiomack: "#"
+    }
+  },
   noContest: {
     title: "NO CONTEST",
     artist: "BTLTECH",
@@ -129,6 +247,7 @@ const releaseCatalog = {
     type: "Single",
     clean: true,
     links: {
+      appleMusic: "https://music.apple.com/gb/album/yahoo-man-single/1881311707",
       youtube: YAHOO_MAN_YOUTUBE_URL,
       video: YAHOO_MAN_VIDEO_URL
     }
@@ -269,7 +388,9 @@ document.addEventListener("DOMContentLoaded", () => {
   applyArtistLinks();
   applyChokoLinks();
   applyChokoReleaseLinks();
+  applyRhymeAndBassLinks();
   applyLyridLinks();
+  applyRecoveraLinks();
   applyReleaseLinks();
   applyVideoLinks();
   applyUpcomingReleaseLinks();
@@ -308,6 +429,26 @@ function applyLyridLinks() {
   document.querySelectorAll("[data-lyrid-link]").forEach((link) => {
     const key = link.getAttribute("data-lyrid-link");
     const href = lyridLinks[key] || "#";
+    const hideIfEmpty = link.dataset.hideIfEmpty === "true";
+
+    setLinkState(link, href, { hideIfEmpty });
+  });
+}
+
+function applyRecoveraLinks() {
+  document.querySelectorAll("[data-recovera-link]").forEach((link) => {
+    const key = link.getAttribute("data-recovera-link");
+    const href = recoveraLinks[key] || "#";
+    const hideIfEmpty = link.dataset.hideIfEmpty === "true";
+
+    setLinkState(link, href, { hideIfEmpty });
+  });
+}
+
+function applyRhymeAndBassLinks() {
+  document.querySelectorAll("[data-rhyme-link]").forEach((link) => {
+    const key = link.getAttribute("data-rhyme-link");
+    const href = rhymeAndBassLinks[key] || "#";
     const hideIfEmpty = link.dataset.hideIfEmpty === "true";
 
     setLinkState(link, href, { hideIfEmpty });

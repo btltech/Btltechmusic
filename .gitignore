@@ -5,3 +5,5 @@ Thumbs.db
 .wrangler/
 dist/
 node_modules/
+deploy_tmp*/
+deploy-log.log

@@ -1,14 +1,42 @@
 <svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="512" height="512" rx="116" fill="url(#g)"/>
-  <rect x="4" y="4" width="504" height="504" rx="112" fill="none" stroke="#F5B642" stroke-opacity="0.3" stroke-width="3"/>
-  <g transform="translate(150,150)">
-    <rect x="0" y="70" width="26" height="72" rx="13" fill="#F5B642"/>
-    <rect x="46" y="24" width="26" height="164" rx="13" fill="#FFF1D6"/>
-    <rect x="92" y="-6" width="26" height="224" rx="13" fill="#F5B642"/>
-    <rect x="138" y="40" width="26" height="132" rx="13" fill="#E85D2A"/>
-    <rect x="184" y="78" width="26" height="56" rx="13" fill="#FFF1D6"/>
+  <!-- Deep Blue / Indigo macOS App Icon Background -->
+  <rect width="512" height="512" rx="116" fill="url(#bg)"/>
+  <rect x="6" y="6" width="500" height="500" rx="110" fill="none" stroke="#00D2FF" stroke-opacity="0.3" stroke-width="3"/>
+
+  <!-- Glowing Cyan & Electric Blue Audio Waveform Bars -->
+  <g transform="translate(150,140)">
+    <rect x="0" y="70" width="26" height="85" rx="13" fill="url(#b1)"/>
+    <rect x="46" y="24" width="26" height="175" rx="13" fill="url(#b2)"/>
+    <rect x="92" y="-10" width="26" height="240" rx="13" fill="url(#b3)"/>
+    <rect x="138" y="35" width="26" height="150" rx="13" fill="url(#b2)"/>
+    <rect x="184" y="78" width="26" height="70" rx="13" fill="url(#b1)"/>
   </g>
-  <text x="256" y="430" fill="#FFF1D6" font-family="Inter, system-ui, sans-serif" font-size="72" font-weight="800" text-anchor="middle">L</text>
-  <defs><linearGradient id="g" x1="40" y1="40" x2="472" y2="472" gradientUnits="userSpaceOnUse">
-    <stop stop-color="#2A1A10"/><stop offset="0.5" stop-color="#130D09"/><stop offset="1" stop-color="#33160C"/></linearGradient></defs>
+
+  <!-- Sleek White/Cyan Stylized 'L' Glyph -->
+  <text x="256" y="440" fill="#E2F1FF" font-family="Inter, -apple-system, system-ui, sans-serif" font-size="76" font-weight="900" text-anchor="middle" letter-spacing="-2">L</text>
+
+  <!-- Gradients -->
+  <defs>
+    <linearGradient id="bg" x1="40" y1="40" x2="472" y2="472" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0F172A"/>
+      <stop offset="0.5" stop-color="#0B132B"/>
+      <stop offset="1" stop-color="#1E293B"/>
+    </linearGradient>
+
+    <linearGradient id="b1" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#00F5D4"/>
+      <stop offset="1" stop-color="#00B4D8"/>
+    </linearGradient>
+
+    <linearGradient id="b2" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#38BDF8"/>
+      <stop offset="1" stop-color="#1D4ED8"/>
+    </linearGradient>
+
+    <linearGradient id="b3" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#60A5FA"/>
+      <stop offset="0.5" stop-color="#00D2FF"/>
+      <stop offset="1" stop-color="#3B82F6"/>
+    </linearGradient>
+  </defs>
 </svg>
