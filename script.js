@@ -14,6 +14,9 @@ const NO_PHOTOCOPY_APPLE_MUSIC_URL = "https://music.apple.com/gb/album/no-photoc
 const YAHOO_MAN_YOUTUBE_URL = "https://youtu.be/51YVrOcPmWg";
 const YAHOO_MAN_VIDEO_URL = "https://youtu.be/51YVrOcPmWg";
 
+// BEGINNER EDITING: PAYCHECK TO PAYCHECK (Choko King) official TikTok lyric video link.
+const PAYCHECK_CHOKO_STORY_TIKTOK_URL = "https://www.tiktok.com/@chokokingofficial/video/7693678810226642198";
+
 // BEGINNER EDITING: CHOKO SEASON THE EP (Choko King) platform and presave links.
 const CHOKO_SEASON_PRESAVE_URL = "https://distrokid.com/hyperfollow/chokoking/choko-season";
 const CHOKO_SEASON_SPOTIFY_URL = "#";
@@ -111,7 +114,9 @@ const chokoReleaseCatalog = {
     description: "A story of struggle, hustle, and ambition. Out now.",
     links: {
       preSave: "https://distrokid.com/hyperfollow/chokoking/paycheck-to-paycheck-choko-story",
-      spotify: "https://distrokid.com/hyperfollow/chokoking/paycheck-to-paycheck-choko-story"
+      spotify: "https://distrokid.com/hyperfollow/chokoking/paycheck-to-paycheck-choko-story",
+      tiktok: PAYCHECK_CHOKO_STORY_TIKTOK_URL,
+      video: PAYCHECK_CHOKO_STORY_TIKTOK_URL
     }
   },
   whineForMe: {
@@ -677,7 +682,7 @@ function showMediaConsentBanner() {
   banner.innerHTML = `
     <div>
       <p class="cookie-banner__title">Media and cookies</p>
-      <p>BTLTECH Music uses essential browser storage. YouTube and Spotify players only load if you accept optional media embeds.</p>
+      <p>BTLTECH Music uses essential browser storage. YouTube, Spotify, and TikTok players only load if you accept optional media embeds.</p>
     </div>
     <div class="cookie-banner__actions">
       <button class="button button--primary" type="button" data-accept-media>Accept Media</button>
@@ -825,6 +830,10 @@ function getMediaProviderLabel(src, embedKey = "") {
     return "YouTube";
   }
 
+  if (src.includes("tiktok.com")) {
+    return "TikTok";
+  }
+
   return "Third-party";
 }
 
@@ -839,6 +848,10 @@ function getExternalMediaUrl(src = "") {
 
     if (parsedUrl.hostname.includes("spotify.com")) {
       return src.replace("/embed/", "/");
+    }
+
+    if (parsedUrl.hostname.includes("tiktok.com")) {
+      return src;
     }
   } catch {
     return "";
