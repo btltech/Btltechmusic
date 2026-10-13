@@ -181,6 +181,18 @@ const chokoReleaseCatalog = {
       youtube: "https://youtu.be/6fB8iX6S00E",
       video: "https://youtu.be/6fB8iX6S00E"
     }
+  },
+  ohBigMan: {
+    title: "Oh Big Man",
+    artist: "Choko King",
+    type: "Single",
+    releaseDate: "2026-10-30",
+    clean: true,
+    genre: "Afro-Dancehall / Afrobeats",
+    description: "The next single from Choko King. Pre-save now on all platforms.",
+    links: {
+      preSave: "https://distrokid.com/hyperfollow/chokoking/oh-big-man"
+    }
   }
 };
 
