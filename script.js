@@ -14,8 +14,15 @@ const NO_PHOTOCOPY_APPLE_MUSIC_URL = "https://music.apple.com/gb/album/no-photoc
 const YAHOO_MAN_YOUTUBE_URL = "https://youtu.be/51YVrOcPmWg";
 const YAHOO_MAN_VIDEO_URL = "https://youtu.be/51YVrOcPmWg";
 
-// BEGINNER EDITING: PAYCHECK TO PAYCHECK (Choko King) official TikTok lyric video link.
+// BEGINNER EDITING: PAYCHECK TO PAYCHECK (BTLTECH) single URLs
+const PAYCHECK_BTLTECH_APPLE_MUSIC_URL = "https://music.apple.com/gb/album/paycheck-to-paycheck/6816091284?i=6816091285";
+
+// BEGINNER EDITING: PAYCHECK TO PAYCHECK (Choko King) single URLs
+const PAYCHECK_CHOKO_STORY_APPLE_MUSIC_URL = "https://music.apple.com/gb/album/paycheck-to-paycheck-choko-story/6816078478?i=6816078479";
 const PAYCHECK_CHOKO_STORY_TIKTOK_URL = "https://www.tiktok.com/@chokokingofficial/video/7693678810226642198";
+
+// BEGINNER EDITING: ARCHIVE! ARCHIVE! (RHYME & BASS) single URLs
+const ARCHIVE_ARCHIVE_APPLE_MUSIC_URL = "https://music.apple.com/gb/album/archive-archive-single/6816141556";
 
 // BEGINNER EDITING: CHOKO SEASON THE EP (Choko King) platform and presave links.
 const CHOKO_SEASON_PRESAVE_URL = "https://distrokid.com/hyperfollow/chokoking/choko-season";
@@ -115,6 +122,7 @@ const chokoReleaseCatalog = {
     links: {
       preSave: "https://distrokid.com/hyperfollow/chokoking/paycheck-to-paycheck-choko-story",
       spotify: "https://distrokid.com/hyperfollow/chokoking/paycheck-to-paycheck-choko-story",
+      appleMusic: PAYCHECK_CHOKO_STORY_APPLE_MUSIC_URL,
       tiktok: PAYCHECK_CHOKO_STORY_TIKTOK_URL,
       video: PAYCHECK_CHOKO_STORY_TIKTOK_URL
     }
@@ -204,7 +212,8 @@ const releaseCatalog = {
     clean: true,
     links: {
       preSave: "https://distrokid.com/hyperfollow/btltech/paycheck-to-paycheck",
-      spotify: "https://distrokid.com/hyperfollow/btltech/paycheck-to-paycheck"
+      spotify: "https://distrokid.com/hyperfollow/btltech/paycheck-to-paycheck",
+      appleMusic: PAYCHECK_BTLTECH_APPLE_MUSIC_URL
     }
   },
   archiveArchive: {
@@ -215,7 +224,8 @@ const releaseCatalog = {
     clean: true,
     links: {
       preSave: "https://distrokid.com/hyperfollow/rhymeandbass/archive-archive",
-      spotify: "https://distrokid.com/hyperfollow/rhymeandbass/archive-archive"
+      spotify: "https://distrokid.com/hyperfollow/rhymeandbass/archive-archive",
+      appleMusic: ARCHIVE_ARCHIVE_APPLE_MUSIC_URL
     }
   },
   noPhotocopy: {
@@ -268,7 +278,7 @@ const releaseCatalog = {
   justDance: {
     links: {
       spotify: "https://open.spotify.com/track/7frTkXYbeWoJ6OB0EAPx4z",
-      appleMusic: "#",
+      appleMusic: "https://music.apple.com/gb/album/just-dance/1893236878?i=1893236955",
       youtube: "#",
       audiomack: "https://audiomack.com/btl-15/album/through-it-all"
     }
@@ -300,7 +310,7 @@ const releaseCatalog = {
   naYou: {
     links: {
       spotify: "https://open.spotify.com/track/0EWiL1ctDiuDn7tlrY0SUB",
-      appleMusic: "#",
+      appleMusic: "https://music.apple.com/gb/album/na-you-through-it-all/1893236878?i=1893236962",
       youtube: "#",
       audiomack: "https://audiomack.com/btl-15/album/through-it-all"
     }
@@ -308,7 +318,7 @@ const releaseCatalog = {
   youLied: {
     links: {
       spotify: "https://open.spotify.com/track/0FFCOxvNDvT1IvNhHIcKW4",
-      appleMusic: "#",
+      appleMusic: "https://music.apple.com/gb/album/you-lied/1893236878?i=1893236958",
       youtube: "#",
       audiomack: "https://audiomack.com/btl-15/album/through-it-all"
     }
