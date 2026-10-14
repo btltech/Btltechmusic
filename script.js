@@ -70,6 +70,7 @@ const artistLinks = {
 // Used anywhere with a data-choko-link attribute. Leave as # until you have the real URL.
 const chokoLinks = {
   spotify: "https://open.spotify.com/artist/1EkMryKT07cI2PF9mLBn7D?si=aEi_xN-GReyDzvZTZRJb6g",
+  playlist: "https://open.spotify.com/playlist/1NIt863O7zDwTjhHf4pBdu?si=rcsSNwqCR6W5_tdVWp6kKg",
   appleMusic: "https://music.apple.com/gb/artist/choko-king/6781295368",
   youtube: "https://music.youtube.com/@chokokingofficial?si=UU_0N6BhL9FIZt85",
   boomplay: BOOMPLAY_CHOKO_KING_ARTIST_URL,
