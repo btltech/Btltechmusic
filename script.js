@@ -93,6 +93,18 @@ const rhymeAndBassLinks = {
   fallOffSpotify: "https://open.spotify.com/track/39eO1RRqaKdT5VuISqRMwc?si=47b048c6bdae413d"
 };
 
+// BEGINNER EDITING: VAELMIRAH is an Afrobeats & Afro-R&B artist. Put her links here.
+const vaelmirahLinks = {
+  spotify: "https://open.spotify.com/artist/5MorZioXTSJaKSIiFyYL4l?si=GqnpM8X0Q3Kmx3M15ZmqUg",
+  youtube: "https://www.youtube.com/@vaelmirah",
+  youtubeMusic: "https://www.youtube.com/playlist?list=OLAK5uy_my_gPAr4pPa7JXIDq_8vmrnhQH5V0gsbg",
+  appleMusic: "#",
+  moonLowSpotify: "https://open.spotify.com/track/1cMRMLsOEO65hCtUTYBDlz",
+  moonLowAlbum: "https://open.spotify.com/album/74TAAJqEVEhyCPPx1Ek4MB",
+  moonLowYouTube: "https://www.youtube.com/playlist?list=OLAK5uy_my_gPAr4pPa7JXIDq_8vmrnhQH5V0gsbg",
+  email: "mailto:btl@btltech.co.uk?subject=VAELMIRAH%20Enquiry"
+};
+
 // BEGINNER EDITING: Choko King's own songs. Falls back to his hub links above when a song link is #.
 const chokoReleaseCatalog = {
   chokoSeason: {
@@ -417,6 +429,7 @@ document.addEventListener("DOMContentLoaded", () => {
   applyChokoLinks();
   applyChokoReleaseLinks();
   applyRhymeAndBassLinks();
+  applyVaelmirahLinks();
   applyLyridLinks();
   applyRecoveraLinks();
   applyReleaseLinks();
@@ -477,6 +490,16 @@ function applyRhymeAndBassLinks() {
   document.querySelectorAll("[data-rhyme-link]").forEach((link) => {
     const key = link.getAttribute("data-rhyme-link");
     const href = rhymeAndBassLinks[key] || "#";
+    const hideIfEmpty = link.dataset.hideIfEmpty === "true";
+
+    setLinkState(link, href, { hideIfEmpty });
+  });
+}
+
+function applyVaelmirahLinks() {
+  document.querySelectorAll("[data-vaelmirah-link]").forEach((link) => {
+    const key = link.getAttribute("data-vaelmirah-link");
+    const href = vaelmirahLinks[key] || "#";
     const hideIfEmpty = link.dataset.hideIfEmpty === "true";
 
     setLinkState(link, href, { hideIfEmpty });
