@@ -102,6 +102,7 @@ const vaelmirahLinks = {
   moonLowSpotify: "https://open.spotify.com/track/1cMRMLsOEO65hCtUTYBDlz",
   moonLowAlbum: "https://open.spotify.com/album/74TAAJqEVEhyCPPx1Ek4MB",
   moonLowYouTube: "https://www.youtube.com/playlist?list=OLAK5uy_my_gPAr4pPa7JXIDq_8vmrnhQH5V0gsbg",
+  moonLowVisualizer: "https://youtu.be/OzehUe2BvEU",
   email: "mailto:btl@btltech.co.uk?subject=VAELMIRAH%20Enquiry"
 };
 
