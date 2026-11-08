@@ -15,18 +15,36 @@ const YAHOO_MAN_YOUTUBE_URL = "https://youtu.be/51YVrOcPmWg";
 const YAHOO_MAN_VIDEO_URL = "https://youtu.be/51YVrOcPmWg";
 
 // BEGINNER EDITING: PAYCHECK TO PAYCHECK (BTLTECH) single URLs
+const PAYCHECK_BTLTECH_SPOTIFY_URL = "https://open.spotify.com/track/33muFzj02yNvwLF4fg0hf8";
 const PAYCHECK_BTLTECH_APPLE_MUSIC_URL = "https://music.apple.com/gb/album/paycheck-to-paycheck/6816091284?i=6816091285";
 
+// BEGINNER EDITING: WEAK KNEES (BTLTECH) single URLs
+const WEAK_KNEES_APPLE_MUSIC_URL = "https://music.apple.com/gb/album/weak-knees/6816105167?i=6816105170";
+const WEAK_KNEES_YOUTUBE_URL = "https://youtu.be/ycGI08iciYE";
+const WEAK_KNEES_VIDEO_URL = "https://youtu.be/ycGI08iciYE";
+
 // BEGINNER EDITING: PAYCHECK TO PAYCHECK (Choko King) single URLs
+const PAYCHECK_CHOKO_STORY_SPOTIFY_URL = "https://open.spotify.com/track/1izfpkguTt9D2DXeEIOYgA";
 const PAYCHECK_CHOKO_STORY_APPLE_MUSIC_URL = "https://music.apple.com/gb/album/paycheck-to-paycheck-choko-story/6816078478?i=6816078479";
 const PAYCHECK_CHOKO_STORY_TIKTOK_URL = "https://www.tiktok.com/@chokokingofficial/video/7693678810226642198";
+const PAYCHECK_CHOKO_STORY_YOUTUBE_URL = "https://youtu.be/51eqHduOqPw";
 
-// BEGINNER EDITING: ARCHIVE! ARCHIVE! (RHYME & BASS) single URLs
+// BEGINNER EDITING: OH BIG MAN (Choko King) single URLs
+const OH_BIG_MAN_SPOTIFY_URL = "https://open.spotify.com/track/0MPcBRhu2ZEvfhb0DcTY9g";
+const OH_BIG_MAN_APPLE_MUSIC_URL = "https://music.apple.com/gb/album/oh-big-man/6816105258?i=6816105259";
+const OH_BIG_MAN_YOUTUBE_URL = "https://youtu.be/ds_5blx7lkE";
+
+// BEGINNER EDITING: ARCHIVE! ARCHIVE! & TICK TOCK (RHYME & BASS) single URLs
+const ARCHIVE_ARCHIVE_SPOTIFY_URL = "https://open.spotify.com/track/6FP8f2usbQQhxEnf4AVHKL";
 const ARCHIVE_ARCHIVE_APPLE_MUSIC_URL = "https://music.apple.com/gb/album/archive-archive-single/6816141556";
+const ARCHIVE_ARCHIVE_YOUTUBE_URL = "https://youtu.be/0YW7seIZRh0";
+const TICK_TOCK_SPOTIFY_URL = "https://open.spotify.com/track/690KKQ3AFTDbaXIa5bR0gR";
+const TICK_TOCK_APPLE_MUSIC_URL = "https://music.apple.com/gb/album/tick-tock-hickory-dickory-dock/6824300031?i=6824300032";
+const TICK_TOCK_YOUTUBE_URL = "https://youtu.be/n2GxnyqoCzY";
 
 // BEGINNER EDITING: CHOKO SEASON THE EP (Choko King) platform and presave links.
 const CHOKO_SEASON_PRESAVE_URL = "https://distrokid.com/hyperfollow/chokoking/choko-season";
-const CHOKO_SEASON_SPOTIFY_URL = "#";
+const CHOKO_SEASON_SPOTIFY_URL = "https://open.spotify.com/album/6L8ipGRG5ktSxEgHtt43SX";
 const CHOKO_SEASON_APPLE_MUSIC_URL = "https://music.apple.com/gb/album/choko-season-ep/6801895512";
 const CHOKO_SEASON_YOUTUBE_URL = "#";
 const CHOKO_SEASON_VIDEO_URL = "#";
@@ -35,9 +53,9 @@ const CHOKO_SEASON_VIDEO_URL = "#";
 // Paste official URLs below when available.
 const WHINE_FOR_ME_SPOTIFY_URL = "https://open.spotify.com/track/79tnurjUBvOsSjgR1rxqT3?si=2ae8dae0680540d0";
 const WHINE_FOR_ME_APPLE_MUSIC_URL = "https://music.apple.com/gb/album/whine-for-me/6794765481?i=6794765482";
-const WHINE_FOR_ME_YOUTUBE_URL = "#"; // Paste YouTube track URL here
+const WHINE_FOR_ME_YOUTUBE_URL = "https://youtu.be/1FObPRHElrc";
 const WHINE_FOR_ME_PRESAVE_URL = "https://distrokid.com/hyperfollow/chokoking/whine-for-me";
-const WHINE_FOR_ME_VIDEO_URL = "#"; // Paste official music video URL here when available
+const WHINE_FOR_ME_VIDEO_URL = "https://youtu.be/1FObPRHElrc";
 const WHINE_FOR_ME_AMAZON_URL = "#"; // Optional Amazon Music URL
 const WHINE_FOR_ME_DEEZER_URL = "#"; // Optional Deezer URL
 
@@ -72,7 +90,7 @@ const chokoLinks = {
   spotify: "https://open.spotify.com/artist/1EkMryKT07cI2PF9mLBn7D?si=aEi_xN-GReyDzvZTZRJb6g",
   playlist: "https://open.spotify.com/playlist/1NIt863O7zDwTjhHf4pBdu?si=rcsSNwqCR6W5_tdVWp6kKg",
   appleMusic: "https://music.apple.com/gb/artist/choko-king/6781295368",
-  youtube: "https://music.youtube.com/@chokokingofficial?si=UU_0N6BhL9FIZt85",
+  youtube: "https://www.youtube.com/@chokokingofficial",
   boomplay: BOOMPLAY_CHOKO_KING_ARTIST_URL,
   audiomack: "#",
   instagram: "https://www.instagram.com/chokokingofficial/",
@@ -85,12 +103,21 @@ const chokoLinks = {
 const rhymeAndBassLinks = {
   tiktok: "https://www.tiktok.com/@rhymeandbass",
   instagram: "https://www.instagram.com/rhyme.bass",
-  youtube: "https://www.youtube.com/@rhymeandbass",
-  spotify: "https://open.spotify.com/track/39eO1RRqaKdT5VuISqRMwc?si=47b048c6bdae413d",
-  appleMusic: "https://music.apple.com/gb/album/fall-off/6804373683?i=6804373685",
+  youtube: "https://www.youtube.com/@rhymebass",
+  spotify: "https://open.spotify.com/artist/68aCO62Bztcy878fN6U1ZH",
+  appleMusic: "https://music.apple.com/gb/artist/rhyme-and-bass/6804373684",
   boomplay: BOOMPLAY_RHYME_BASS_ARTIST_URL,
+  tickTockSpotify: TICK_TOCK_SPOTIFY_URL,
+  tickTockAppleMusic: TICK_TOCK_APPLE_MUSIC_URL,
+  tickTockYouTube: TICK_TOCK_YOUTUBE_URL,
+  archiveSpotify: ARCHIVE_ARCHIVE_SPOTIFY_URL,
+  archiveAppleMusic: ARCHIVE_ARCHIVE_APPLE_MUSIC_URL,
+  archiveYouTube: ARCHIVE_ARCHIVE_YOUTUBE_URL,
   moneyDontMakeTheManSpotify: MONEY_DONT_MAKE_THE_MAN_SPOTIFY_URL,
-  fallOffSpotify: "https://open.spotify.com/track/39eO1RRqaKdT5VuISqRMwc?si=47b048c6bdae413d"
+  moneyDontMakeTheManAppleMusic: "https://music.apple.com/gb/album/money-dont-make-the-man/6805989966?i=6805989967",
+  moneyDontMakeTheManYouTube: "https://youtu.be/-KLmYo779JQ",
+  fallOffSpotify: "https://open.spotify.com/track/39eO1RRqaKdT5VuISqRMwc?si=47b048c6bdae413d",
+  fallOffYouTube: "https://youtu.be/xFez7w6O8ng"
 };
 
 // BEGINNER EDITING: VAELMIRAH is an Afrobeats & Afro-R&B artist. Put her links here.
@@ -98,11 +125,19 @@ const vaelmirahLinks = {
   spotify: "https://open.spotify.com/artist/5MorZioXTSJaKSIiFyYL4l?si=GqnpM8X0Q3Kmx3M15ZmqUg",
   youtube: "https://www.youtube.com/@vaelmirah",
   youtubeMusic: "https://www.youtube.com/playlist?list=OLAK5uy_my_gPAr4pPa7JXIDq_8vmrnhQH5V0gsbg",
-  appleMusic: "#",
+  appleMusic: "https://music.apple.com/gb/artist/vaelmirah/6821623895",
+  tiktok: "https://www.tiktok.com/@vaelmirah",
+  instagram: "https://www.instagram.com/vaelmirah",
   moonLowSpotify: "https://open.spotify.com/track/1cMRMLsOEO65hCtUTYBDlz",
   moonLowAlbum: "https://open.spotify.com/album/74TAAJqEVEhyCPPx1Ek4MB",
+  moonLowAppleMusic: "https://music.apple.com/gb/album/moon-low/6821799118?i=6821799119",
   moonLowYouTube: "https://www.youtube.com/playlist?list=OLAK5uy_my_gPAr4pPa7JXIDq_8vmrnhQH5V0gsbg",
-  moonLowVisualizer: "https://youtu.be/OzehUe2BvEU",
+  moonLowVisualizer: "https://youtu.be/aubGy-naywg",
+  softLifeSpotify: "https://open.spotify.com/track/2fAL2y8H266iOl7OUHzJjJ",
+  softLifeAlbum: "https://open.spotify.com/album/1Bbcb3Pz9e9ITvfQHkstvQ",
+  softLifeAppleMusic: "https://music.apple.com/gb/album/soft-life/6824278365?i=6824278366",
+  softLifeVisualizer: "https://youtu.be/7ClUhKgDAPI",
+  softLifeVideo2: "https://youtu.be/yokj5NsiwyI",
   email: "mailto:btl@btltech.co.uk?subject=VAELMIRAH%20Enquiry"
 };
 
@@ -129,16 +164,17 @@ const chokoReleaseCatalog = {
     title: "Paycheck to Paycheck (Choko story)",
     artist: "Choko King",
     type: "Single",
-    releaseDate: "2026-10-01",
+    releaseDate: "2026-10-09",
     clean: true,
     genre: "Afro-Dancehall / Afrobeats",
     description: "A story of struggle, hustle, and ambition. Out now.",
     links: {
       preSave: "https://distrokid.com/hyperfollow/chokoking/paycheck-to-paycheck-choko-story",
-      spotify: "https://distrokid.com/hyperfollow/chokoking/paycheck-to-paycheck-choko-story",
+      spotify: PAYCHECK_CHOKO_STORY_SPOTIFY_URL,
       appleMusic: PAYCHECK_CHOKO_STORY_APPLE_MUSIC_URL,
+      youtube: PAYCHECK_CHOKO_STORY_YOUTUBE_URL,
       tiktok: PAYCHECK_CHOKO_STORY_TIKTOK_URL,
-      video: PAYCHECK_CHOKO_STORY_TIKTOK_URL
+      video: PAYCHECK_CHOKO_STORY_YOUTUBE_URL
     }
   },
   whineForMe: {
@@ -186,12 +222,14 @@ const chokoReleaseCatalog = {
   },
   shayo: {
     links: {
+      spotify: "https://open.spotify.com/track/0R18eRj2gT7X4fxADqss3H",
       youtube: "https://youtu.be/q8pDbfkanwQ",
       video: "https://youtu.be/q8pDbfkanwQ"
     }
   },
   inevitable: {
     links: {
+      spotify: "https://open.spotify.com/track/1oE0ZOpB3WKopOubppp9gU",
       youtube: "https://youtu.be/6fB8iX6S00E",
       video: "https://youtu.be/6fB8iX6S00E"
     }
@@ -202,10 +240,14 @@ const chokoReleaseCatalog = {
     type: "Single",
     releaseDate: "2026-10-30",
     clean: true,
-    genre: "Afro-Dancehall / Afrobeats",
-    description: "The next single from Choko King. Pre-save now on all platforms.",
+    genre: "Afro-Dancehall / Reggae",
+    description: "From the streets of Lagos to the heart of London, Oh Big Man is a powerful Afro-dancehall anthem about everyday survival, resilience, and hope. Out now.",
     links: {
-      preSave: "https://distrokid.com/hyperfollow/chokoking/oh-big-man"
+      preSave: "https://distrokid.com/hyperfollow/chokoking/oh-big-man",
+      spotify: OH_BIG_MAN_SPOTIFY_URL,
+      appleMusic: OH_BIG_MAN_APPLE_MUSIC_URL,
+      youtube: OH_BIG_MAN_YOUTUBE_URL,
+      video: OH_BIG_MAN_YOUTUBE_URL
     }
   }
 };
@@ -230,28 +272,56 @@ const recoveraLinks = {
 // BEGINNER EDITING: Add release-specific links here so each song can go to its own page.
 // If a release link is #, that platform button stays hidden until its URL is added.
 const releaseCatalog = {
+  weakKnees: {
+    title: "Weak Knees",
+    artist: "BTLTECH",
+    type: "Single",
+    releaseDate: "2026-10-30",
+    clean: true,
+    links: {
+      spotify: artistLinks.spotify,
+      appleMusic: WEAK_KNEES_APPLE_MUSIC_URL,
+      youtube: WEAK_KNEES_YOUTUBE_URL,
+      video: WEAK_KNEES_VIDEO_URL
+    }
+  },
   paycheckBtltech: {
     title: "Paycheck to Paycheck",
     artist: "BTLTECH",
     type: "Single",
-    releaseDate: "2026-10-01",
+    releaseDate: "2026-10-02",
     clean: true,
     links: {
       preSave: "https://distrokid.com/hyperfollow/btltech/paycheck-to-paycheck",
-      spotify: "https://distrokid.com/hyperfollow/btltech/paycheck-to-paycheck",
+      spotify: PAYCHECK_BTLTECH_SPOTIFY_URL,
       appleMusic: PAYCHECK_BTLTECH_APPLE_MUSIC_URL
+    }
+  },
+  tickTock: {
+    title: "TICK TOCK (Hickory Dickory Dock)",
+    artist: "RHYME & BASS",
+    type: "Single",
+    releaseDate: "2026-10-23",
+    clean: true,
+    links: {
+      spotify: TICK_TOCK_SPOTIFY_URL,
+      appleMusic: TICK_TOCK_APPLE_MUSIC_URL,
+      youtube: TICK_TOCK_YOUTUBE_URL,
+      video: TICK_TOCK_YOUTUBE_URL
     }
   },
   archiveArchive: {
     title: "Archive! Archive!",
     artist: "RHYME & BASS",
     type: "Single",
-    releaseDate: "2026-10-01",
+    releaseDate: "2026-10-02",
     clean: true,
     links: {
       preSave: "https://distrokid.com/hyperfollow/rhymeandbass/archive-archive",
-      spotify: "https://distrokid.com/hyperfollow/rhymeandbass/archive-archive",
-      appleMusic: ARCHIVE_ARCHIVE_APPLE_MUSIC_URL
+      spotify: ARCHIVE_ARCHIVE_SPOTIFY_URL,
+      appleMusic: ARCHIVE_ARCHIVE_APPLE_MUSIC_URL,
+      youtube: ARCHIVE_ARCHIVE_YOUTUBE_URL,
+      video: ARCHIVE_ARCHIVE_YOUTUBE_URL
     }
   },
   noPhotocopy: {
