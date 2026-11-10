@@ -517,6 +517,7 @@ document.addEventListener("DOMContentLoaded", () => {
   applyCommunityActions();
   applyEmbedLinks();
   setupDirectMediaEmbeds();
+  syncLiveRadioEmbed();
   setupMailingListForm();
   setupMobileMenu();
   clearLegacyServiceWorker();
@@ -1226,6 +1227,37 @@ function setupMobileMenu() {
       closeMenu();
     }
   });
+}
+
+function syncLiveRadioEmbed() {
+  const radioIframes = document.querySelectorAll("iframe[data-live-radio-embed]");
+  if (!radioIframes.length) {
+    return;
+  }
+
+  fetch("/api/live-radio", { credentials: "same-origin" })
+    .then((response) => (response.ok ? response.json() : null))
+    .then((data) => {
+      if (!data || !data.videoId || !data.embedUrl) {
+        return;
+      }
+
+      radioIframes.forEach((iframe) => {
+        const currentSrc = iframe.getAttribute("src") || "";
+        const currentCookieSrc = iframe.getAttribute("data-cookie-src") || "";
+
+        if (currentCookieSrc !== data.embedUrl) {
+          iframe.setAttribute("data-cookie-src", data.embedUrl);
+        }
+
+        if (currentSrc && currentSrc !== data.embedUrl) {
+          iframe.setAttribute("src", data.embedUrl);
+        }
+      });
+    })
+    .catch(() => {
+      /* Keep initial static embed URL if edge endpoint is unreachable */
+    });
 }
 
 function clearLegacyServiceWorker() {
