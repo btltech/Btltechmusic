@@ -10,9 +10,15 @@ const NO_CONTEST_VIDEO_URL = "https://youtu.be/nUQRqOZtjlY";
 const NO_PHOTOCOPY_SPOTIFY_URL = "https://open.spotify.com/track/4Hk2sNFqQ9eC0lMp9BepfM?si=ed04909f8ee64f1d";
 const NO_PHOTOCOPY_APPLE_MUSIC_URL = "https://music.apple.com/gb/album/no-photocopy-single/6811532041";
 
+// BEGINNER EDITING: BTLTECH MUSIC RADIO 24/7 LIVE STREAM URLs
+const BTLTECH_LIVE_RADIO_YOUTUBE_URL = "https://www.youtube.com/watch?v=9ycXtdvhGio";
+const BTLTECH_LIVE_RADIO_EMBED_URL = "https://www.youtube.com/embed/9ycXtdvhGio";
+const BTLTECH_LIVE_RADIO_CHANNEL_URL = "https://www.youtube.com/@btltechmusic/live";
+const BTLTECH_LIVE_RADIO_SPOTIFY_PLAYLIST_URL = "https://open.spotify.com/playlist/5B6jlPnEuTe8rjQVYdfIrI";
+
 // BEGINNER EDITING: YAHOO MAN (BTLTECH) official lyric video link.
-const YAHOO_MAN_YOUTUBE_URL = "https://youtu.be/51YVrOcPmWg";
-const YAHOO_MAN_VIDEO_URL = "https://youtu.be/51YVrOcPmWg";
+const YAHOO_MAN_YOUTUBE_URL = "https://youtu.be/l3EmqF0xKyI";
+const YAHOO_MAN_VIDEO_URL = "https://youtu.be/l3EmqF0xKyI";
 
 // BEGINNER EDITING: PAYCHECK TO PAYCHECK (BTLTECH) single URLs
 const PAYCHECK_BTLTECH_SPOTIFY_URL = "https://open.spotify.com/track/33muFzj02yNvwLF4fg0hf8";
