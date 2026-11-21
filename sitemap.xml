@@ -67,10 +67,16 @@
       <video:player_loc>https://www.youtube.com/embed/60o0VEmNQrI</video:player_loc>
     </video:video>
     <video:video>
-      <video:thumbnail_loc>https://i.ytimg.com/vi/nUQRqOZtjlY/hqdefault.jpg</video:thumbnail_loc>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/I52ok-xV3uI/hqdefault.jpg</video:thumbnail_loc>
       <video:title>BTLTECH - NO CONTEST (Official Lyric Video)</video:title>
       <video:description>Warm Afro-soul and lovers rock single NO CONTEST by BTLTECH.</video:description>
-      <video:player_loc>https://www.youtube.com/embed/nUQRqOZtjlY</video:player_loc>
+      <video:player_loc>https://www.youtube.com/embed/I52ok-xV3uI</video:player_loc>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/kG5A3jXnYYI/hqdefault.jpg</video:thumbnail_loc>
+      <video:title>BTLTECH - Ah You Me Choose (Official Lyric Video)</video:title>
+      <video:description>Official lyric video for Ah You Me Choose by BTLTECH from the album Through It All.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/kG5A3jXnYYI</video:player_loc>
     </video:video>
   </url>
   <url>

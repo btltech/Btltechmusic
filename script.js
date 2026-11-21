@@ -3,8 +3,8 @@
 const NO_CONTEST_PRESAVE_URL = "https://distrokid.com/hyperfollow/btltech/no-contest";
 const NO_CONTEST_SPOTIFY_URL = "https://open.spotify.com/track/7oFIeqYunFkhfFA6MoprzX?si=aa298a9fda574a01";
 const NO_CONTEST_APPLE_MUSIC_URL = "https://music.apple.com/gb/album/no-contest-single/6794939181";
-const NO_CONTEST_YOUTUBE_URL = "https://youtu.be/nUQRqOZtjlY";
-const NO_CONTEST_VIDEO_URL = "https://youtu.be/nUQRqOZtjlY";
+const NO_CONTEST_YOUTUBE_URL = "https://youtu.be/I52ok-xV3uI";
+const NO_CONTEST_VIDEO_URL = "https://youtu.be/I52ok-xV3uI";
 
 // BEGINNER EDITING: NO PHOTOCOPY (BTLTECH) single URLs
 const NO_PHOTOCOPY_SPOTIFY_URL = "https://open.spotify.com/track/4Hk2sNFqQ9eC0lMp9BepfM?si=ed04909f8ee64f1d";
@@ -55,7 +55,7 @@ const CHOKO_IS_UNO_TOPIC_YOUTUBE_URL = "https://youtu.be/1gr3ASZTYgM";
 const GOD_MADE_DI_MAN_SPOTIFY_URL = "https://open.spotify.com/track/2ViCjpX6QkQLNuLhCR8Qlb";
 const GOD_MADE_DI_MAN_APPLE_MUSIC_URL = "https://music.apple.com/gb/album/god-made-di-man-money-mad-single/6829282776?i=6829282837";
 const GOD_MADE_DI_MAN_YOUTUBE_URL = "https://youtu.be/LGgCS8-5JJI";
-const GOD_MADE_DI_MAN_TOPIC_YOUTUBE_URL = "https://youtu.be/Dk0Vb3xYuBg";
+const GOD_MADE_DI_MAN_TOPIC_YOUTUBE_URL = "https://youtu.be/ZdpAHpolbRw";
 
 // BEGINNER EDITING: OH BIG MAN (Choko King) single URLs
 const OH_BIG_MAN_SPOTIFY_URL = "https://open.spotify.com/track/0MPcBRhu2ZEvfhb0DcTY9g";
@@ -177,12 +177,12 @@ const vaelmirahLinks = {
   moonLowAlbum: "https://open.spotify.com/album/74TAAJqEVEhyCPPx1Ek4MB",
   moonLowAppleMusic: "https://music.apple.com/gb/album/moon-low/6821799118?i=6821799119",
   moonLowYouTube: "https://youtu.be/l0R-gGNeEq8",
-  moonLowVisualizer: "https://youtu.be/aubGy-naywg",
+  moonLowVisualizer: "https://youtu.be/IQdPeJIpuL0",
   softLifeSpotify: "https://open.spotify.com/track/2fAL2y8H266iOl7OUHzJjJ",
   softLifeAlbum: "https://open.spotify.com/album/1Bbcb3Pz9e9ITvfQHkstvQ",
   softLifeAppleMusic: "https://music.apple.com/gb/album/soft-life/6824278365?i=6824278366",
   softLifeYouTube: "https://youtu.be/yokj5NsiwyI",
-  softLifeVisualizer: "https://youtu.be/7ClUhKgDAPI",
+  softLifeVisualizer: "https://youtu.be/YKT_8aO46N8",
   softLifeVideo2: "https://youtu.be/yokj5NsiwyI",
   email: "mailto:btl@btltech.co.uk?subject=VAELMIRAH%20Enquiry"
 };
@@ -546,7 +546,8 @@ const releaseCatalog = {
     links: {
       spotify: "https://open.spotify.com/track/5ZZnHjuwgSZhDgFMxdeuA1",
       appleMusic: "https://music.apple.com/gb/album/ah-you-me-choose/1893236878?i=1893236961",
-      youtube: "#",
+      youtube: "https://youtu.be/kG5A3jXnYYI",
+      video: "https://youtu.be/kG5A3jXnYYI",
       audiomack: "https://audiomack.com/btl-15/album/through-it-all"
     }
   },
@@ -648,7 +649,8 @@ const radioStations = {
       { id: "60o0VEmNQrI", title: "I'm a Hustler (Music Video)", artist: "BTLTECH" },
       { id: "1FObPRHElrc", title: "Wine For Me", artist: "Choko King" },
       { id: "3dEqbb7a1XY", title: "Jo (Visualiser)", artist: "VAELMIRAH" },
-      { id: "nUQRqOZtjlY", title: "NO CONTEST", artist: "BTLTECH" },
+      { id: "I52ok-xV3uI", title: "NO CONTEST", artist: "BTLTECH" },
+      { id: "kG5A3jXnYYI", title: "Ah You Me Choose", artist: "BTLTECH" },
       { id: "DhsBhU3aavU", title: "Inevitable", artist: "Choko King" },
       { id: "0tu7avBvm3Y", title: "Go Slow", artist: "Choko King" },
       { id: "rXq5KBw2tDU", title: "Sweet Fire", artist: "Choko King" },
@@ -700,8 +702,8 @@ const radioStations = {
       { id: "yokj5NsiwyI", title: "Soft Life (Visual Lyric Video)", artist: "VAELMIRAH" },
       { id: "l0R-gGNeEq8", title: "Moon Low (Official Lyric Video)", artist: "VAELMIRAH" },
       { id: "3dEqbb7a1XY", title: "Jo (The Whisper Dance) Visualiser", artist: "VAELMIRAH" },
-      { id: "7ClUhKgDAPI", title: "Soft Life (Kinetic Lyric Video)", artist: "VAELMIRAH" },
-      { id: "aubGy-naywg", title: "Moon Low (Lyrics Visualizer)", artist: "VAELMIRAH" }
+      { id: "YKT_8aO46N8", title: "Soft Life (Official Audio)", artist: "VAELMIRAH" },
+      { id: "IQdPeJIpuL0", title: "Moon Low (Official Audio)", artist: "VAELMIRAH" }
     ]
   },
   rhyme: {
@@ -732,7 +734,8 @@ const radioStations = {
       { id: "ycGI08iciYE", title: "Weak Knees", artist: "BTLTECH" },
       { id: "60o0VEmNQrI", title: "I'm a Hustler (Official Music Video)", artist: "BTLTECH" },
       { id: "WCjIyIowL3M", title: "Shayo (Choko King ft. BTLTECH)", artist: "Choko King ft. BTLTECH" },
-      { id: "nUQRqOZtjlY", title: "NO CONTEST (Official Lyric Video)", artist: "BTLTECH" },
+      { id: "I52ok-xV3uI", title: "NO CONTEST (Official Lyric Video)", artist: "BTLTECH" },
+      { id: "kG5A3jXnYYI", title: "Ah You Me Choose (Official Lyric Video)", artist: "BTLTECH" },
       { id: "oZvIodzUz8E", title: "No Contest (Illustrated Lovers Rock)", artist: "BTLTECH" },
       { id: "Wqxl7dakMu8", title: "I'm A Hustler (Lyric Video)", artist: "BTLTECH" }
     ]
