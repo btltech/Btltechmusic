@@ -36,7 +36,7 @@
     <meta name="twitter:image" content="https://btltechmusic.com/assets/og-image.jpg" />
 
     <link rel="stylesheet" href="styles.css?v=20260623a" />
-    <script defer src="script.js?v=20261121a"></script>
+    <script defer src="script.js?v=20261121b"></script>
 
     <script type="application/ld+json">
       {
@@ -1094,44 +1094,73 @@
       <section class="section section--soft" id="live-radio">
         <div class="container">
           <div class="section-heading">
-            <p class="eyebrow" style="color: #ff4d5e;">🔴 ON AIR · YOUTUBE LIVE STREAM</p>
-            <h2>BTLTECH Music Radio 🔴 LIVE</h2>
+            <p class="eyebrow" style="color: #ff4d5e;">📻 MULTI-STATION RADIO TUNER · 29 SONGS</p>
+            <h2>BTLTECH Music Radio 🔴 Non-Stop</h2>
             <p>
-              Non-stop Afrobeats, Dancehall &amp; Afro-R&amp;B lyric videos from BTLTECH, Choko King, VAELMIRAH, and RHYME &amp; BASS &mdash; reshuffled all the time with full on-screen lyrics.
+              Switch between all 6 BTLTECH Music radio stations below &mdash; play the full 29-song rotation, the 4-hour continuous radio archive, or tune into dedicated stations for Choko King, VAELMIRAH, RHYME &amp; BASS, and BTLTECH.
             </p>
           </div>
 
           <div class="embed-single">
-            <article class="embed-card" data-embed-wrapper style="border: 1px solid rgba(255, 51, 68, 0.45); box-shadow: 0 18px 48px rgba(255, 51, 68, 0.12);">
+            <article class="embed-card" data-embed-wrapper data-radio-tuner data-default-station="all" style="border: 1px solid rgba(255, 51, 68, 0.45); box-shadow: 0 18px 48px rgba(255, 51, 68, 0.12);">
+              <!-- STATION SELECTOR TABS -->
+              <div role="group" aria-label="Choose radio station" style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1rem; padding-bottom: 0.9rem; border-bottom: 1px solid rgba(255, 255, 255, 0.1);">
+                <button type="button" class="platform-pill" data-station-select="all" aria-pressed="true" style="cursor: pointer; font-weight: 700;">📻 All-Label Radio (29 Songs)</button>
+                <button type="button" class="platform-pill" data-station-select="archive" aria-pressed="false" style="cursor: pointer; font-weight: 600;">🔴 4-Hour Full Mix</button>
+                <button type="button" class="platform-pill" data-station-select="choko" aria-pressed="false" style="cursor: pointer; font-weight: 600;">👑 Choko King Radio</button>
+                <button type="button" class="platform-pill" data-station-select="vaelmirah" aria-pressed="false" style="cursor: pointer; font-weight: 600;">🌙 VAELMIRAH Radio</button>
+                <button type="button" class="platform-pill" data-station-select="rhyme" aria-pressed="false" style="cursor: pointer; font-weight: 600;">🔊 RHYME &amp; BASS Radio</button>
+                <button type="button" class="platform-pill" data-station-select="btltech" aria-pressed="false" style="cursor: pointer; font-weight: 600;">🔥 BTLTECH Radio</button>
+              </div>
+
               <div style="display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin-bottom: 0.75rem; flex-wrap: wrap;">
                 <div>
-                  <span class="release-badge" style="font-size: 0.75rem; padding: 0.25rem 0.75rem; background: rgba(255, 51, 68, 0.2); color: #ff4d5e; border-color: rgba(255, 51, 68, 0.45); font-weight: 700;">🔴 LIVE · MUSIC WITHOUT BORDERS</span>
-                  <h3 style="margin: 0.45rem 0 0.15rem; font-size: 1.4rem;">BTLTECH Music Radio 🔴 LIVE | Afrobeats, Dancehall &amp; Afro-R&amp;B</h3>
+                  <span class="release-badge" style="font-size: 0.75rem; padding: 0.25rem 0.75rem; background: rgba(255, 51, 68, 0.2); color: #ff4d5e; border-color: rgba(255, 51, 68, 0.45); font-weight: 700;">🔴 ON-DEMAND RADIO · COUNTS TOWARD YOUTUBE VIEWS</span>
+                  <h3 data-radio-station-title style="margin: 0.45rem 0 0.15rem; font-size: 1.4rem;">📻 All-Label Radio (29 Songs)</h3>
+                  <p data-radio-station-tagline style="margin: 0.15rem 0 0; color: var(--muted); font-size: 0.92rem;">Non-stop rotation of all 29 official lyric &amp; music videos across BTLTECH, Choko King, VAELMIRAH, and RHYME &amp; BASS.</p>
                 </div>
-                <div class="button-group" style="gap: 0.6rem; flex-wrap: wrap;">
-                  <a
+                <div class="button-group" style="gap: 0.5rem; flex-wrap: wrap;">
+                  <button
+                    type="button"
                     class="button button--primary"
-                    href="https://www.youtube.com/@btltechmusic/live"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style="font-size: 0.85rem; padding: 0.55rem 1.1rem;"
-                  >Watch Live on YouTube</a>
+                    data-radio-shuffle
+                    style="font-size: 0.85rem; padding: 0.55rem 1rem; cursor: pointer;"
+                  >🔀 Shuffle Station</button>
+                  <button
+                    type="button"
+                    class="button button--secondary"
+                    data-radio-next
+                    style="font-size: 0.85rem; padding: 0.55rem 1rem; cursor: pointer;"
+                  >⏭ Next Song</button>
                   <a
                     class="button button--secondary"
-                    href="https://open.spotify.com/playlist/5B6jlPnEuTe8rjQVYdfIrI"
+                    href="https://youtu.be/OZsYZtvN2vY"
+                    data-radio-channel-link
                     target="_blank"
                     rel="noopener noreferrer"
-                    style="font-size: 0.85rem; padding: 0.55rem 1.1rem;"
-                  >Spotify Radio Playlist</a>
+                    style="font-size: 0.85rem; padding: 0.55rem 1rem;"
+                  >Open on YouTube</a>
+                  <a
+                    class="button button--ghost"
+                    href="https://open.spotify.com/playlist/5B6jlPnEuTe8rjQVYdfIrI"
+                    data-radio-spotify-link
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style="font-size: 0.85rem; padding: 0.55rem 1rem;"
+                  >Spotify Playlist</a>
                 </div>
               </div>
 
+              <p data-radio-now-playing style="margin: 0 0 0.75rem; font-size: 0.88rem; color: #1ed29a; font-weight: 600;">
+                Now Queued: BTLTECH — You Lie (29 tracks in rotation)
+              </p>
+
               <div class="embed-frame-wrap embed-frame-wrap--video">
                 <iframe
-                  title="BTLTECH Music Radio 🔴 LIVE | Afrobeats, Dancehall & Afro-R&B"
-                  src="https://www.youtube.com/embed/dOWZbmrVY6M"
-                  data-cookie-src="https://www.youtube.com/embed/dOWZbmrVY6M"
-                  data-open-url="https://www.youtube.com/@btltechmusic/live"
+                  title="BTLTECH Music Radio | Non-Stop Afrobeats, Dancehall & Afro-R&B"
+                  src="https://www.youtube.com/embed/OZsYZtvN2vY?playlist=OZsYZtvN2vY,OF_j5tNtuJg,eY0DGXACKXs,n2GxnyqoCzY,LGgCS8-5JJI,kR-ntq17Mf4,ycGI08iciYE,ds_5blx7lkE,yokj5NsiwyI,0YW7seIZRh0,H6dtqlzQxkg,z6tX4uCymFQ,6qTeSW62ILk,-KLmYo779JQ,1zauCJGMuR0,WCjIyIowL3M,syqDiNRboDw,xFez7w6O8ng,l3EmqF0xKyI,51eqHduOqPw,l0R-gGNeEq8,60o0VEmNQrI,1FObPRHElrc,3dEqbb7a1XY,nUQRqOZtjlY,DhsBhU3aavU,0tu7avBvm3Y,rXq5KBw2tDU,toW3FsHkzOU&loop=1&rel=0"
+                  data-cookie-src="https://www.youtube.com/embed/OZsYZtvN2vY?playlist=OZsYZtvN2vY,OF_j5tNtuJg,eY0DGXACKXs,n2GxnyqoCzY,LGgCS8-5JJI,kR-ntq17Mf4,ycGI08iciYE,ds_5blx7lkE,yokj5NsiwyI,0YW7seIZRh0,H6dtqlzQxkg,z6tX4uCymFQ,6qTeSW62ILk,-KLmYo779JQ,1zauCJGMuR0,WCjIyIowL3M,syqDiNRboDw,xFez7w6O8ng,l3EmqF0xKyI,51eqHduOqPw,l0R-gGNeEq8,60o0VEmNQrI,1FObPRHElrc,3dEqbb7a1XY,nUQRqOZtjlY,DhsBhU3aavU,0tu7avBvm3Y,rXq5KBw2tDU,toW3FsHkzOU&loop=1&rel=0"
+                  data-open-url="https://youtu.be/OZsYZtvN2vY"
                   data-live-radio-embed="true"
                   loading="lazy"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -1140,27 +1169,16 @@
                 ></iframe>
               </div>
 
-              <div style="margin-top: 1.25rem; padding-top: 1rem; border-top: 1px solid rgba(255, 255, 255, 0.08); display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 1rem; font-size: 0.88rem;">
-                <div>
-                  <strong style="color: var(--gold); display: block; margin-bottom: 0.2rem;">BTLTECH</strong>
-                  <span style="color: var(--muted);">You Lie, Hold My Waist, Stacking the Cash, Weak Knees, No Contest, Yahoo Man, I'm a Hustler, Candidate, Welcome to Lagos</span>
-                </div>
-                <div>
-                  <strong style="color: var(--gold); display: block; margin-bottom: 0.2rem;">Choko King</strong>
-                  <span style="color: var(--muted);">Choko Is Uno, God Made Di Man (Money Mad), Oh Big Man, Paycheck to Paycheck, Kolo, Shayo, Inevitable, Wine For Me, Go Slow, London Outside</span>
-                </div>
-                <div>
-                  <strong style="color: var(--gold); display: block; margin-bottom: 0.2rem;">VAELMIRAH</strong>
-                  <span style="color: var(--muted);">Her Own World EP: Hold My Waist, Bad for Me, Boss Mode, Jo (The Whisper Dance), Soft Life, Moon Low</span>
-                </div>
-                <div>
-                  <strong style="color: var(--gold); display: block; margin-bottom: 0.2rem;">RHYME &amp; BASS</strong>
-                  <span style="color: var(--muted);">Tick Tock, Archive! Archive!, Money Don't Make the Man, Fall Off</span>
-                </div>
+              <!-- CLICKABLE TRACK QUEUE PILLS -->
+              <div style="margin-top: 1.15rem; padding-top: 1rem; border-top: 1px solid rgba(255, 255, 255, 0.08);">
+                <p style="margin: 0 0 0.6rem; font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--gold); font-weight: 700;">
+                  Station Rotation Queue (Click any song to play now &amp; queue the rest)
+                </p>
+                <div data-radio-track-list style="display: flex; flex-wrap: wrap; gap: 0.45rem; max-height: 170px; overflow-y: auto; padding-right: 0.25rem;"></div>
               </div>
 
               <p class="section-note" style="margin-top: 1rem;">
-                🔴 Streaming live on <a href="https://www.youtube.com/@btltechmusic/live" target="_blank" rel="noopener" style="color: #ff4d5e; font-weight: 600;">@btltechmusic/live</a> · Companion playlist on <a href="https://open.spotify.com/playlist/5B6jlPnEuTe8rjQVYdfIrI" target="_blank" rel="noopener" style="color: #1ed760; font-weight: 600;">Spotify</a> · Visuals powered by <a href="lyrid.html" style="color: var(--accent2); font-weight: 600;">Lyrid for Mac</a>
+                📻 Switch stations anytime · Every play streams directly from YouTube · Companion playlist on <a href="https://open.spotify.com/playlist/5B6jlPnEuTe8rjQVYdfIrI" target="_blank" rel="noopener" style="color: #1ed760; font-weight: 600;">Spotify</a> · Visuals powered by <a href="lyrid.html" style="color: var(--accent2); font-weight: 600;">Lyrid for Mac</a>
               </p>
             </article>
           </div>

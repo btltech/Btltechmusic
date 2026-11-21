@@ -613,6 +613,131 @@ const embedLinks = {
   youtubePlaylist: buildYouTubePlaylistEmbedUrl(artistLinks.youtube)
 };
 
+// BEGINNER EDITING: Multi-Station Radio Tuner configuration.
+// Every play counts directly as a YouTube view and watch time on the official song video.
+const radioStations = {
+  all: {
+    id: "all",
+    name: "📻 All-Label Radio (29 Songs)",
+    tagline: "Non-stop rotation of all 29 official lyric & music videos across BTLTECH, Choko King, VAELMIRAH, and RHYME & BASS.",
+    channelUrl: "https://www.youtube.com/@btltechmusic",
+    spotifyUrl: "https://open.spotify.com/playlist/5B6jlPnEuTe8rjQVYdfIrI",
+    tracks: [
+      { id: "OZsYZtvN2vY", title: "You Lie", artist: "BTLTECH" },
+      { id: "OF_j5tNtuJg", title: "Choko Is Uno", artist: "Choko King" },
+      { id: "eY0DGXACKXs", title: "Hold My Waist", artist: "VAELMIRAH x BTLTECH" },
+      { id: "n2GxnyqoCzY", title: "TICK TOCK (Hickory Dickory Dock)", artist: "RHYME & BASS" },
+      { id: "LGgCS8-5JJI", title: "God Made Di Man (Money Mad)", artist: "Choko King" },
+      { id: "kR-ntq17Mf4", title: "Bad for Me", artist: "VAELMIRAH ft. Choko King" },
+      { id: "ycGI08iciYE", title: "Weak Knees", artist: "BTLTECH" },
+      { id: "ds_5blx7lkE", title: "Oh Big Man", artist: "Choko King" },
+      { id: "yokj5NsiwyI", title: "Soft Life", artist: "VAELMIRAH" },
+      { id: "0YW7seIZRh0", title: "Archive! Archive!", artist: "RHYME & BASS" },
+      { id: "H6dtqlzQxkg", title: "Welcome to Lagos", artist: "BTLTECH" },
+      { id: "z6tX4uCymFQ", title: "Kolo", artist: "Choko King" },
+      { id: "6qTeSW62ILk", title: "Boss Mode", artist: "VAELMIRAH" },
+      { id: "-KLmYo779JQ", title: "Money Don't Make the Man", artist: "RHYME & BASS" },
+      { id: "1zauCJGMuR0", title: "Stacking the Cash", artist: "BTLTECH" },
+      { id: "WCjIyIowL3M", title: "Shayo", artist: "Choko King ft. BTLTECH" },
+      { id: "syqDiNRboDw", title: "Jo (The Whisper Dance)", artist: "VAELMIRAH" },
+      { id: "xFez7w6O8ng", title: "Fall Off", artist: "RHYME & BASS" },
+      { id: "l3EmqF0xKyI", title: "Yahoo Man", artist: "BTLTECH" },
+      { id: "51eqHduOqPw", title: "Paycheck to Paycheck (Choko Story)", artist: "Choko King" },
+      { id: "l0R-gGNeEq8", title: "Moon Low", artist: "VAELMIRAH" },
+      { id: "60o0VEmNQrI", title: "I'm a Hustler (Music Video)", artist: "BTLTECH" },
+      { id: "1FObPRHElrc", title: "Wine For Me", artist: "Choko King" },
+      { id: "3dEqbb7a1XY", title: "Jo (Visualiser)", artist: "VAELMIRAH" },
+      { id: "nUQRqOZtjlY", title: "NO CONTEST", artist: "BTLTECH" },
+      { id: "DhsBhU3aavU", title: "Inevitable", artist: "Choko King" },
+      { id: "0tu7avBvm3Y", title: "Go Slow", artist: "Choko King" },
+      { id: "rXq5KBw2tDU", title: "Sweet Fire", artist: "Choko King" },
+      { id: "toW3FsHkzOU", title: "London Outside", artist: "Choko King" }
+    ]
+  },
+  archive: {
+    id: "archive",
+    name: "🔴 4-Hour Full Radio Mix",
+    tagline: "Continuous 4-hour BTLTECH Music Radio broadcast recording featuring all 29 songs back-to-back.",
+    channelUrl: "https://www.youtube.com/@btltechmusic/live",
+    spotifyUrl: "https://open.spotify.com/playlist/5B6jlPnEuTe8rjQVYdfIrI",
+    tracks: [
+      { id: "dOWZbmrVY6M", title: "BTLTECH Music Radio (4-Hour Continuous Mix)", artist: "All BTLTECH Music Artists" }
+    ]
+  },
+  choko: {
+    id: "choko",
+    name: "👑 Choko King Radio",
+    tagline: "Afro-Dancehall After Dark: non-stop Lagos heat and London nights from Choko King.",
+    channelUrl: "https://www.youtube.com/@chokokingofficial",
+    spotifyUrl: "https://open.spotify.com/playlist/1NIt863O7zDwTjhHf4pBdu",
+    tracks: [
+      { id: "OF_j5tNtuJg", title: "Choko Is Uno", artist: "Choko King" },
+      { id: "LGgCS8-5JJI", title: "God Made Di Man (Money Mad)", artist: "Choko King" },
+      { id: "ds_5blx7lkE", title: "Oh Big Man", artist: "Choko King" },
+      { id: "51eqHduOqPw", title: "Paycheck to Paycheck (Choko Story)", artist: "Choko King" },
+      { id: "z6tX4uCymFQ", title: "Kolo", artist: "Choko King" },
+      { id: "WCjIyIowL3M", title: "Shayo (ft. BTLTECH)", artist: "Choko King" },
+      { id: "1FObPRHElrc", title: "Wine For Me (Whine For Me)", artist: "Choko King" },
+      { id: "0tu7avBvm3Y", title: "Go Slow", artist: "Choko King" },
+      { id: "DhsBhU3aavU", title: "Inevitable", artist: "Choko King" },
+      { id: "rXq5KBw2tDU", title: "Sweet Fire", artist: "Choko King" },
+      { id: "toW3FsHkzOU", title: "London Outside", artist: "Choko King" },
+      { id: "kR-ntq17Mf4", title: "Bad for Me (VAELMIRAH ft. Choko King)", artist: "VAELMIRAH ft. Choko King" }
+    ]
+  },
+  vaelmirah: {
+    id: "vaelmirah",
+    name: "🌙 VAELMIRAH Radio",
+    tagline: "2AM Afro-R&B & Soft Life Vibes: non-stop official lyric videos and visualizers from HER OWN WORLD.",
+    channelUrl: "https://www.youtube.com/@vaelmirah",
+    spotifyUrl: "https://open.spotify.com/album/05G7jiPy5S14aaYHYH2yGX",
+    tracks: [
+      { id: "eY0DGXACKXs", title: "Hold My Waist (x BTLTECH)", artist: "VAELMIRAH x BTLTECH" },
+      { id: "kR-ntq17Mf4", title: "Bad for Me (ft. Choko King)", artist: "VAELMIRAH ft. Choko King" },
+      { id: "syqDiNRboDw", title: "Jo (The Whisper Dance)", artist: "VAELMIRAH" },
+      { id: "6qTeSW62ILk", title: "Boss Mode", artist: "VAELMIRAH" },
+      { id: "yokj5NsiwyI", title: "Soft Life (Visual Lyric Video)", artist: "VAELMIRAH" },
+      { id: "l0R-gGNeEq8", title: "Moon Low (Official Lyric Video)", artist: "VAELMIRAH" },
+      { id: "3dEqbb7a1XY", title: "Jo (The Whisper Dance) Visualiser", artist: "VAELMIRAH" },
+      { id: "7ClUhKgDAPI", title: "Soft Life (Kinetic Lyric Video)", artist: "VAELMIRAH" },
+      { id: "aubGy-naywg", title: "Moon Low (Lyrics Visualizer)", artist: "VAELMIRAH" }
+    ]
+  },
+  rhyme: {
+    id: "rhyme",
+    name: "🔊 RHYME & BASS Radio",
+    tagline: "Old rhymes, new rhythms: childhood melodies flipped into UK Drill, UK Bass, and Afroswing.",
+    channelUrl: "https://www.youtube.com/@rhymebass",
+    spotifyUrl: "https://open.spotify.com/artist/68aCO62Bztcy878fN6U1ZH",
+    tracks: [
+      { id: "n2GxnyqoCzY", title: "TICK TOCK (Hickory Dickory Dock)", artist: "RHYME & BASS" },
+      { id: "0YW7seIZRh0", title: "Archive! Archive!", artist: "RHYME & BASS" },
+      { id: "-KLmYo779JQ", title: "Money Don't Make the Man", artist: "RHYME & BASS" },
+      { id: "xFez7w6O8ng", title: "Fall Off", artist: "RHYME & BASS" }
+    ]
+  },
+  btltech: {
+    id: "btltech",
+    name: "🔥 BTLTECH Radio",
+    tagline: "Afrobeats, Afro-soul, lovers rock, and Lagos-to-London street storytelling from BTLTECH.",
+    channelUrl: "https://www.youtube.com/@btltechmusic",
+    spotifyUrl: "https://open.spotify.com/artist/3t2rkD90BbAtlzi5Tn4jPu",
+    tracks: [
+      { id: "OZsYZtvN2vY", title: "You Lie", artist: "BTLTECH" },
+      { id: "eY0DGXACKXs", title: "Hold My Waist (with VAELMIRAH)", artist: "VAELMIRAH x BTLTECH" },
+      { id: "H6dtqlzQxkg", title: "Welcome to Lagos (New Visual)", artist: "BTLTECH" },
+      { id: "1zauCJGMuR0", title: "Stacking the Cash", artist: "BTLTECH" },
+      { id: "l3EmqF0xKyI", title: "Yahoo Man", artist: "BTLTECH" },
+      { id: "ycGI08iciYE", title: "Weak Knees", artist: "BTLTECH" },
+      { id: "60o0VEmNQrI", title: "I'm a Hustler (Official Music Video)", artist: "BTLTECH" },
+      { id: "WCjIyIowL3M", title: "Shayo (Choko King ft. BTLTECH)", artist: "Choko King ft. BTLTECH" },
+      { id: "nUQRqOZtjlY", title: "NO CONTEST (Official Lyric Video)", artist: "BTLTECH" },
+      { id: "oZvIodzUz8E", title: "No Contest (Illustrated Lovers Rock)", artist: "BTLTECH" },
+      { id: "Wqxl7dakMu8", title: "I'm A Hustler (Lyric Video)", artist: "BTLTECH" }
+    ]
+  }
+};
+
 const mediaConsentStorageKey = "btltech-media-consent";
 const mediaConsentAccepted = "accepted";
 const mediaConsentEssential = "essential";
@@ -634,6 +759,7 @@ document.addEventListener("DOMContentLoaded", () => {
   applyCommunityActions();
   applyEmbedLinks();
   setupDirectMediaEmbeds();
+  setupRadioTuner();
   syncLiveRadioEmbed();
   setupMailingListForm();
   setupMobileMenu();
@@ -1346,6 +1472,142 @@ function setupMobileMenu() {
   });
 }
 
+function buildRadioEmbedUrl(tracks, startIndex = 0, autoplay = false) {
+  if (!tracks || !tracks.length) {
+    return "https://www.youtube.com/embed/dOWZbmrVY6M";
+  }
+
+  const ordered = [
+    ...tracks.slice(startIndex),
+    ...tracks.slice(0, startIndex)
+  ];
+  const firstId = ordered[0].id;
+
+  if (ordered.length === 1) {
+    return `https://www.youtube.com/embed/${firstId}?rel=0${autoplay ? "&autoplay=1" : ""}`;
+  }
+
+  const playlistIds = ordered.map((track) => track.id).join(",");
+  return `https://www.youtube.com/embed/${firstId}?playlist=${playlistIds}&loop=1&rel=0${autoplay ? "&autoplay=1" : ""}`;
+}
+
+function setupRadioTuner() {
+  document.querySelectorAll("[data-radio-tuner]").forEach((tuner) => {
+    const iframe = tuner.querySelector("iframe[data-live-radio-embed]");
+    const titleEl = tuner.querySelector("[data-radio-station-title]");
+    const taglineEl = tuner.querySelector("[data-radio-station-tagline]");
+    const nowPlayingEl = tuner.querySelector("[data-radio-now-playing]");
+    const trackListEl = tuner.querySelector("[data-radio-track-list]");
+    const channelLinkEl = tuner.querySelector("[data-radio-channel-link]");
+    const spotifyLinkEl = tuner.querySelector("[data-radio-spotify-link]");
+    const shuffleBtn = tuner.querySelector("[data-radio-shuffle]");
+    const nextBtn = tuner.querySelector("[data-radio-next]");
+    const stationButtons = tuner.querySelectorAll("[data-station-select]");
+
+    if (!iframe) {
+      return;
+    }
+
+    let currentStationKey = tuner.dataset.defaultStation || "all";
+    let currentTracks = [...(radioStations[currentStationKey]?.tracks || radioStations.all.tracks)];
+    let currentIndex = 0;
+
+    const renderStation = ( options = {} ) => {
+      const { autoplay = false } = options;
+      const station = radioStations[currentStationKey] || radioStations.all;
+      const activeTrack = currentTracks[currentIndex] || currentTracks[0];
+      const embedUrl = buildRadioEmbedUrl(currentTracks, currentIndex, autoplay);
+      const watchUrl = activeTrack ? `https://youtu.be/${activeTrack.id}` : station.channelUrl;
+
+      stationButtons.forEach((btn) => {
+        const isSelected = btn.dataset.stationSelect === currentStationKey;
+        btn.setAttribute("aria-pressed", String(isSelected));
+        btn.style.borderColor = isSelected ? "var(--gold)" : "rgba(255, 255, 255, 0.16)";
+        btn.style.background = isSelected ? "rgba(245, 182, 66, 0.18)" : "rgba(255, 255, 255, 0.04)";
+        btn.style.color = isSelected ? "var(--gold)" : "var(--cream)";
+      });
+
+      if (titleEl) {
+        titleEl.textContent = station.name;
+      }
+
+      if (taglineEl) {
+        taglineEl.textContent = station.tagline;
+      }
+
+      if (nowPlayingEl && activeTrack) {
+        nowPlayingEl.textContent = `Now Queued: ${activeTrack.artist} — ${activeTrack.title} (${currentTracks.length} track${currentTracks.length === 1 ? "" : "s"} in rotation)`;
+      }
+
+      if (channelLinkEl) {
+        channelLinkEl.setAttribute("href", watchUrl);
+      }
+
+      if (spotifyLinkEl && station.spotifyUrl) {
+        spotifyLinkEl.setAttribute("href", station.spotifyUrl);
+      }
+
+      iframe.setAttribute("data-cookie-src", embedUrl);
+      iframe.setAttribute("data-open-url", watchUrl);
+
+      if (autoplay && !hasMediaConsent()) {
+        setMediaConsent(mediaConsentAccepted);
+        document.querySelector("[data-cookie-banner]")?.remove();
+        loadAllMediaFrames();
+      } else if (hasMediaConsent()) {
+        loadMediaFrame(iframe);
+      }
+
+      if (trackListEl) {
+        trackListEl.innerHTML = "";
+        currentTracks.forEach((track, idx) => {
+          const pill = document.createElement("button");
+          pill.type = "button";
+          const isCurrent = idx === currentIndex;
+          pill.style.cssText = `cursor:pointer;font-size:0.8rem;padding:0.38rem 0.75rem;border-radius:999px;border:1px solid ${isCurrent ? "rgba(30, 210, 154, 0.65)" : "rgba(255,255,255,0.12)"};background:${isCurrent ? "rgba(30, 210, 154, 0.18)" : "rgba(255,255,255,0.04)"};color:${isCurrent ? "#1ed29a" : "var(--cream)"};font-weight:${isCurrent ? "700" : "500"};transition:all 0.15s ease;`;
+          pill.textContent = `${isCurrent ? "▶ " : ""}${track.artist} – ${track.title}`;
+          pill.addEventListener("click", () => {
+            currentIndex = idx;
+            renderStation({ autoplay: true });
+          });
+          trackListEl.appendChild(pill);
+        });
+      }
+    };
+
+    stationButtons.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const nextKey = btn.dataset.stationSelect;
+        if (!radioStations[nextKey]) {
+          return;
+        }
+        currentStationKey = nextKey;
+        currentTracks = [...radioStations[currentStationKey].tracks];
+        currentIndex = 0;
+        renderStation({ autoplay: true });
+      });
+    });
+
+    shuffleBtn?.addEventListener("click", () => {
+      if (currentTracks.length > 1) {
+        for (let i = currentTracks.length - 1; i > 0; i -= 1) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [currentTracks[i], currentTracks[j]] = [currentTracks[j], currentTracks[i]];
+        }
+      }
+      currentIndex = 0;
+      renderStation({ autoplay: true });
+    });
+
+    nextBtn?.addEventListener("click", () => {
+      currentIndex = (currentIndex + 1) % currentTracks.length;
+      renderStation({ autoplay: true });
+    });
+
+    renderStation({ autoplay: false });
+  });
+}
+
 function syncLiveRadioEmbed() {
   const radioIframes = document.querySelectorAll("iframe[data-live-radio-embed]");
   if (!radioIframes.length) {
@@ -1355,11 +1617,15 @@ function syncLiveRadioEmbed() {
   fetch("/api/live-radio", { credentials: "same-origin" })
     .then((response) => (response.ok ? response.json() : null))
     .then((data) => {
-      if (!data || !data.videoId || !data.embedUrl) {
+      if (!data || !data.isLiveNow || !data.videoId || data.videoId === "dOWZbmrVY6M") {
         return;
       }
 
       radioIframes.forEach((iframe) => {
+        if (iframe.closest("[data-radio-tuner]")) {
+          return;
+        }
+
         const currentSrc = iframe.getAttribute("src") || "";
         const currentCookieSrc = iframe.getAttribute("data-cookie-src") || "";
 
