@@ -1,13 +1,260 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:video="http://www.google.com/schemas/sitemap-video/1.1"
+>
   <url>
     <loc>https://btltechmusic.com/</loc>
-    <lastmod>2026-09-28</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <priority>1.0</priority>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/dOWZbmrVY6M/hqdefault.jpg</video:thumbnail_loc>
+      <video:title>BTLTECH Music Radio LIVE | 24/7 Afrobeats, Dancehall &amp; Afro-R&amp;B Lyric Videos</video:title>
+      <video:description>Non-stop Afrobeats, Afro-Dancehall, Afro-R&amp;B and UK Bass official lyric videos from BTLTECH, Choko King, VAELMIRAH, and RHYME &amp; BASS.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/dOWZbmrVY6M</video:player_loc>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/OZsYZtvN2vY/hqdefault.jpg</video:thumbnail_loc>
+      <video:title>BTLTECH - You Lie (Official Lyric Video)</video:title>
+      <video:description>Official lyric video for You Lie by BTLTECH, animated in Lyrid for Mac.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/OZsYZtvN2vY</video:player_loc>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://btltechmusic.com/btltech</loc>
+    <lastmod>2026-11-21</lastmod>
+    <priority>0.95</priority>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/OZsYZtvN2vY/hqdefault.jpg</video:thumbnail_loc>
+      <video:title>BTLTECH - You Lie (Official Lyric Video)</video:title>
+      <video:description>Official lyric video for You Lie by BTLTECH from the album Through It All.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/OZsYZtvN2vY</video:player_loc>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/eY0DGXACKXs/hqdefault.jpg</video:thumbnail_loc>
+      <video:title>VAELMIRAH x BTLTECH - Hold My Waist (Official Lyric Video)</video:title>
+      <video:description>Official lyric video for Hold My Waist by VAELMIRAH and BTLTECH from the HER OWN WORLD EP.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/eY0DGXACKXs</video:player_loc>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/H6dtqlzQxkg/hqdefault.jpg</video:thumbnail_loc>
+      <video:title>BTLTECH - Welcome to Lagos (Official Lyric Video)</video:title>
+      <video:description>Official lyric video for Welcome to Lagos by BTLTECH celebrating Lagos street energy.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/H6dtqlzQxkg</video:player_loc>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/1zauCJGMuR0/hqdefault.jpg</video:thumbnail_loc>
+      <video:title>BTLTECH - Stacking the Cash (Official Lyric Video)</video:title>
+      <video:description>Motivational Afrobeats hustle anthem Stacking the Cash by BTLTECH.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/1zauCJGMuR0</video:player_loc>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/l3EmqF0xKyI/hqdefault.jpg</video:thumbnail_loc>
+      <video:title>BTLTECH - Yahoo Man (Official Lyric Video)</video:title>
+      <video:description>Official lyric video for Yahoo Man by BTLTECH created with Lyrid for Mac.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/l3EmqF0xKyI</video:player_loc>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/ycGI08iciYE/hqdefault.jpg</video:thumbnail_loc>
+      <video:title>BTLTECH - Weak Knees (Official Lyric Video)</video:title>
+      <video:description>Romantic Afro-R&amp;B and Afropop love song Weak Knees by BTLTECH set against London after dark.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/ycGI08iciYE</video:player_loc>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/60o0VEmNQrI/hqdefault.jpg</video:thumbnail_loc>
+      <video:title>BTLTECH - I'm a Hustler (Official Music Video)</video:title>
+      <video:description>Official music video for I'm a Hustler by BTLTECH.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/60o0VEmNQrI</video:player_loc>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/nUQRqOZtjlY/hqdefault.jpg</video:thumbnail_loc>
+      <video:title>BTLTECH - NO CONTEST (Official Lyric Video)</video:title>
+      <video:description>Warm Afro-soul and lovers rock single NO CONTEST by BTLTECH.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/nUQRqOZtjlY</video:player_loc>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://btltechmusic.com/choko-king</loc>
+    <lastmod>2026-11-21</lastmod>
+    <priority>0.95</priority>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/OF_j5tNtuJg/hqdefault.jpg</video:thumbnail_loc>
+      <video:title>Choko King - Choko Is Uno (Official Lyric Video)</video:title>
+      <video:description>Official lyric video for Choko Is Uno by virtual Afro-dancehall artist Choko King.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/OF_j5tNtuJg</video:player_loc>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/LGgCS8-5JJI/hqdefault.jpg</video:thumbnail_loc>
+      <video:title>Choko King - God Made Di Man (Money Mad) (Official Lyric Video)</video:title>
+      <video:description>Conscious Afro-dancehall single God Made Di Man (Money Mad) by Choko King.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/LGgCS8-5JJI</video:player_loc>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/z6tX4uCymFQ/hqdefault.jpg</video:thumbnail_loc>
+      <video:title>Choko King - Kolo (Official Lyric Video)</video:title>
+      <video:description>Official lyric video for Kolo from Choko King's debut EP CHOKO SEASON.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/z6tX4uCymFQ</video:player_loc>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/WCjIyIowL3M/hqdefault.jpg</video:thumbnail_loc>
+      <video:title>Choko King ft. BTLTECH - Shayo (Official Lyric Video)</video:title>
+      <video:description>Official lyric video for Shayo by Choko King featuring BTLTECH.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/WCjIyIowL3M</video:player_loc>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/DhsBhU3aavU/hqdefault.jpg</video:thumbnail_loc>
+      <video:title>Choko King - Inevitable (Official Lyric Video)</video:title>
+      <video:description>Official lyric video for Inevitable from the CHOKO SEASON EP by Choko King.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/DhsBhU3aavU</video:player_loc>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/rXq5KBw2tDU/hqdefault.jpg</video:thumbnail_loc>
+      <video:title>Choko King - Sweet Fire (Official Lyric Video)</video:title>
+      <video:description>Official lyric video for Choko King's debut Afro-dancehall single Sweet Fire.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/rXq5KBw2tDU</video:player_loc>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/0tu7avBvm3Y/hqdefault.jpg</video:thumbnail_loc>
+      <video:title>Choko King - Go Slow (Official Lyric Video)</video:title>
+      <video:description>Official lyric video for Go Slow by Choko King.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/0tu7avBvm3Y</video:player_loc>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/ds_5blx7lkE/hqdefault.jpg</video:thumbnail_loc>
+      <video:title>Choko King - Oh Big Man (Official Lyric Video)</video:title>
+      <video:description>Official lyric video for Oh Big Man by Choko King — Lagos to London survival and hope.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/ds_5blx7lkE</video:player_loc>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/51eqHduOqPw/hqdefault.jpg</video:thumbnail_loc>
+      <video:title>Choko King - Paycheck to Paycheck (Choko Story) (Official Lyric Video)</video:title>
+      <video:description>Kinetic bank-ledger lyric video for Paycheck to Paycheck (Choko Story) by Choko King.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/51eqHduOqPw</video:player_loc>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/1FObPRHElrc/hqdefault.jpg</video:thumbnail_loc>
+      <video:title>Choko King - Wine For Me (Whine For Me) (Official Lyric Video)</video:title>
+      <video:description>Official lyric video for Wine For Me by Choko King.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/1FObPRHElrc</video:player_loc>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://btltechmusic.com/vaelmirah</loc>
+    <lastmod>2026-11-21</lastmod>
+    <priority>0.95</priority>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/eY0DGXACKXs/hqdefault.jpg</video:thumbnail_loc>
+      <video:title>VAELMIRAH x BTLTECH - Hold My Waist (Official Lyric Video)</video:title>
+      <video:description>Official lyric video for Hold My Waist by VAELMIRAH and BTLTECH from the HER OWN WORLD EP.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/eY0DGXACKXs</video:player_loc>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/kR-ntq17Mf4/hqdefault.jpg</video:thumbnail_loc>
+      <video:title>VAELMIRAH ft. Choko King - Bad for Me (Official 4K Lyric Video)</video:title>
+      <video:description>Official 4K lyric video for Bad for Me by VAELMIRAH featuring Choko King from HER OWN WORLD.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/kR-ntq17Mf4</video:player_loc>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/syqDiNRboDw/hqdefault.jpg</video:thumbnail_loc>
+      <video:title>VAELMIRAH - Jo (The Whisper Dance) (Official Lyric Video)</video:title>
+      <video:description>Official lyric video for Jo (The Whisper Dance) by VAELMIRAH.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/syqDiNRboDw</video:player_loc>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/3dEqbb7a1XY/hqdefault.jpg</video:thumbnail_loc>
+      <video:title>VAELMIRAH - Jo (The Whisper Dance) Visualiser</video:title>
+      <video:description>Official visualiser for Jo (The Whisper Dance) by VAELMIRAH from HER OWN WORLD.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/3dEqbb7a1XY</video:player_loc>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/6qTeSW62ILk/hqdefault.jpg</video:thumbnail_loc>
+      <video:title>VAELMIRAH - Boss Mode (Official Lyric Video)</video:title>
+      <video:description>Official lyric video for Boss Mode by VAELMIRAH from the 6-track debut EP HER OWN WORLD.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/6qTeSW62ILk</video:player_loc>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/yokj5NsiwyI/hqdefault.jpg</video:thumbnail_loc>
+      <video:title>VAELMIRAH - Soft Life (Official Lyric Video)</video:title>
+      <video:description>Official lyric video for Soft Life by VAELMIRAH — turning hardship into hard-earned peace.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/yokj5NsiwyI</video:player_loc>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/l0R-gGNeEq8/hqdefault.jpg</video:thumbnail_loc>
+      <video:title>VAELMIRAH - Moon Low (Official Lyric Video)</video:title>
+      <video:description>Official lyric video for Moon Low by VAELMIRAH.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/l0R-gGNeEq8</video:player_loc>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://btltechmusic.com/rhyme-and-bass</loc>
+    <lastmod>2026-11-21</lastmod>
+    <priority>0.95</priority>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/n2GxnyqoCzY/hqdefault.jpg</video:thumbnail_loc>
+      <video:title>RHYME &amp; BASS - TICK TOCK (Hickory Dickory Dock) (Official Lyric Video)</video:title>
+      <video:description>RHYME &amp; BASS reimagines Hickory Dickory Dock into a UK Bass anthem about time and urgency.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/n2GxnyqoCzY</video:player_loc>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/0YW7seIZRh0/hqdefault.jpg</video:thumbnail_loc>
+      <video:title>RHYME &amp; BASS - Archive! Archive! (Official Lyric Video)</video:title>
+      <video:description>"You call it pain, I call it data." Official lyric video for Archive! Archive! by RHYME &amp; BASS.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/0YW7seIZRh0</video:player_loc>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/-KLmYo779JQ/hqdefault.jpg</video:thumbnail_loc>
+      <video:title>RHYME &amp; BASS - Money Don't Make the Man (Official Lyric Video)</video:title>
+      <video:description>Official lyric video for Money Don't Make the Man by RHYME &amp; BASS.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/-KLmYo779JQ</video:player_loc>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/xFez7w6O8ng/hqdefault.jpg</video:thumbnail_loc>
+      <video:title>RHYME &amp; BASS - Fall Off (Official Lyric Video)</video:title>
+      <video:description>"Humpty Dumpty had a great fall — still got up." Official lyric video for Fall Off by RHYME &amp; BASS.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/xFez7w6O8ng</video:player_loc>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://btltechmusic.com/moon-low</loc>
+    <lastmod>2026-11-21</lastmod>
+    <priority>0.9</priority>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/l0R-gGNeEq8/hqdefault.jpg</video:thumbnail_loc>
+      <video:title>VAELMIRAH - Moon Low (Official Lyric Video)</video:title>
+      <video:description>Official lyric video for Moon Low by VAELMIRAH — Afro-fusion R&amp;B across Lagos rain and London cold.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/l0R-gGNeEq8</video:player_loc>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://btltechmusic.com/choko-season</loc>
+    <lastmod>2026-11-21</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://btltechmusic.com/rhymeandbass/fall-off</loc>
+    <lastmod>2026-11-21</lastmod>
+    <priority>0.9</priority>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/xFez7w6O8ng/hqdefault.jpg</video:thumbnail_loc>
+      <video:title>RHYME &amp; BASS - Fall Off (Official Lyric Video)</video:title>
+      <video:description>Official lyric video for Fall Off by RHYME &amp; BASS.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/xFez7w6O8ng</video:player_loc>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://btltechmusic.com/rhymeandbass/money-dont-make-the-man</loc>
+    <lastmod>2026-11-21</lastmod>
+    <priority>0.9</priority>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/-KLmYo779JQ/hqdefault.jpg</video:thumbnail_loc>
+      <video:title>RHYME &amp; BASS - Money Don't Make the Man (Official Lyric Video)</video:title>
+      <video:description>Official lyric video for Money Don't Make the Man by RHYME &amp; BASS.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/-KLmYo779JQ</video:player_loc>
+    </video:video>
   </url>
   <url>
     <loc>https://btltechmusic.com/recovera</loc>
-    <lastmod>2026-09-28</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <priority>0.95</priority>
   </url>
   <url>
@@ -17,72 +264,60 @@
   </url>
   <url>
     <loc>https://btltechmusic.com/lyrid</loc>
-    <lastmod>2026-09-28</lastmod>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://btltechmusic.com/btltech</loc>
-    <lastmod>2026-09-28</lastmod>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://btltechmusic.com/choko-king</loc>
-    <lastmod>2026-09-28</lastmod>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://btltechmusic.com/rhyme-and-bass</loc>
-    <lastmod>2026-09-28</lastmod>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://btltechmusic.com/rhymeandbass/fall-off</loc>
-    <lastmod>2026-09-28</lastmod>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://btltechmusic.com/rhymeandbass/money-dont-make-the-man</loc>
-    <lastmod>2026-09-28</lastmod>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://btltechmusic.com/choko-season</loc>
-    <lastmod>2026-09-28</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://btltechmusic.com/lyrid-help</loc>
-    <lastmod>2026-09-28</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://btltechmusic.com/whine-for-me</loc>
-    <lastmod>2026-09-28</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <priority>0.8</priority>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/1FObPRHElrc/hqdefault.jpg</video:thumbnail_loc>
+      <video:title>Choko King - Wine For Me (Whine For Me) (Official Lyric Video)</video:title>
+      <video:description>Official lyric video for WHINE FOR ME by Choko King.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/1FObPRHElrc</video:player_loc>
+    </video:video>
   </url>
   <url>
     <loc>https://btltechmusic.com/go-slow</loc>
-    <lastmod>2026-09-28</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <priority>0.8</priority>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/0tu7avBvm3Y/hqdefault.jpg</video:thumbnail_loc>
+      <video:title>Choko King - Go Slow (Official Lyric Video)</video:title>
+      <video:description>Official lyric video for Go Slow by Choko King.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/0tu7avBvm3Y</video:player_loc>
+    </video:video>
   </url>
   <url>
     <loc>https://btltechmusic.com/london-outside</loc>
-    <lastmod>2026-09-28</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <priority>0.8</priority>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/rtXeSaP4s7M/hqdefault.jpg</video:thumbnail_loc>
+      <video:title>Choko King - London Outside (Official Lyric Video)</video:title>
+      <video:description>Official lyric video for London Outside by Choko King.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/rtXeSaP4s7M</video:player_loc>
+    </video:video>
   </url>
   <url>
     <loc>https://btltechmusic.com/choko-so-cool</loc>
-    <lastmod>2026-09-28</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://btltechmusic.com/press-kit</loc>
-    <lastmod>2026-09-28</lastmod>
-    <priority>0.7</priority>
+    <lastmod>2026-11-21</lastmod>
+    <priority>0.85</priority>
   </url>
   <url>
     <loc>https://btltechmusic.com/contact</loc>
-    <lastmod>2026-09-28</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
