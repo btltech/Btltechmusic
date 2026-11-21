@@ -11,9 +11,9 @@ const NO_PHOTOCOPY_SPOTIFY_URL = "https://open.spotify.com/track/4Hk2sNFqQ9eC0lM
 const NO_PHOTOCOPY_APPLE_MUSIC_URL = "https://music.apple.com/gb/album/no-photocopy-single/6811532041";
 
 // BEGINNER EDITING: BTLTECH MUSIC RADIO 24/7 LIVE STREAM URLs
-const BTLTECH_LIVE_RADIO_YOUTUBE_URL = "https://www.youtube.com/watch?v=dOWZbmrVY6M";
+const BTLTECH_LIVE_RADIO_YOUTUBE_URL = "https://youtube.com/live/dOWZbmrVY6M?feature=share";
 const BTLTECH_LIVE_RADIO_EMBED_URL = "https://www.youtube.com/embed/dOWZbmrVY6M";
-const BTLTECH_LIVE_RADIO_CHANNEL_URL = "https://www.youtube.com/@btltechmusic/live";
+const BTLTECH_LIVE_RADIO_CHANNEL_URL = "https://youtube.com/live/dOWZbmrVY6M?feature=share";
 const BTLTECH_LIVE_RADIO_SPOTIFY_PLAYLIST_URL = "https://open.spotify.com/playlist/5B6jlPnEuTe8rjQVYdfIrI";
 
 // BEGINNER EDITING: YAHOO MAN (BTLTECH) official lyric video link.
@@ -618,11 +618,12 @@ const embedLinks = {
 const radioStations = {
   all: {
     id: "all",
-    name: "📻 All-Label Radio (29 Songs)",
-    tagline: "Non-stop rotation of all 29 official lyric & music videos across BTLTECH, Choko King, VAELMIRAH, and RHYME & BASS.",
-    channelUrl: "https://www.youtube.com/@btltechmusic",
+    name: "📻 All-Label Radio (29 Songs · 4-Hour Stream)",
+    tagline: "Continuous 4-hour 29-song BTLTECH Music Radio stream plus individual song selector across BTLTECH, Choko King, VAELMIRAH, and RHYME & BASS.",
+    channelUrl: "https://youtube.com/live/dOWZbmrVY6M?feature=share",
     spotifyUrl: "https://open.spotify.com/playlist/5B6jlPnEuTe8rjQVYdfIrI",
     tracks: [
+      { id: "dOWZbmrVY6M", title: "29-Song Continuous Radio Stream (4 Hours)", artist: "BTLTECH Music Radio", watchUrl: "https://youtube.com/live/dOWZbmrVY6M?feature=share" },
       { id: "OZsYZtvN2vY", title: "You Lie", artist: "BTLTECH" },
       { id: "OF_j5tNtuJg", title: "Choko Is Uno", artist: "Choko King" },
       { id: "eY0DGXACKXs", title: "Hold My Waist", artist: "VAELMIRAH x BTLTECH" },
@@ -651,17 +652,17 @@ const radioStations = {
       { id: "DhsBhU3aavU", title: "Inevitable", artist: "Choko King" },
       { id: "0tu7avBvm3Y", title: "Go Slow", artist: "Choko King" },
       { id: "rXq5KBw2tDU", title: "Sweet Fire", artist: "Choko King" },
-      { id: "toW3FsHkzOU", title: "London Outside", artist: "Choko King" }
+      { id: "rtXeSaP4s7M", title: "London Outside", artist: "Choko King" }
     ]
   },
   archive: {
     id: "archive",
-    name: "🔴 4-Hour Full Radio Mix",
-    tagline: "Continuous 4-hour BTLTECH Music Radio broadcast recording featuring all 29 songs back-to-back.",
-    channelUrl: "https://www.youtube.com/@btltechmusic/live",
+    name: "🔴 4-Hour Full Radio Stream",
+    tagline: "Continuous 4-hour BTLTECH Music Radio broadcast featuring all 29 songs back-to-back.",
+    channelUrl: "https://youtube.com/live/dOWZbmrVY6M?feature=share",
     spotifyUrl: "https://open.spotify.com/playlist/5B6jlPnEuTe8rjQVYdfIrI",
     tracks: [
-      { id: "dOWZbmrVY6M", title: "BTLTECH Music Radio (4-Hour Continuous Mix)", artist: "All BTLTECH Music Artists" }
+      { id: "dOWZbmrVY6M", title: "BTLTECH Music Radio (4-Hour 29-Song Stream)", artist: "All BTLTECH Music Artists", watchUrl: "https://youtube.com/live/dOWZbmrVY6M?feature=share" }
     ]
   },
   choko: {
@@ -681,7 +682,7 @@ const radioStations = {
       { id: "0tu7avBvm3Y", title: "Go Slow", artist: "Choko King" },
       { id: "DhsBhU3aavU", title: "Inevitable", artist: "Choko King" },
       { id: "rXq5KBw2tDU", title: "Sweet Fire", artist: "Choko King" },
-      { id: "toW3FsHkzOU", title: "London Outside", artist: "Choko King" },
+      { id: "rtXeSaP4s7M", title: "London Outside", artist: "Choko King" },
       { id: "kR-ntq17Mf4", title: "Bad for Me (VAELMIRAH ft. Choko King)", artist: "VAELMIRAH ft. Choko King" }
     ]
   },
@@ -1477,18 +1478,8 @@ function buildRadioEmbedUrl(tracks, startIndex = 0, autoplay = false) {
     return "https://www.youtube.com/embed/dOWZbmrVY6M";
   }
 
-  const ordered = [
-    ...tracks.slice(startIndex),
-    ...tracks.slice(0, startIndex)
-  ];
-  const firstId = ordered[0].id;
-
-  if (ordered.length === 1) {
-    return `https://www.youtube.com/embed/${firstId}?rel=0${autoplay ? "&autoplay=1" : ""}`;
-  }
-
-  const playlistIds = ordered.map((track) => track.id).join(",");
-  return `https://www.youtube.com/embed/${firstId}?playlist=${playlistIds}&loop=1&rel=0${autoplay ? "&autoplay=1" : ""}`;
+  const activeTrack = tracks[startIndex] || tracks[0];
+  return `https://www.youtube.com/embed/${activeTrack.id}?rel=0${autoplay ? "&autoplay=1" : ""}`;
 }
 
 function setupRadioTuner() {
@@ -1517,7 +1508,7 @@ function setupRadioTuner() {
       const station = radioStations[currentStationKey] || radioStations.all;
       const activeTrack = currentTracks[currentIndex] || currentTracks[0];
       const embedUrl = buildRadioEmbedUrl(currentTracks, currentIndex, autoplay);
-      const watchUrl = activeTrack ? `https://youtu.be/${activeTrack.id}` : station.channelUrl;
+      const watchUrl = activeTrack?.watchUrl || (activeTrack ? `https://youtu.be/${activeTrack.id}` : station.channelUrl);
 
       stationButtons.forEach((btn) => {
         const isSelected = btn.dataset.stationSelect === currentStationKey;
