@@ -11,9 +11,9 @@ const NO_PHOTOCOPY_SPOTIFY_URL = "https://open.spotify.com/track/4Hk2sNFqQ9eC0lM
 const NO_PHOTOCOPY_APPLE_MUSIC_URL = "https://music.apple.com/gb/album/no-photocopy-single/6811532041";
 
 // BEGINNER EDITING: BTLTECH MUSIC RADIO 24/7 LIVE STREAM URLs
-const BTLTECH_LIVE_RADIO_YOUTUBE_URL = "https://youtube.com/live/dOWZbmrVY6M?feature=share";
-const BTLTECH_LIVE_RADIO_EMBED_URL = "https://www.youtube.com/embed/dOWZbmrVY6M";
-const BTLTECH_LIVE_RADIO_CHANNEL_URL = "https://youtube.com/live/dOWZbmrVY6M?feature=share";
+const BTLTECH_LIVE_RADIO_YOUTUBE_URL = "https://www.youtube.com/watch?v=f4ppGUla2j4";
+const BTLTECH_LIVE_RADIO_EMBED_URL = "https://www.youtube.com/embed/f4ppGUla2j4";
+const BTLTECH_LIVE_RADIO_CHANNEL_URL = "https://www.youtube.com/watch?v=f4ppGUla2j4";
 const BTLTECH_LIVE_RADIO_SPOTIFY_PLAYLIST_URL = "https://open.spotify.com/playlist/5B6jlPnEuTe8rjQVYdfIrI";
 
 // BEGINNER EDITING: YAHOO MAN (BTLTECH) official lyric video link.
@@ -619,12 +619,12 @@ const embedLinks = {
 const radioStations = {
   all: {
     id: "all",
-    name: "📻 All-Label Radio (29 Songs · 4-Hour Stream)",
-    tagline: "Continuous 4-hour 29-song BTLTECH Music Radio stream plus individual song selector across BTLTECH, Choko King, VAELMIRAH, and RHYME & BASS.",
-    channelUrl: "https://youtube.com/live/dOWZbmrVY6M?feature=share",
+    name: "📻 All-Label Radio (29 Songs · 12-Hour Stream)",
+    tagline: "Continuous 12-hour BTLTECH Music Radio stream plus individual song selector across BTLTECH, Choko King, VAELMIRAH, and RHYME & BASS.",
+    channelUrl: "https://www.youtube.com/watch?v=f4ppGUla2j4",
     spotifyUrl: "https://open.spotify.com/playlist/5B6jlPnEuTe8rjQVYdfIrI",
     tracks: [
-      { id: "dOWZbmrVY6M", title: "29-Song Continuous Radio Stream (4 Hours)", artist: "BTLTECH Music Radio", watchUrl: "https://youtube.com/live/dOWZbmrVY6M?feature=share" },
+      { id: "f4ppGUla2j4", title: "BTLTECH MUSIC RADIO LIVE | Non-Stop Afrobeats, Dancehall & Afro-R&B (12 Hours)", artist: "BTLTECH Music Radio", watchUrl: "https://www.youtube.com/watch?v=f4ppGUla2j4" },
       { id: "OZsYZtvN2vY", title: "You Lie", artist: "BTLTECH" },
       { id: "OF_j5tNtuJg", title: "Choko Is Uno", artist: "Choko King" },
       { id: "eY0DGXACKXs", title: "Hold My Waist", artist: "VAELMIRAH x BTLTECH" },
@@ -1478,7 +1478,7 @@ function setupMobileMenu() {
 
 function buildRadioEmbedUrl(tracks, startIndex = 0, autoplay = false) {
   if (!tracks || !tracks.length) {
-    return "https://www.youtube.com/embed/dOWZbmrVY6M";
+    return "https://www.youtube.com/embed/f4ppGUla2j4";
   }
 
   const activeTrack = tracks[startIndex] || tracks[0];
@@ -1611,7 +1611,7 @@ function syncLiveRadioEmbed() {
   fetch("/api/live-radio", { credentials: "same-origin" })
     .then((response) => (response.ok ? response.json() : null))
     .then((data) => {
-      if (!data || !data.isLiveNow || !data.videoId || data.videoId === "dOWZbmrVY6M") {
+      if (!data || !data.isLiveNow || !data.videoId || data.videoId === "f4ppGUla2j4" || data.videoId === "dOWZbmrVY6M") {
         return;
       }
 
