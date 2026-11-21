@@ -1,6 +1,6 @@
 export async function onRequestGet() {
   const channelLiveUrl = "https://www.youtube.com/@btltechmusic/live";
-  const fallbackVideoId = "9ycXtdvhGio";
+  const fallbackVideoId = "dOWZbmrVY6M";
 
   try {
     const response = await fetch(channelLiveUrl, {

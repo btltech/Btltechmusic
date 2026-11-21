@@ -11,20 +11,32 @@ const NO_PHOTOCOPY_SPOTIFY_URL = "https://open.spotify.com/track/4Hk2sNFqQ9eC0lM
 const NO_PHOTOCOPY_APPLE_MUSIC_URL = "https://music.apple.com/gb/album/no-photocopy-single/6811532041";
 
 // BEGINNER EDITING: BTLTECH MUSIC RADIO 24/7 LIVE STREAM URLs
-const BTLTECH_LIVE_RADIO_YOUTUBE_URL = "https://www.youtube.com/watch?v=9ycXtdvhGio";
-const BTLTECH_LIVE_RADIO_EMBED_URL = "https://www.youtube.com/embed/9ycXtdvhGio";
+const BTLTECH_LIVE_RADIO_YOUTUBE_URL = "https://www.youtube.com/watch?v=dOWZbmrVY6M";
+const BTLTECH_LIVE_RADIO_EMBED_URL = "https://www.youtube.com/embed/dOWZbmrVY6M";
 const BTLTECH_LIVE_RADIO_CHANNEL_URL = "https://www.youtube.com/@btltechmusic/live";
 const BTLTECH_LIVE_RADIO_SPOTIFY_PLAYLIST_URL = "https://open.spotify.com/playlist/5B6jlPnEuTe8rjQVYdfIrI";
 
 // BEGINNER EDITING: YAHOO MAN (BTLTECH) official lyric video link.
+const YAHOO_MAN_SPOTIFY_URL = "https://open.spotify.com/track/3irTC2RLAxvGasLD37LxWL";
 const YAHOO_MAN_YOUTUBE_URL = "https://youtu.be/l3EmqF0xKyI";
 const YAHOO_MAN_VIDEO_URL = "https://youtu.be/l3EmqF0xKyI";
+
+// BEGINNER EDITING: YOU LIE / STACKING THE CASH / HOLD MY WAIST (BTLTECH) URLs
+const YOU_LIE_SPOTIFY_URL = "https://open.spotify.com/track/2Ziscn5WjSzprzNgc9dW7H";
+const YOU_LIE_APPLE_MUSIC_URL = "https://music.apple.com/gb/album/you-lied/1893236878?i=1893236958";
+const YOU_LIE_YOUTUBE_URL = "https://youtu.be/OZsYZtvN2vY";
+const STACKING_THE_CASH_YOUTUBE_URL = "https://youtu.be/1zauCJGMuR0";
+const WELCOME_TO_LAGOS_NEW_YOUTUBE_URL = "https://youtu.be/H6dtqlzQxkg";
+const HOLD_MY_WAIST_SPOTIFY_URL = "https://open.spotify.com/track/32mD9uATJ4QjxHF4HPHgc2";
+const HOLD_MY_WAIST_APPLE_MUSIC_URL = "https://music.apple.com/gb/album/hold-my-waist-feat-btltech/6829061918?i=6829061922";
+const HOLD_MY_WAIST_YOUTUBE_URL = "https://youtu.be/eY0DGXACKXs";
 
 // BEGINNER EDITING: PAYCHECK TO PAYCHECK (BTLTECH) single URLs
 const PAYCHECK_BTLTECH_SPOTIFY_URL = "https://open.spotify.com/track/33muFzj02yNvwLF4fg0hf8";
 const PAYCHECK_BTLTECH_APPLE_MUSIC_URL = "https://music.apple.com/gb/album/paycheck-to-paycheck/6816091284?i=6816091285";
 
 // BEGINNER EDITING: WEAK KNEES (BTLTECH) single URLs
+const WEAK_KNEES_SPOTIFY_URL = "https://open.spotify.com/album/0kIbO1It93DgdyiI4IN5Br";
 const WEAK_KNEES_APPLE_MUSIC_URL = "https://music.apple.com/gb/album/weak-knees/6816105167?i=6816105170";
 const WEAK_KNEES_YOUTUBE_URL = "https://youtu.be/ycGI08iciYE";
 const WEAK_KNEES_VIDEO_URL = "https://youtu.be/ycGI08iciYE";
@@ -34,6 +46,16 @@ const PAYCHECK_CHOKO_STORY_SPOTIFY_URL = "https://open.spotify.com/track/1izfpkg
 const PAYCHECK_CHOKO_STORY_APPLE_MUSIC_URL = "https://music.apple.com/gb/album/paycheck-to-paycheck-choko-story/6816078478?i=6816078479";
 const PAYCHECK_CHOKO_STORY_TIKTOK_URL = "https://www.tiktok.com/@chokokingofficial/video/7693678810226642198";
 const PAYCHECK_CHOKO_STORY_YOUTUBE_URL = "https://youtu.be/51eqHduOqPw";
+
+// BEGINNER EDITING: CHOKO IS UNO & GOD MADE DI MAN (MONEY MAD) (Choko King) single URLs
+const CHOKO_IS_UNO_SPOTIFY_URL = "https://open.spotify.com/album/5H8QTH7gKx9KnvgTqBZ1zU";
+const CHOKO_IS_UNO_APPLE_MUSIC_URL = "https://music.apple.com/gb/album/choko-is-uno-single/6824448342?i=6824448343";
+const CHOKO_IS_UNO_YOUTUBE_URL = "https://youtu.be/OF_j5tNtuJg";
+const CHOKO_IS_UNO_TOPIC_YOUTUBE_URL = "https://youtu.be/1gr3ASZTYgM";
+const GOD_MADE_DI_MAN_SPOTIFY_URL = "https://open.spotify.com/track/2ViCjpX6QkQLNuLhCR8Qlb";
+const GOD_MADE_DI_MAN_APPLE_MUSIC_URL = "https://music.apple.com/gb/album/god-made-di-man-money-mad-single/6829282776?i=6829282837";
+const GOD_MADE_DI_MAN_YOUTUBE_URL = "https://youtu.be/LGgCS8-5JJI";
+const GOD_MADE_DI_MAN_TOPIC_YOUTUBE_URL = "https://youtu.be/Dk0Vb3xYuBg";
 
 // BEGINNER EDITING: OH BIG MAN (Choko King) single URLs
 const OH_BIG_MAN_SPOTIFY_URL = "https://open.spotify.com/track/0MPcBRhu2ZEvfhb0DcTY9g";
@@ -52,8 +74,8 @@ const TICK_TOCK_YOUTUBE_URL = "https://youtu.be/n2GxnyqoCzY";
 const CHOKO_SEASON_PRESAVE_URL = "https://distrokid.com/hyperfollow/chokoking/choko-season";
 const CHOKO_SEASON_SPOTIFY_URL = "https://open.spotify.com/album/6L8ipGRG5ktSxEgHtt43SX";
 const CHOKO_SEASON_APPLE_MUSIC_URL = "https://music.apple.com/gb/album/choko-season-ep/6801895512";
-const CHOKO_SEASON_YOUTUBE_URL = "#";
-const CHOKO_SEASON_VIDEO_URL = "#";
+const CHOKO_SEASON_YOUTUBE_URL = "https://www.youtube.com/playlist?list=OLAK5uy_l8AFhhLfl8Ubg5DmdXy9AW9VtewN2Pd-I";
+const CHOKO_SEASON_VIDEO_URL = "https://youtu.be/toW3FsHkzOU";
 
 // BEGINNER EDITING: WHINE FOR ME (Choko King) platform and video link placeholders.
 // Paste official URLs below when available.
@@ -134,14 +156,32 @@ const vaelmirahLinks = {
   appleMusic: "https://music.apple.com/gb/artist/vaelmirah/6821623895",
   tiktok: "https://www.tiktok.com/@vaelmirah",
   instagram: "https://www.instagram.com/vaelmirah",
+  herOwnWorldSpotify: "https://open.spotify.com/album/05G7jiPy5S14aaYHYH2yGX",
+  herOwnWorldAppleMusic: "https://music.apple.com/gb/album/her-own-world-ep/6829061918",
+  herOwnWorldYouTube: "https://www.youtube.com/playlist?list=PLCG1Ob8xe68M",
+  allSongsYouTubePlaylist: "https://www.youtube.com/playlist?list=PLCk3yZlScw5w",
+  holdMyWaistSpotify: "https://open.spotify.com/track/32mD9uATJ4QjxHF4HPHgc2",
+  holdMyWaistAppleMusic: "https://music.apple.com/gb/album/hold-my-waist-feat-btltech/6829061918?i=6829061922",
+  holdMyWaistYouTube: "https://youtu.be/eY0DGXACKXs",
+  badForMeSpotify: "https://open.spotify.com/track/5JbynWfjbk9PRmHBswP44A",
+  badForMeAppleMusic: "https://music.apple.com/gb/album/bad-for-me-feat-choko-king/6829061918?i=6829061923",
+  badForMeYouTube: "https://youtu.be/kR-ntq17Mf4",
+  bossModeSpotify: "https://open.spotify.com/track/2eZNDPmCBGJFx3J8kxKJi6",
+  bossModeAppleMusic: "https://music.apple.com/gb/album/boss-mode/6829061918?i=6829061924",
+  bossModeYouTube: "https://youtu.be/6qTeSW62ILk",
+  joSpotify: "https://open.spotify.com/track/501EYQ0pClkoiIfPiVu86e",
+  joAppleMusic: "https://music.apple.com/gb/album/jo-the-whisper-dance/6829061918?i=6829061925",
+  joYouTube: "https://youtu.be/syqDiNRboDw",
+  joVisualizer: "https://youtu.be/3dEqbb7a1XY",
   moonLowSpotify: "https://open.spotify.com/track/1cMRMLsOEO65hCtUTYBDlz",
   moonLowAlbum: "https://open.spotify.com/album/74TAAJqEVEhyCPPx1Ek4MB",
   moonLowAppleMusic: "https://music.apple.com/gb/album/moon-low/6821799118?i=6821799119",
-  moonLowYouTube: "https://www.youtube.com/playlist?list=OLAK5uy_my_gPAr4pPa7JXIDq_8vmrnhQH5V0gsbg",
+  moonLowYouTube: "https://youtu.be/l0R-gGNeEq8",
   moonLowVisualizer: "https://youtu.be/aubGy-naywg",
   softLifeSpotify: "https://open.spotify.com/track/2fAL2y8H266iOl7OUHzJjJ",
   softLifeAlbum: "https://open.spotify.com/album/1Bbcb3Pz9e9ITvfQHkstvQ",
   softLifeAppleMusic: "https://music.apple.com/gb/album/soft-life/6824278365?i=6824278366",
+  softLifeYouTube: "https://youtu.be/yokj5NsiwyI",
   softLifeVisualizer: "https://youtu.be/7ClUhKgDAPI",
   softLifeVideo2: "https://youtu.be/yokj5NsiwyI",
   email: "mailto:btl@btltech.co.uk?subject=VAELMIRAH%20Enquiry"
@@ -149,6 +189,36 @@ const vaelmirahLinks = {
 
 // BEGINNER EDITING: Choko King's own songs. Falls back to his hub links above when a song link is #.
 const chokoReleaseCatalog = {
+  chokoIsUno: {
+    title: "Choko Is Uno",
+    artist: "Choko King",
+    type: "Single",
+    releaseDate: "2026-11-20",
+    clean: true,
+    genre: "Afro-Dancehall / Afrobeats",
+    description: "Crown-on Afro-dancehall energy from Choko King. Out now across all major platforms with the official lyric video.",
+    links: {
+      spotify: CHOKO_IS_UNO_SPOTIFY_URL,
+      appleMusic: CHOKO_IS_UNO_APPLE_MUSIC_URL,
+      youtube: CHOKO_IS_UNO_YOUTUBE_URL,
+      video: CHOKO_IS_UNO_YOUTUBE_URL
+    }
+  },
+  godMadeDiMan: {
+    title: "God Made Di Man (Money Mad)",
+    artist: "Choko King",
+    type: "Single",
+    releaseDate: "2026-11-20",
+    clean: true,
+    genre: "Afro-Dancehall / Reggae",
+    description: "Conscious Afro-dancehall reflection on money, character, and staying grounded between Lagos and London. Out now.",
+    links: {
+      spotify: GOD_MADE_DI_MAN_SPOTIFY_URL,
+      appleMusic: GOD_MADE_DI_MAN_APPLE_MUSIC_URL,
+      youtube: GOD_MADE_DI_MAN_YOUTUBE_URL,
+      video: GOD_MADE_DI_MAN_YOUTUBE_URL
+    }
+  },
   chokoSeason: {
     title: "CHOKO SEASON (THE EP)",
     artist: "Choko King",
@@ -206,7 +276,8 @@ const chokoReleaseCatalog = {
     links: {
       spotify: "https://open.spotify.com/track/1YUM6BY5ODMEirvxSytLkW?si=9760aabda4e146cc",
       appleMusic: "https://music.apple.com/gb/album/london-outside-single/6788608520",
-      youtube: "https://youtu.be/rtXeSaP4s7M?si=1Wl7MjVjHfbcbeHc",
+      youtube: "https://youtu.be/toW3FsHkzOU",
+      video: "https://youtu.be/toW3FsHkzOU",
       audiomack: "#"
     }
   },
@@ -214,7 +285,8 @@ const chokoReleaseCatalog = {
     links: {
       spotify: "https://open.spotify.com/track/7slUe9GJ5owbOXHFTzoZrm?si=f94041c12b714507",
       appleMusic: "https://music.apple.com/gb/album/go-slow/6787240110?i=6787240111",
-      youtube: "https://youtu.be/eCHfEXeaUhM?si=1DEWNkPPmIl-8_AA",
+      youtube: "https://youtu.be/0tu7avBvm3Y",
+      video: "https://youtu.be/0tu7avBvm3Y",
       audiomack: "#"
     }
   },
@@ -222,22 +294,31 @@ const chokoReleaseCatalog = {
     links: {
       spotify: "https://open.spotify.com/album/1BeFz4HWKYgxqJdf2ITnkP?si=xhP_-sKOSrmL_uRUZ61_VA",
       appleMusic: "https://music.apple.com/gb/album/sweet-fire-single/6781821072",
-      youtube: "https://youtu.be/laj3oyrXPR8",
+      youtube: "https://youtu.be/rXq5KBw2tDU",
+      video: "https://youtu.be/rXq5KBw2tDU",
       audiomack: "#"
     }
   },
   shayo: {
     links: {
       spotify: "https://open.spotify.com/track/0R18eRj2gT7X4fxADqss3H",
-      youtube: "https://youtu.be/q8pDbfkanwQ",
-      video: "https://youtu.be/q8pDbfkanwQ"
+      youtube: "https://youtu.be/WCjIyIowL3M",
+      video: "https://youtu.be/WCjIyIowL3M"
+    }
+  },
+  kolo: {
+    links: {
+      spotify: CHOKO_SEASON_SPOTIFY_URL,
+      appleMusic: CHOKO_SEASON_APPLE_MUSIC_URL,
+      youtube: "https://youtu.be/z6tX4uCymFQ",
+      video: "https://youtu.be/z6tX4uCymFQ"
     }
   },
   inevitable: {
     links: {
       spotify: "https://open.spotify.com/track/1oE0ZOpB3WKopOubppp9gU",
-      youtube: "https://youtu.be/6fB8iX6S00E",
-      video: "https://youtu.be/6fB8iX6S00E"
+      youtube: "https://youtu.be/DhsBhU3aavU",
+      video: "https://youtu.be/DhsBhU3aavU"
     }
   },
   ohBigMan: {
@@ -278,6 +359,19 @@ const recoveraLinks = {
 // BEGINNER EDITING: Add release-specific links here so each song can go to its own page.
 // If a release link is #, that platform button stays hidden until its URL is added.
 const releaseCatalog = {
+  holdMyWaist: {
+    title: "Hold My Waist (with VAELMIRAH)",
+    artist: "VAELMIRAH & BTLTECH",
+    type: "Single",
+    releaseDate: "2026-11-15",
+    clean: true,
+    links: {
+      spotify: HOLD_MY_WAIST_SPOTIFY_URL,
+      appleMusic: HOLD_MY_WAIST_APPLE_MUSIC_URL,
+      youtube: HOLD_MY_WAIST_YOUTUBE_URL,
+      video: HOLD_MY_WAIST_YOUTUBE_URL
+    }
+  },
   weakKnees: {
     title: "Weak Knees",
     artist: "BTLTECH",
@@ -285,7 +379,7 @@ const releaseCatalog = {
     releaseDate: "2026-10-30",
     clean: true,
     links: {
-      spotify: artistLinks.spotify,
+      spotify: WEAK_KNEES_SPOTIFY_URL,
       appleMusic: WEAK_KNEES_APPLE_MUSIC_URL,
       youtube: WEAK_KNEES_YOUTUBE_URL,
       video: WEAK_KNEES_VIDEO_URL
@@ -364,16 +458,31 @@ const releaseCatalog = {
     type: "Single",
     clean: true,
     links: {
+      spotify: YAHOO_MAN_SPOTIFY_URL,
       appleMusic: "https://music.apple.com/gb/album/yahoo-man-single/1881311707",
       youtube: YAHOO_MAN_YOUTUBE_URL,
       video: YAHOO_MAN_VIDEO_URL
+    }
+  },
+  stackingTheCash: {
+    title: "Stacking the Cash",
+    artist: "BTLTECH",
+    type: "Single",
+    clean: true,
+    links: {
+      spotify: "https://open.spotify.com/track/02iC7F7WG1ytUpAmfHed9l",
+      appleMusic: "https://music.apple.com/gb/album/through-it-all/1893236878",
+      youtube: STACKING_THE_CASH_YOUTUBE_URL,
+      video: STACKING_THE_CASH_YOUTUBE_URL,
+      audiomack: "https://audiomack.com/btl-15/album/through-it-all"
     }
   },
   omoStacker: {
     links: {
       spotify: "https://open.spotify.com/track/02iC7F7WG1ytUpAmfHed9l",
       appleMusic: "https://music.apple.com/gb/album/omo-stacker/1893236878?i=1893236954",
-      youtube: "https://www.youtube.com/watch?v=Q02rkkR6rzU",
+      youtube: STACKING_THE_CASH_YOUTUBE_URL,
+      video: STACKING_THE_CASH_YOUTUBE_URL,
       audiomack: "https://audiomack.com/btl-15/album/through-it-all"
     }
   },
@@ -389,7 +498,8 @@ const releaseCatalog = {
     links: {
       spotify: "https://open.spotify.com/track/5LP7z14HOE3CZpbJzg8Evz",
       appleMusic: "https://music.apple.com/gb/album/im-a-hustler/1893236878?i=1893236879",
-      youtube: "https://youtu.be/Wqxl7dakMu8",
+      youtube: "https://youtu.be/60o0VEmNQrI",
+      video: "https://youtu.be/60o0VEmNQrI",
       audiomack: "https://audiomack.com/btl-15/album/through-it-all"
     }
   },
@@ -397,7 +507,8 @@ const releaseCatalog = {
     links: {
       spotify: "https://open.spotify.com/track/0nVh3jDIOYWEu2xzBDJf8p",
       appleMusic: "https://music.apple.com/gb/album/welcome-to-lagos/6773167906?i=6773167907",
-      youtube: "https://www.youtube.com/watch?v=Gmq0UzyPvZk",
+      youtube: WELCOME_TO_LAGOS_NEW_YOUTUBE_URL,
+      video: WELCOME_TO_LAGOS_NEW_YOUTUBE_URL,
       audiomack: "https://audiomack.com/btl-15/song/welcome-to-lagos"
     }
   },
@@ -418,10 +529,16 @@ const releaseCatalog = {
     }
   },
   youLied: {
+    title: "You Lie (You Lied)",
+    artist: "BTLTECH",
+    type: "Single",
+    releaseDate: "2026-11-16",
+    clean: true,
     links: {
-      spotify: "https://open.spotify.com/track/0FFCOxvNDvT1IvNhHIcKW4",
-      appleMusic: "https://music.apple.com/gb/album/you-lied/1893236878?i=1893236958",
-      youtube: "#",
+      spotify: YOU_LIE_SPOTIFY_URL,
+      appleMusic: YOU_LIE_APPLE_MUSIC_URL,
+      youtube: YOU_LIE_YOUTUBE_URL,
+      video: YOU_LIE_YOUTUBE_URL,
       audiomack: "https://audiomack.com/btl-15/album/through-it-all"
     }
   },
@@ -461,10 +578,10 @@ const upcomingRelease = {
 // BEGINNER EDITING: Update these video links if each visual has its own destination.
 const videoCatalog = {
   omoStackerVisual: {
-    url: "#"
+    url: STACKING_THE_CASH_YOUTUBE_URL
   },
   welcomeToLagosClip: {
-    url: "https://www.youtube.com/watch?v=Gmq0UzyPvZk"
+    url: WELCOME_TO_LAGOS_NEW_YOUTUBE_URL
   }
 };
 
